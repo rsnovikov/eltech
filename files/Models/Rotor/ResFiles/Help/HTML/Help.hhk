@@ -1,0 +1,53 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="SiteType" value="index">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Теория">
+    <param name="Name" value="Oai@ey">
+    <param name="Local" value="Теория.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Расчет параметров ДПТ">
+    <param name="Name" value="Расчет основных параметров двигателей общего применения">
+    <param name="Local" value="Расчет_основных_параметров_двигателей_общего_применения.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Практика">
+    <param name="Name" value="Практика">
+    <param name="Local" value="Практика.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="&quot;МАТИ&quot; - РГТУ">
+    <param name="Name" value="I iрiaрaiia">
+    <param name="Local" value="О_программе.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="О программе">
+    <param name="Name" value="I iрiaрaiia">
+    <param name="Local" value="О_программе.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Лабораторные работы">
+    <param name="Name" value="Лабораторный практикум">
+    <param name="Local" value="Лабораторный_практикум.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Испытание двигателя">
+    <param name="Name" value="Eniuoaiea aaeaaoaeae">
+    <param name="Local" value="Испытание_двигателей.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Имитация работы">
+    <param name="Name" value="Имитация работы">
+    <param name="Local" value="Имитация_работы.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Выбор типа двигателя">
+    <param name="Name" value="Выбор типа двигателя">
+    <param name="Local" value="Выбор_типа_двигателя.htm">
+  </object>
+</ul>
+</html>

@@ -1,0 +1,126 @@
+float kd,i,ia,ih,pem,d,va,a,b;
+//----------------------POWER
+if(Power<500)
+if(dlit->Checked)
+{
+ if(Power>=1 && Power<5)kd=14;
+ if(Power>=5 && Power<10)kd=2*Power+15;
+ if(Power>=10 && Power<15)kd=40;
+ if(Power>=15 && Power<20)kd=Power+25;
+ if(Power>=20 && Power<30)kd=0.5*Power+35;
+ if(Power>=30 && Power<55)kd=0.4*Power+33;
+ if(Power>=55 && Power<100)kd=0.2*Power+40;
+ if(Power>=100 && Power<200)kd=0.1*Power+45;
+ if(Power>=200 && Power<500)kd=0.0167*Power+61.67;
+} else
+    {
+     if(Power>=1 && Power<5)kd=6;
+     if(Power>=5 && Power<10)kd=2*Power+12;
+     if(Power>=10 && Power<15)kd=31;
+     if(Power>=15 && Power<20)kd=35;
+     if(Power>=20 && Power<30)kd=37;
+     if(Power>=30 && Power<55)kd=0.25*Power+32.5;
+     if(Power>=55 && Power<100)kd=0.1*Power+40;
+     if(Power>=100 && Power<200)kd=0.003*Power+49;
+     if(Power>=200 && Power<500)kd=0.0167*Power+51.67;
+    }
+
+if(Power>=500)
+{
+ if(Power>=500 && Power<1000)kd=6*0.001*Power+70;
+ if(Power>=1000 && Power<2000)kd=3*0.001*Power+73;
+ if(Power>=2000 && Power<4000)kd=1.5*0.001*Power+76;
+ if(Power>=4000 && Power<10000)kd=0.75*0.001*Power+77;
+ if(Power>=10000 && Power<20000)kd=0.3*0.001*Power+80;
+ if(Power>=20000 && Power<40000)kd=0.15*0.001*Power+81;
+ if(Power>=40000 && Power<60000)kd=0.15*0.001*Power+80;
+ if(Power>=60000 && Power<100000)kd=0.075*0.001*Power+83.5;
+ if(Power>=100000 && Power<200000)kd=0.01*0.001*Power+89;
+ if(Power>=200000 && Power<600000)kd=0.0075*0.001*Power+89.5;
+ if(Power>=600000)kd=94.5;
+}
+//---------------------------
+ bool z=false;
+ bool v=false;
+ Form7->l->Lines->Clear();
+ i=Power*100/(kd*un); ih=-1; ia=-1;
+ if(pa->Checked || sm->Checked) {ih=0.037*i;ia=i-ih;}
+ if(Power>=500)pem=Power*(100+kd)/(2*kd);
+    else if(dlit->Checked)pem=(100+2*kd)/(3*kd)*Power;
+            else pem=(100+3*kd)/(4*kd)*Power;
+ r=pem/(n*1000);
+ if(r>3)d=1.67*r+10;
+   else d=4*r+17.98;
+ if(r>7){MessageBox(0,"Неверное соотношение мощности\n и частоты вращения!","Ошибка установки",MB_OK | MB_ICONERROR);return;}
+ va=(M_PI*n/60)*d*0.01;
+ if(Power>=500 && va<15){d=4*r+17.98;va=(M_PI*n/60)*d*0.01;if(va<15 && r<0.3) d=75*r+27.4;}
+ if(Power>=500 && va>30){d=1.67*r+10;va=(M_PI*n/60)*d*0.01;if(va>30)d=0.67*r+6;}
+ if(Power<500 && va<15){d=4*r+17.98;va=(M_PI*n/60)*d*0.01;if(va<15 && r<0.3) d=75*r+27.4;}
+ if(Power<500 && va>25){d=1.67*r+10;va=(M_PI*n/60)*d*0.01;if(va>25)d=0.67*r+6;}
+ va=(M_PI*n/60)*d*0.01;
+ if(Power>=500 && (va<15 || va>30)){Form7->l->Lines->Add("Внимание: Скорость вращения якоря не соответствует рекомендованным значениям");z=true;}
+ if(Power<500 && (va<15 || va>25)){Form7->l->Lines->Add("Внимание: Скорость вращения якоря не соответствует рекомендованным значениям");z=true;}
+ r*=1000000;
+ if((r>110 || r<1) && Power<500){MessageBox(0,"Неверное соотношение мощности\n и частоты вращения!","Ошибка установки",MB_OK | MB_ICONERROR);return;}
+ if(Power>=500){a=9.1*d+27.2;b=0.014*d+0.34;}
+   else if(dlit->Checked)
+           {
+             if(r<2)a=10*r+30;
+             if(r>=2 && r<10) a=3.75*r+42.5;
+             if(r>=10 && r<20) a=r+70;
+             if(r>=20 && r<50) a=0.67*r+76.67;
+             if(r>=50 && r<100) a=0.2*r+100;
+             if(r>=100 && r<500) a=0.025*r+117.5;
+             if(r>=1 && r<2) b=0.05*r+0.15;
+             if(r>=2 && r<5) b=0.02*r+0.21;
+             if(r>=5 && r<8) b=0.013*r+0.23;
+             if(r>=8 && r<10) b=0.01*r+0.25;
+             if(r>=10 && r<20) b=0.003*r+0.32;
+             if(r>=20 && r<40) b=0.001*r+0.36;
+             if(r>=40 && r<70) b=0.002*r+0.32;
+             if(r>=70 && r<100) b=0.46;
+             if(r>=100 && r<500) b=0.000075*r+0.4225;
+           }
+           else
+             {
+              if(r<1)a=10*r+76;
+              if(r>=1 && r<2) a=18*r+64;
+              if(r>=2 && r<5) a=10*r+80;
+              if(r>=5 && r<10) a=3*r+115;
+              if(r>=10 && r<20) a=1.5*r+130;
+              if(r>=20 && r<50) a=0.67*r+146.67;
+              if(r>=50 && r<70) a=0.5*r+155;
+              if(r>=70 && r<100) a=0.33*r+166.67;
+              if(r>=100 && r<500) a=0.13*r+186.67;
+              if(r>=1 && r<2) b=0.05*r+0.2;
+              if(r>=2 && r<5) b=0.02*r+0.26;
+              if(r>=5 && r<8) b=0.013*r+0.29;
+              if(r>=8 && r<10) b=0.4;
+              if(r>=10 && r<20) b=0.004*r+0.36;
+              if(r>=20 && r<40) b=0.002*r+0.4;
+              if(r>=40 && r<70) b=0.001*r+0.44;
+              if(r>=70 && r<100) b=0.00067*r+0.45;
+              if(r>=100 && r<120) b=0.0025*r+0.25;
+             }
+ float delta,bi,t,la,li,alpha,lambda,polusa;
+ alpha=0.65;
+ li=6.1*(pem/n)*10000/(alpha*a*b*d*d);
+ if(li>floor(li)+0.5)la=floor(li)+1;
+    else la=floor(li);
+ lambda=li/d;
+ if(Power<500)
+    if(Power<200) polusa=2;
+       else polusa=4;
+ if(Power>=500)
+   if(d<20)polusa=2;
+      else if(d>=20 && d<35) polusa=4;
+             else if(d>=35 && d<=135) polusa=6;
+ t=M_PI*d/polusa;
+ bi=alpha*t;
+ if(d<6)delta=0.01*d;
+ if(d>=6 && d<10)delta=0.0125*d-0.025;
+ if(d>=10 && d<15) delta=0.01*d;
+ if(d>=30 && d<40) delta=0.005*d+0.1;
+ if(d>=40 && d<80) delta=0.00375*d+0.296;
+ if(d>=15 && d<30) delta=0.02*d-0.15;
+ float bgn=bi-2*delta;

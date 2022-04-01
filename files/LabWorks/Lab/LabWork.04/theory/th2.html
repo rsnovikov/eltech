@@ -1,0 +1,429 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+
+<title>2</title>
+</head>
+
+<body>
+
+<p><b>2. РАСЧЕТ СХЕМЫ ЦЕПИ МЕТОДОМ УЗЛОВЫХ НАПРЯЖЕНИЙ </b></p>
+<p>Для расчета сложных электрических цепей используют метод узловых напряжений (МУН) или метод контурных токов (МКТ). Необходимое число уравнений для расчета цепи этими методами определяют по формулам:</p>
+<p><i>N<sub>МУН &nbsp;</sub></i>= <i>У</i> - 1; <i>N<sub>МКТ &nbsp;</sub></i>= <i>B</i> - (<i>У</i> - 1),</p>
+<p>где <i>В</i> и <i>У -</i> число ветвей и узлов в схеме.</p>
+<p>Выполним расчет схемы цепи (рис. 4.2) (вариант <i>N</i> = 36, см. табл. 4.1) методом узловых напряжений. </p>
+<p>Исходные данные для расчета: <i>J</i><sub>1 </sub>= 2 А; <i>E</i><sub>1 </sub>= 10 B; <i>E</i><sub>5 </sub>= 20 B; <i>R</i><sub>1 </sub>= 1 Ом; <i>R</i><sub>2 </sub>= 2 Ом; &nbsp;<i>R</i><sub>3 </sub>= &nbsp;3 Ом; <i>R</i><sub>4 </sub>= 4 Ом; <i>R</i><sub>5 </sub>= 5 Ом; <i>R</i><sub>6 </sub>= 6 Ом.</p>
+<p align="center">&nbsp;<img border="0" src="th2.files/1.gif"></p>
+<p>Таблица 4.1</p>
+<table width="95%" border="1">
+<tr><td rowspan="2">Вариант</td>
+<td colspan="2">Источники</td>
+<td colspan="6">Сопротивления резисторов, Ом</td></tr><tr>
+<td>ИН c ЭДС <i>Е<sub>k</sub></i>, B</td>
+<td>ИТ с током<i> J<sub>k</sub></i>, А</td>
+<td><i>R</i><sub>1</sub></td>
+<td><i>R</i><sub>2</sub></td>
+<td><i>R</i><sub>3</sub></td>
+<td><i>R</i><sub>4</sub></td>
+<td><i>R</i><sub>5</sub></td>
+<td><i>R</i><sub>6</sub></td></tr>
+<tr><td width="9.91%">1</td>
+<td width="21.8%"><i>E</i><sub>5 </sub>= 15;<i> E</i><sub>6 </sub>= – 5</td>
+<td width="21.8%"><i>J</i><sub>3 </sub>= &nbsp;4</td>
+<td width="7.74%">7</td>
+<td width="7.74%">2</td>
+<td width="7.74%">1</td>
+<td width="7.74%">3</td>
+<td width="7.74%">9</td>
+<td width="7.74%">8</td></tr>
+<tr><td>2</td>
+<td><i>E</i><sub>1 </sub>= – 20;<i> E</i><sub>6 </sub>= 2</td>
+<td><i>J</i><sub>2 </sub>= – 5</td>
+<td>9</td>
+<td>9</td>
+<td>7</td>
+<td>1</td>
+<td>2</td>
+<td>3</td></tr>
+<tr><td>3</td>
+<td><i>E</i><sub>1 </sub>= 35;<i> E</i><sub>2 </sub>= – 5</td>
+<td><i>J</i><sub>3 </sub>= – 6</td>
+<td>1</td>
+<td>6</td>
+<td>3</td>
+<td>9</td>
+<td>5</td>
+<td>1</td></tr>
+<tr><td>4</td>
+<td><i>E</i><sub>2 </sub>= 20;<i> E</i><sub>6 </sub>= 30</td>
+<td><i>J</i><sub>2 </sub>= 7</td>
+<td>3</td>
+<td>4</td>
+<td>9</td>
+<td>7</td>
+<td>8</td>
+<td>2</td></tr>
+<tr><td>5</td>
+<td><i>E</i><sub>1 </sub>= 40;<i> E</i><sub>3 </sub>= 30</td>
+<td><i>J</i><sub>2 </sub>= 8</td>
+<td>6</td>
+<td>2</td>
+<td>6</td>
+<td>6</td>
+<td>1</td>
+<td>3</td></tr>
+<tr><td>6</td>
+<td><i>E</i><sub>2 </sub>= 30;<i> E</i><sub>4 </sub>= 15</td>
+<td><i>J</i><sub>3 </sub>= 2</td>
+<td>9</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>3</td></tr>
+<tr><td>7</td>
+<td><i>E</i><sub>3 </sub>= 40;<i> E</i><sub>6 </sub>= – 30</td>
+<td><i>J</i><sub>3 </sub>= – 1</td>
+<td>3</td>
+<td>3</td>
+<td>7</td>
+<td>3</td>
+<td>8</td>
+<td>2</td></tr>
+<tr><td>8</td>
+<td><i>E</i><sub>1 </sub>= – 15;<i> E</i><sub>4 </sub>= 5</td>
+<td><i>J</i><sub>2 </sub>= &nbsp;6</td>
+<td>8</td>
+<td>2</td>
+<td>8</td>
+<td>3</td>
+<td>2</td>
+<td>2</td></tr>
+<tr><td>9</td>
+<td><i>E</i><sub>2 </sub>= – 30;<i> E</i><sub>5 </sub>= 5</td>
+<td><i>J</i><sub>1 </sub>= – 7</td>
+<td>3</td>
+<td>9</td>
+<td>8</td>
+<td>3</td>
+<td>5</td>
+<td>2</td></tr>
+<tr><td>10</td>
+<td><i>E</i><sub>3 </sub>= – 35;<i> E</i><sub>4 </sub>= 10</td>
+<td><i>J</i><sub>1 </sub>= 5</td>
+<td>4</td>
+<td>2</td>
+<td>7</td>
+<td>4</td>
+<td>2</td>
+<td>1</td></tr>
+<tr><td>11</td>
+<td><i>E</i><sub>3 </sub>= 25;<i> E</i><sub>6 </sub>= – 15</td>
+<td><i>J</i><sub>2 </sub>= &nbsp;3</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>9</td>
+<td>8</td></tr>
+<tr><td>12</td>
+<td><i>E</i><sub>1 </sub>= – 30;<i> E</i><sub>6 </sub>= 10</td>
+<td><i>J</i><sub>3 </sub>= – 3</td>
+<td>9</td>
+<td>7</td>
+<td>7</td>
+<td>1</td>
+<td>2</td>
+<td>3</td></tr>
+<tr><td>13</td>
+<td><i>E</i><sub>1 </sub>= 25;<i> E</i><sub>2 </sub>= – 15</td>
+<td><i>J</i><sub>2 </sub>= &nbsp;8</td>
+<td>1</td>
+<td>6</td>
+<td>2</td>
+<td>9</td>
+<td>5</td>
+<td>1</td></tr>
+<tr><td>14</td>
+<td><i>E</i><sub>2 </sub>= 10;<i> E</i><sub>6 </sub>= 20</td>
+<td><i>J</i><sub>2 </sub>= 5</td>
+<td>3</td>
+<td>4</td>
+<td>9</td>
+<td>5</td>
+<td>8</td>
+<td>2</td></tr>
+<tr><td>15</td>
+<td><i>E</i><sub>1 </sub>= 30;<i> E</i><sub>3 </sub>= 20</td>
+<td><i>J</i><sub>3 </sub>= 4</td>
+<td>6</td>
+<td>2</td>
+<td>6</td>
+<td>6</td>
+<td>4</td>
+<td>3</td></tr>
+<tr><td>16</td>
+<td><i>E</i><sub>2 </sub>= 20;<i> E</i><sub>4 </sub>= 25</td>
+<td><i>J</i><sub>2 </sub>= 3</td>
+<td>9</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>1</td></tr>
+<tr><td>17</td>
+<td><i>E</i><sub>3 </sub>= 30;<i> E</i><sub>6 </sub>= – 20</td>
+<td><i>J</i><sub>2 </sub>= – 5</td>
+<td>3</td>
+<td>3</td>
+<td>7</td>
+<td>3</td>
+<td>5</td>
+<td>2</td></tr>
+<tr><td>18</td>
+<td><i>E</i><sub>1 </sub>= – 5;<i> E</i><sub>4 </sub>= 15</td>
+<td><i>J</i><sub>3 </sub>= – 4</td>
+<td>8</td>
+<td>2</td>
+<td>8</td>
+<td>6</td>
+<td>2</td>
+<td>2</td></tr>
+<tr><td>19</td>
+<td><i>E</i><sub>2 </sub>= – 20;<i> E</i><sub>5 </sub>= 15</td>
+<td><i>J</i><sub>2 </sub>= – 6</td>
+<td>3</td>
+<td>9</td>
+<td>2</td>
+<td>3</td>
+<td>5</td>
+<td>2</td></tr>
+<tr><td>20</td>
+<td><i>E</i><sub>3 </sub>= – 25;<i> E</i><sub>4 </sub>= 30</td>
+<td><i>J</i><sub>2 </sub>= 4</td>
+<td>4</td>
+<td>6</td>
+<td>7</td>
+<td>4</td>
+<td>2</td>
+<td>1</td></tr>
+<tr><td>21</td>
+<td><i>E</i><sub>5 </sub>= 25;<i> E</i><sub>6 </sub>= – 15</td>
+<td><i>J</i><sub>2 </sub>= &nbsp;3</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>9</td>
+<td>8</td></tr>
+<tr><td>22</td>
+<td><i>E</i><sub>1 </sub>= – 10;<i> E</i><sub>6 </sub>= 30</td>
+<td><i>J</i><sub>2 </sub>= – 5</td>
+<td>9</td>
+<td>4</td>
+<td>7</td>
+<td>1</td>
+<td>2</td>
+<td>3</td></tr>
+<tr><td>23</td>
+<td><i>E</i><sub>1 </sub>= 25;<i> E</i><sub>2 </sub>= – 15</td>
+<td><i>J</i><sub>1 </sub>= – 2</td>
+<td>1</td>
+<td>6</td>
+<td>7</td>
+<td>9</td>
+<td>5</td>
+<td>1</td></tr>
+<tr><td>24</td>
+<td><i>E</i><sub>2 </sub>= 30;<i> E</i><sub>6 </sub>= 10</td>
+<td><i>J</i><sub>1 </sub>= 4</td>
+<td>3</td>
+<td>4</td>
+<td>9</td>
+<td>5</td>
+<td>8</td>
+<td>2</td></tr>
+<tr><td>25</td>
+<td><i>E</i><sub>1 </sub>= 30;<i> E</i><sub>3 </sub>= 20</td>
+<td><i>J</i><sub>2 </sub>= 5</td>
+<td>6</td>
+<td>2</td>
+<td>6</td>
+<td>6</td>
+<td>4</td>
+<td>3</td></tr>
+<tr><td>26</td>
+<td><i>E</i><sub>2 </sub>= 40;<i> E</i><sub>4 </sub>= 5</td>
+<td><i>J</i><sub>3 </sub>= 6</td>
+<td>9</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>2</td></tr>
+<tr><td>27</td>
+<td><i>E</i><sub>3 </sub>= 30;<i> E</i><sub>6 </sub>= – 20</td>
+<td><i>J</i><sub>3 </sub>= – 7</td>
+<td>7</td>
+<td>3</td>
+<td>7</td>
+<td>3</td>
+<td>8</td>
+<td>2</td></tr>
+<tr><td>28</td>
+<td><i>E</i><sub>1 </sub>= – 5;<i> E</i><sub>4 </sub>= 10</td>
+<td><i>J</i><sub>2 </sub>= &nbsp;1</td>
+<td>8</td>
+<td>4</td>
+<td>8</td>
+<td>3</td>
+<td>2</td>
+<td>2</td></tr>
+<tr><td>29</td>
+<td><i>E</i><sub>2 </sub>= – 20;<i> E</i><sub>5 </sub>= 15</td>
+<td><i>J</i><sub>1 </sub>= – 4</td>
+<td>3</td>
+<td>9</td>
+<td>3</td>
+<td>3</td>
+<td>5</td>
+<td>2</td></tr>
+<tr><td>30</td>
+<td><i>E</i><sub>5 </sub>= 5;<i> E</i><sub>6 </sub>= – 15</td>
+<td><i>J</i><sub>3 </sub>= – 5</td>
+<td>7</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>9</td>
+<td>8</td></tr>
+<tr><td>31</td>
+<td><i>E</i><sub>1 </sub>= 35;<i> E</i><sub>2 </sub>= – 5</td>
+<td><i>J</i><sub>3 </sub>= – 6</td>
+<td>9</td>
+<td>4</td>
+<td>7</td>
+<td>4</td>
+<td>2</td>
+<td>3</td></tr>
+<tr><td>32</td>
+<td><i>E</i><sub>3 </sub>= 30;<i> E</i><sub>6 </sub>= – 20</td>
+<td><i>J</i><sub>2 </sub>= – 5</td>
+<td>8</td>
+<td>2</td>
+<td>8</td>
+<td>7</td>
+<td>2</td>
+<td>3</td></tr>
+<tr><td>33</td>
+<td><i>E</i><sub>1 </sub>= 30;<i> E</i><sub>3 </sub>= 20</td>
+<td><i>J</i><sub>3 </sub>= 4</td>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+<td>4</td>
+<td>7</td>
+<td>2</td></tr>
+<tr><td>34</td>
+<td><i>E</i><sub>1 </sub>= 25;<i> E</i><sub>2 </sub>= – 15</td>
+<td><i>J</i><sub>1 </sub>= &nbsp;2</td>
+<td>2</td>
+<td>6</td>
+<td>2</td>
+<td>8</td>
+<td>5</td>
+<td>1</td></tr>
+<tr><td>35</td>
+<td><i>E</i><sub>1 </sub>= – 10;<i> E</i><sub>6 </sub>= 30</td>
+<td><i>J</i><sub>2 </sub>= – 5</td>
+<td>6</td>
+<td>4</td>
+<td>9</td>
+<td>5</td>
+<td>6</td>
+<td>2</td></tr>
+<tr><td>36</td>
+<td><i>E</i><sub>1 </sub>= 10;<i> E</i><sub>5 </sub>= 20</td>
+<td><i>J</i><sub>1 </sub>= - 2</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td></tr>
+</table>
+<br>
+<p>Направление тока <i>J</i><sub>1 </sub>изменено на противоположное, т. к. в табл. 4.1 (вариант 36) он задан со знаком &quot;минус&quot; (<i>J</i><sub>1</sub> = - 2 А).</p>
+<p>Топологический анализ схемы показывает, что в ней 7 ветвей, 4 узла, 3 независимых контура и 6 неизвестных токов <i>I</i><sub>1</sub>, ... , <i>I</i><sub>6</sub>. Число независимых уравнений <i>N<sub>МУН &nbsp;</sub></i>= <i>У</i> – 1 = &nbsp;4 - 1 = 3.</p>
+<p>Выбираем базисный узел (узел 0), направляем к нему узловые напряжения <i>U</i><sub>10</sub>,<i> U</i><sub>20 </sub>и <i>U</i><sub>30 </sub>(см. рис. 4.2) и составляем систему уравнений:</p>
+<p>
+<i>G</i><sub>11</sub>U<sub>10</sub> - <i>G</i><sub>12</sub><i>U</i><sub>20</sub> - 
+<i>G</i><sub>13</sub><i>U</i><sub>30</sub> = -<i>J</i><sub>1</sub> + <i>G</i><sub>1</sub><i>E</i><sub>1</sub>; <br>
+-<i>G</i><sub>21</sub><i>U</i><sub>10</sub> + <i>G</i><sub>22</sub><i>U</i><sub>20</sub> - 
+<i>G</i><sub>23</sub><i>U</i><sub>30</sub> = -<i>G</i><sub>1</sub><i>E</i><sub>1</sub>; <br>
+-<i>G</i><sub>31</sub><i>U</i><sub>10</sub> - <i>G</i><sub>32</sub><i>U</i><sub>20</sub> + 
+<i>G</i><sub>33</sub><i>U</i><sub>30</sub> = <i>G</i><sub>5</sub><i>E</i><sub>5</sub>, </p>
+<p>
+где <i>G</i><sub>11 </sub>= <i>G</i><sub>1 </sub>+ <i>G</i><sub>2 &nbsp;</sub>+ &nbsp;<i>G</i><sub>6 </sub>= 1/<i>R</i><sub>1 </sub>+ 1/<i>R</i><sub>2 </sub>+ 1/<i>R</i><sub>6 </sub>= 1/1 + 1/2 + 1/6 = 1,667 См;</p>
+<p>&nbsp; &nbsp; &nbsp;<i>G</i><sub>22 </sub>= <i>G</i><sub>1 </sub>+ <i>G</i><sub>3 &nbsp;</sub>+ &nbsp;<i>G</i><sub>4 </sub>= 1/<i>R</i><sub>1 </sub>+ 1/<i>R</i><sub>3 </sub>+ 1/<i>R</i><sub>4 </sub>= 1/1 + 1/3 + 1/4 = 1,583 См;</p>
+<p><i> &nbsp; &nbsp; &nbsp;G</i><sub>33 </sub>= <i>G</i><sub>2 </sub>+ <i>G</i><sub>3 &nbsp;</sub>+ &nbsp;<i>G</i><sub>5 </sub>= 1/<i>R</i><sub>2 </sub>+ 1/<i>R</i><sub>3 </sub>+ 1/<i>R</i><sub>5 </sub>= 1/2 + 1/3 + 1/5 = 1,033 См - узловые проводимости; <i>G</i><sub>12 </sub>= <i>G</i><sub>21 </sub>= <i>G</i><sub>1 &nbsp;</sub>= 1 См; <i>G</i><sub>23 </sub>= <i>G</i><sub>32 </sub>= <i>G</i><sub>3 &nbsp;</sub>= 0,333 См; &nbsp;<i>G</i><sub>13 </sub>= <i>G</i><sub>31 </sub>= &nbsp;<i>G</i><sub>2 </sub>= &nbsp;1/2 = &nbsp;0,5 См – межузловые проводимости; - <i>J</i><sub>1</sub> + <i>G</i><sub>1</sub><i>E</i><sub>1 </sub>= &nbsp; &nbsp;= -2 + 1&bull;10 = 8 A; -<i>G</i><sub>1</sub><i>E</i><sub>1</sub>= -1•10 = -10 A;<i> G</i><sub>5</sub><i>E</i><sub>5 </sub>= 1/5•20 = 4 A – узловые токи.</p>
+<p>Подставив численные значения в систему уравнений, имеем:</p>
+<p>
+1,677<i>U</i><sub>10</sub> - 1,0<i>U</i><sub>20</sub> - 0,5<i>U</i><sub>30</sub> = 8;<br>
+-1,0<i>U</i><sub>10</sub> + 1,583<i>U</i><sub>20</sub> - 0,333<i>U</i><sub>30</sub> = -10;<br>
+-0,5<i>U</i><sub>10</sub> - 0,333<i>U</i><sub>20</sub> + 1,033<i>U</i><sub>30</sub> = 4.<p>
+Воспользовавшись калькулятором <b>Elcalc </b>(рис. 4.3),<b> </b>записываем узловые напряжения в табл. 4.2.<p><img border="0" src="th2.files/2.gif"></p>
+<p>Токи ветвей определим по обобщенному закону Ома (с учетом выбранных условно положительных направлений токов в ветвях (см. рис. 4.2)):</p>
+<p><i>I</i><sub>1 </sub>= (<i>E</i><sub>1</sub> – <i>U</i><sub>10</sub>)/<i>R</i><sub>1</sub> = (<i>E</i><sub>1</sub> – (<i>U</i><sub>10 </sub>– <i>U</i><sub>20</sub>))/<i>R</i><sub>1</sub> = (10 – (6,028 + 1,16))/1 = 2,812 А; </p>
+<p><i>I</i><sub>2 </sub>= <i>U</i><sub>31</sub>/<i>R</i><sub>2</sub> = (<i>U</i><sub>30</sub> - <i>U</i><sub>10</sub>)/<i>R</i><sub>2</sub> = (6,416 – 6,028)/2 = 0,194 А; </p>
+<p><i> &nbsp; &nbsp; &nbsp; I</i><sub>3 </sub>= <i>U</i><sub>23</sub>/<i>R</i><sub>3 </sub>= (<i>U</i><sub>20</sub> - <i>U</i><sub>30</sub>)/<i>R</i><sub>3</sub> = (-1,16 – 6,416)/3 = &nbsp;-2,525 А; </p>
+<p>&nbsp; &nbsp; &nbsp; <i>I</i><sub>4 </sub>= -<i>U</i><sub>20</sub>/<i>R</i><sub>4 </sub>= 1,16/4 = 0,29 А; </p>
+<p>&nbsp; &nbsp; &nbsp; <i>I</i><sub>5 </sub>= (<i>E</i><sub>5</sub> - <i>U</i><sub>30</sub>)/<i>R</i><sub>5</sub> = (20 - 6,416)/5 = 2,717 А; </p>
+<p>&nbsp; &nbsp; &nbsp; <i>I</i><sub>6 </sub>= -<i>U</i><sub>10</sub>/<i>R</i><sub>6</sub> = -6,028/6 = -1,005 А.</p>
+<p>Вычисленные значения токов заносим в табл. 4.2.</p>
+<p>Таблица 4.2</p>
+<table width="95%" border="1">
+<tr><td rowspan="2" valign="top"><br></td>
+<td colspan="3" valign="top">Узловые напряжения</td>
+<td colspan="6" valign="top">Токи ветвей схемы</td></tr><tr>
+<td valign="top"><i>U</i><sub>10</sub>, В</td>
+<td><i>U</i><sub>20</sub>, В</td>
+<td><i>U</i><sub>30</sub>, В</td>
+<td><i>I</i><sub>1</sub>, А</td>
+<td><i>I</i><sub>2</sub>, А</td>
+<td><i>I</i><sub>3</sub>, А</td>
+<td><i>I</i><sub>4</sub>, А</td>
+<td><i>I</i><sub>5</sub>, А</td>
+<td><i>I</i><sub>6</sub>, А</td></tr>
+<tr><td width="15.5%" valign="top">Рассчитано</td>
+<td width="9.79%" valign="top">6,028</td>
+<td width="9.73%">-1,16</td>
+<td width="9.53%">6,416</td>
+<td width="8.34%" valign="top">2,812</td>
+<td width="8.93%">0,194</td>
+<td width="9.66%" valign="top">-2,525</td>
+<td width="9.2%">0,29</td>
+<td width="8.67%" valign="top">2,717</td>
+<td width="10.7%" valign="top">-1,005</td></tr>
+<tr><td valign="top">Измерено</td>
+<td valign="top">6,030</td>
+<td>-1,155</td>
+<td>6,417</td>
+<td valign="top">2,812</td>
+<td valign="top">0,193</td>
+<td valign="top">-2,523</td>
+<td>0,289</td>
+<td valign="top">&nbsp;2,716</td>
+<td valign="top">-1,005</td></tr>
+</table>
+<p>Выполним проверку правильности расчета токов, записав первый закон Кирхгофа, например, для узла 1 (см. рис. 4.2):</p>
+<p><i>- J</i><sub>1</sub> + <i>I</i><sub>1 </sub>+ <i>I</i><sub>2</sub> + <i>I</i><sub>6 </sub>= -2 + 2,812 + 0,194 - 1,005 
+<span style="font-family: Symbol">»</span> 0.</p>
+<p>Моделируем схему цепи варианта 36 на рабочем поле программы EWB (рис. 4.4). Запускаем программу на исполнение и заносим показания приборов в табл. 4.2. Убеждаемся, что расчетные и экспериментальные данные практически совпадают.</p>
+<p align="center"><img border="0" src="th2.files/3.gif"></p>
+
+</body>
+
+</html>

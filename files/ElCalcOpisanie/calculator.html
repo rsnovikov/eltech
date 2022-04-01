@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Интерфейс подпрограммы &quot;Калькулятор&quot;</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      <td height="20" colspan="2" class="head1"> 
+      <div align="center">
+        <p align="center">Интерфейс подпрограммы &quot;Калькулятор&quot;</p>
+      </div></td>
+  </tr>
+    <tr align="center"> 
+  <td colspan="2" valign="top"><table width="100%"  border="0">
+    <tr>
+      <td width="70%" colspan="2" class="text">         
+<br>
+        <p></strong>После запуска программы <span class="head2">elcalc.exe </span>открывается окно подпрограм­мы <span class="head2">Калькулятор </span> (рис. 1). В верх­ней части окна находятся кнопки выбора режима работы калькулятора. </p>
+<center><img src="pic/pic1.jpg" width="607" height="414"></center>
+		<p class="text">На рабочем поле калькулятора размещено пять окон: </p>
+		<p class="text">1) окно ввода (сброса) чисел (функций) от <span class="head2">Х1 </span> до <span class="head2">Х5</span>, а также чисел <span class="head2"><em>рi </em></span>= <em>&pi; </em>&asymp; 3,14159265350979 и <span class="head2"><em>е </em></span> = 2,71828182845905; последние &quot;перетаскиваются&quot; мышью (при нажатой левой клавише) в поле Х1 или в поля Х2…Х5 после их &quot;активации&quot; (посредством щелчка мышью на соответствующем фонарике); </p>
+              <p class="text">2) <span class="head2">ОТВЕТ </span> - результат вычисления функций, выводимый в алгебраической и показательной (для комплексных чисел) формах; </p>
+              <p class="text">3) <span class="head2">Варианты ввода:</span></p>
+              <p class="text">- <span class="head2">угол </span> (аргумент комплексного числа) - в градусах или радианах;</p>
+              <p class="text">- <span class="head2">вещественные </span>числа - в следующих формах: -10,45678 (десятичная дробь); -10/458 (обыкновенная дробь); ±5е±6 или ±5Е±6 ( ±5Е&#8901;10<sup>±6</sup>); </p>
+              <p class="text">- <span class="head2">комплексные </span> числа (функции): ±<span class=index>a</span>±<span class=index>jb</span>(алгебраическая форма за­писи), где <span class=index>а </span> и <span class=index>b </span> - действительная и мнимая части комплексного числа; <span class=index>j - </span>мни­мая единица (±<span class=index>j - </span>оператор поворота вектора на ±90&deg; на комплексной плоскости); ±<span class=index>Ae</span>(±<span class=index>&alpha;j</span>) (показательная форма записи числа ±<span class=index>Ae</span><span class=indexbig>±<span class=index>j&alpha;</span></span>), где <span class=index>A </span> - модуль и <span class=index>&alpha; </span>- аргумент (в градусах или радианах) комплексного числа; </p>              
+  
+        <p class="text">4) окно вывода векторов, отображающих комплексные числа (функ­­ции) на комплексной плоскости <span class=index>Re </span>- <span class=index>Im </span>; </p>
+        <p class="text">5) окно вывода синусоид с начальными фазами, равными аргументам комплексных чисел (функций) или углам поворота векторов, построенных на комплексной плоскости.</p>
+
+
+<br>        
+<center><span class=head1>Выполняемые операции(Функции)</span></center>
+<br>
+<span class="text">
+
+<p>После введения действительного числа, например, Х1 = 9, и щелчка мышью на кнопке <span class=head2>Запомнить число</span> выводится <span class=head2>ОТВЕТ</span> 9 в алгебраической форме, а справа оно отображается в виде вектора (вдоль оси действительных чисел <span class=index>Re</span>) и в виде синусоиды без фазового сдвига (рис. 2).</p>
+
+<center><img src="pic/pic2.jpg"></center>
+Длина максимального вектора составляет 75-85% относительно размеров 4-го окна;  длина других векторов масштабируется относительно длины максимального вектора (см. на рис. 2 вектор меньшего размера, отображающий результат 3 вычисления корня квадратного из Х1 = 9).
+
+<p><span class=head2>ВНИМАНИЕ!</span> Как числа Х1…Х5, так и отображающие их векторы и синусоиды Х1 и Х2 различаются по цвету: Х1 имеет синий цвет; Х2 - красный и т. д.</p>
+
+<p>Программой вычисляются и отображаются на комплексной плоскости следующие <span class=head2>функции</span>:</p>
+
+<p>- <span class=head2>функции действительного переменного</span> (на оси действительных чисел):</p>
+
+<p>&#8226;<span class=head2> унарные операции с одним действительным числом Х1</span>: <span class=head2>корень </span>(квадратный)<span class=head2> из Х1</span>; <span class=head2>корень кубический из Х1</span>; <span class=head2>1/Х1</span>; <span class=head2>Х1*X1 </span>- Х1 во 2-й степени (в квадрате); <span class=head2>X1*X1*X1 </span>- X1 в 3-й степени (в кубе); логарифмические  <span class=head2>ln(X1)</span> и <span class=head2>lg(X1)</span>, дают ошибку, если Х1 = 0; тригонометрические: <span class=head2>sin(X1)</span>; <span class=head2>cos(X1)</span>; <span class=head2>tg(X1)</span>, даёт ошибку, если cos(X1) = 0; <span class=head2>ctg(X1)</span>, даёт ошибку, если sin(X1) = 0; обратные тригонометрические: <span class=head2>arcsin(X1)</span>; <span class=head2>аrccos(X1)</span>; <span class=head2>arctg(X1)</span>, даёт ошибку, если Х1= 90 ; <span class=head2>arcctg(X1)</span>, даёт ошибку, если Х1 = 0; гиперболические функции: <span class=head2>sh(X1)</span>; <span class=head2>ch(X1)</span>; <span class=head2>th(X1)</span>; <span class=head2>cth(X1)</span> даёт ошибку, если Х1 = 0; обратные гиперболические: <span class=head2>Arsh(X1)</span>; <span class=head2>Arch(X1)</span> в области Х1 [1,+ ]. Функция <span class=head2>Arch(X1)</span> двухзначная, выводится |М|, ответ &#177;М; <span class=head2>Аrth(X1)</span>  в интервале X1 (-1 ,1); <span class=head2>Аrcth(X1)</span> в областях: X1<-1 и X1>1;</p>
+
+<p>&#8226; <span class=head2>бинарные операции с  двумя действительными числами Х1 и Х2 </span>(в  т. ч. Х2  = 0 или Х1 = 0): <span class=head2>Х1 + X2</span>; <span class=head2>Х1 - X2</span>; <span class=head2>Х2 - X1</span>; <span class=head2>Х1*X1</span> - произведение двух чисел; <span class=head2>Х1/X2</span>; <span class=head2>Х2/X1</span> - деление двух чисел; <span class=head2>Х1 в степени X2</span>; <span class=head2>Х2 в степени X1</span>; экспоненциальные функции <span class=head2>exp(Х1)</span> и <span class=head2>exp(X2)</span>.
+
+<p>После ввода <span class=head2>действительного числа</span>, например, <span class=head2>Х1 = 5</span>, активизации второго окна и ввода в него числа, например, <span class=head2>Х2 = 7</span>, в окнах отображаются введенные числа, а в окне <span class=head2>ОТВЕТ</span> - последнее число или результат последней операции, например, <span class=head2>Х1 - Х2 = -2</span> (рис. 3). Результирующий вектор черного цвета, равный -2, также отображается на комплексной плоскости.</p>
+
+<center><img src="pic/pic3.jpg"></center>
+
+Длина максимального вектора составляет 75...85% относительно размеров 4-го окна;  длина других векторов масштабируется относительно длины максимального вектора (см. на рис. 2 вектор меньшего размера, отображающий результат <span class=head2>3</span> вычисления корня квадратного из <span class=head2>Х1 = 9</span>).
+
+<p><span class=head2>ВНИМАНИЕ!</span> Числа <span class=index>рi &#8776; &#960;</span> и <span class=index>е</span> могут быть "перетащены" мышью в ячейки <span class=head2>Х1 </span>и <span class=head2>Х2 </span>и с ними выполнены перечисленные выше операции;</p>
+
+<p>&#8226; <span class=head2>три, четыре или пять вещественных чисел: Х1 + Х2 + ... + Х5</span>;
+
+<p>- <span class=head2>функции комплексного переменного</span> (на комплексной плоскости):</p>
+
+<p>&#8226; <span class=head2>унарные операции  с одним комплексным числом Х1 </span>(в т. ч. введённым в виде <span class=index>a  &#177; j</span>0; <span class=index>Ae</span>(0<span class=index>j</span>)): <span class=head2>Х1*X1</span> - Х1 в квадрате; <span class=head2>Корень </span>(квадратный) <span class=head2>из Х1</span>; <span class=head2>Корень кубический из Х1</span>; <span class=head2>1/Х1 </span>- обратная Х1. </p>
+
+<p><span class=head2>ПРИМЕЧАНИЕ</span>. Действительное число <span class=index>а</span> может быть преобразовано в комплексное путём добавления в окне  +0<span class=index>j </span>или <span class=index>е</span>(0<span class=index>j</span>), например, <span class=index>а </span>= -1 для программы вещественное число, а  числа -1 + <span class=index>j</span>0 или  -1 + <span class=index>е</span>(0<span class=index>j</span>) программа воспринимает как комплексные. </p>
+
+<center><img src="pic/pic4.jpg"></center>
+
+На рис. 4 дано представление комплексного числа <span class=head2>3 + j4</span> в виде вектора и синусоиды (полагая, что комплексное число отображает синусоидальную функцию времени при <span class=index>t</span> = 0) и результата <span class=head2>2+j1</span> выполнения операции <span class=head2>Корень </span>(квадратный) <span class=head2>из Х1</span> в виде уменьшенного и повернутого по часовой стрелке на &#8776;27&#176;  вектора на комплексной плоскости.
+
+<p><span class=head2>ПРИМЕЧАНИЕ</span>. В программе предусмотрено отображение только графиков  <span class=index>х</span>1(<span class=index>&#969;t</span>)и <span class=index>х</span>2(<span class=index>&#969t</span>) с целью изучения фазового сдвига между ними; при этом кривая <span class=head2>Х1</span> (например, напряжения <span class=index>u</span>) имеет синий цвет, а кривая <span class=head2>Х2 </span>(например, тока <span class=index>i</span>) - красный цвет. </p>
+
+<p>&#8226; <span class=head2>бинарные операции над двумя комплексными переменными Х1 и Х2 </span>( в т. ч. <span class=head2>Х1 </span>= 0 или <span class=head2>Х2 </span>= 0; <span class=head2>X1 </span>= <span class=index>a </span>+ <span class=index>j</span>0;  <span class=head2>Х2 </span>= <span class=index>jb </span>и т. д.): <span class=head2>Х1 + X2 </span>- сложение; <span class=head2>Х1 - X2 </span>или <span class=head2>Х2 - X1 </span>- вычитание; <span class=head2>Х1*X1</span>- умножение; <span class=head2>Х1/X1 </span>- деление; <span class=head2>Х1//X1</span> - произведение двух комплексных чисел, делённое на их сумму, т. е. <span class=head2>Х1//X1 = (Х1*Х2)/(Х1 + Х2)</span>.</p>
+
+<p>После ввода <span class=head2>комплексного числа</span>, например, <span class=head2>Х1 = -3+j6</span>, активизации и ввода второго числа, например, <span class=head2>Х2 = 7e(-45j)</span> в соответствующих полях отображаются эти числа, а в окне <span class=head2>ОТВЕТ </span>- последнее число или результат последней операции, например, <span class=head2>Х1 + Х2 = 2,21е(28,3j)</span> (рис. 5). Результирующий вектор также отображается на комплексной плоскости. </p>
+
+<p>Полагая, что комплексные числа <span class=head2>Х1</span> и <span class=head2>Х2 </span>отображают <span class=head2>синусоидальные функции времени </span>при <span class=index>t</span> = 0, в нижнем правом углу высвечиваются синусоиды с соответствующими начальными фазами.</p>
+
+<center><img src="pic/pic5.jpg"></center>
+
+Активизируя (щелчком мышью на фонариках) последовательно поля <span class=head2>Х3</span>, <span class=head2>Х4 </span>и <span class=head2>Х5 </span>и вводя в них значения комплексных чисел, программа может выполнить их сложение. Если необходимо, например сложить <span class=head2>Х1 = 4+j5</span>, <span class=head2>Х2 = -6-j8 </span>и <span class=head2>Х4 = 7</span> и вычесть <span class=head2>Х3 = 9е(-45j)</span>, то предварительно ставим знак минус ("-") перед модулем числа <span class=head2>Х3 </span>(рис. 6). При записи числа в алгебраической форме нужно изменить знаки действительной и мнимой части.
+
+<center><img src="pic/pic6.jpg"></center>
+
+При расчёте электрических схем эту операцию студенты выполняют при проверке правильности расчёта цепи, воспользовавшись, например, первым законом Кирхгофа, который утверждает, что алгебраическая сумма комплексов токов в узле электрической цепи равна нулю.
+ 
+<p><span class=head2>ЗАМЕЧАНИЕ</span>. При вводе более двух чисел размеры окна комплексной плоскости увеличиваются, а окно вывода синусоид в программе не предусмотрено.</p>
+</span>        
+        
+        
+        </td>
+    </tr>
+  </table></td>
+  </tr>
+    <tr> 
+<td height="20"><a href="opisanie.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+      <div align="right"><a href="sistema.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>      </td>
+    </tr>
+</table> 
+</body>
+</html>

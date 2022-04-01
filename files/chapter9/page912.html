@@ -1,0 +1,51 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+// <!-- Begin
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     // document.write("<BGSOUND SRC=../Sound/Chapter9/9.1.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter9/9.1.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>9.1.2 Устройство машин постоянного тока</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="page912/style912.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="10%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        <div align="center"> 9.1.2. Устройство машин постоянного тока</div></td>
+    </tr>
+  <table width="100%" height="80%" border="0" cellspacing="0">
+    <tr align="top" valign="top">
+      <td height="20" colspawn="2" class="text"><span class="text">Основными частями <span class="head2">МПТ</span> (рис. 9.1) являются <span class="head2">статор</span> и <span class="head2">якорь</span>, отдалённые друг от друга воздушным зазором (0,3…0,5 мм).<br></span> 
+<div align="center"><img  src='page912/images/image91.jpg' width=615 height=254 hspace='0' vspace='0' border='0'></div>
+<br><span class="head2">Статор</span> - это стальной цилиндр <i>1</i>, внутри которого крепятся главные полюса <i>2</i> с полюсными наконечниками <i>3</i>, образуя вместе с корпусом магнитопровод машины <a href="#" onMouseOver="stm(Text[1],Style[0])" onMouseOut="htm()">(рис. 9.1, <i>а</i>)</a>. Полюсные наконечники служат для равномерного распределения магнитной индукции в зазоре между полюсами статора-индуктора и якоря. На главных полюсах расположены последовательно соединённые катушки <span class="head2">обмотки возбуждения</span> <i>4</i>, предназначенные для создания неподвижного магнитного потока Ф<span class="indexsmall">в</span> машины.</span><br>
+<br>Концы <span class=index>Ш1</span> и <span class=index>Ш2</span> обмотки возбуждения (<span class="index">ОВ</span>) выводят на клеммный щиток, расположенный на корпусе машины <a href="#" onMouseOver="stm(Text[2],Style[0])" onMouseOut="htm()">(рис. 9.1, <i>б</i>)</a>. Помимо основных полюсов внутри статора располагают дополнительные полюса <i>9</i> с обмотками <i>10</i>, которые служат для уменьшения искрения в скользящих контактах (между щётками и коллектором).<br>
+<br><span class="head2">Якорь</span> (подвижная часть машины) - это цилиндр <i>5</i>, набранный из листов электротехнической стали, снаружи которого имеются пазы, в которые уложена <span class="head2">якорная обмотка</span> <i>11</i>. Отводы обмотки якоря (<span class=index>ОЯ</span>) припаивают к пластинам коллектора <i>6</i>, расположенного на вращающемся в подшипниках валу <i>7</i>. <span class="head2">Коллектор</span> представляет собой цилиндр, набранный из медных пластин, изолированных друг от друга и от вала и закреплённых (по технологии "ласточкина хвоста") на стальной втулке. Коллектор играет роль механического выпрямителя переменной ЭДС, индуктируемой в обмотке якоря.  
+К коллектору с помощью пружин прижимаются неподвижные <span class="head2">медно-графитовые щётки</span> <i>8</i>, соединённые с клеммами <span class=index>Я1</span> и <span class=index>Я2</span> щитка <a href="#" onMouseOver="stm(Text[2],Style[0])" onMouseOut="htm()">(рис. 9.1, <i>б</i>)</a>. Образовавшиеся скользящие контакты дают возможность соединить вращающуюся <span class=index>ОЯ</span> с внешней электрической цепью (снять выпрямленное напряжение с коллектора (генераторный режим) или соединить якорную обмотку с источником постоянного напряжения и распределить токи в стержнях <span class=index>ОЯ</span> таким образом, чтобы их направления под разноименными полюсами были бы противоположными (двигательный режим)).
+Суммарное сопротивление цепи якоря R<span class="indexsmall">я</span> = 0,5…5 Ом.<br>
+<br><div align="center"><img  src='page9223/images/image92.jpg' width=588 height=148 hspace='0' vspace='0' border='0'></div>
+<br>Часть машины, в которой индуктируется ЭДС, принято называть <span class="head2">якорем</span>, а часть машины, создающей основное магнитное поле (магнитный поток) – <span class="head2">индуктором</span>. В машинах постоянного тока якорем является ротор, а индуктором – статор. 
+В  зависимости от того, как обмотка возбуждения включена относительно сети и якоря, различают <span class="head2">МПТ независимого возбуждения</span> (<span class="index">ОВ</span> к якорю не подключена) и <span class="head2">МПТ с самовозбуждением</span>, которое подразделяется  на  параллельное, последовательное и смешанное. <br>На <span class="head2">(рис. 9.2)</span>  приведены электрические схемы возбуждения указанных типов МПТ.</div>       
+    <tr>
+      <td height="20"><a href="page911.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> </td>
+      <td><div align="right"><a href="page921.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div></td>
+    </tr>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<html>
+<head><link href="left.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+var total=1;
+var db = new Array();
+
+// -- Enter Values Here --
+// Format: dbAdd(parent[true|false] , description, URL [blank for nohref], level , TARGET [blank for "content"], new? [1=yes])
+     dbAdd( true , "4.1. О переходных процессах и методах их расчёта " , "chapter4/Glava_4/Chapter_1/4_1.htm" , 0 , "mainFrame" , 0)
+dbAdd( false,  "4.1.1. Общие положения" , "chapter4/Glava_4/Chapter_1/4_1_1.htm" , 1, "mainFrame" , 0)
+dbAdd( false, "4.1.2. Причины и характер переходных процессов" , "chapter4/Glava_4/Chapter_1/4_1_2.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "4.1.3. Правила (законы) коммутации" , "chapter4/Glava_4/Chapter_1/4_1_3.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "4.1.4.  Начальные условия" , "chapter4/Glava_4/Chapter_1/4_1_4.htm" , 1 , "mainFrame" , 0)
+dbAdd( true, "4.1.5. Схемы замещения заряженного конденсатора и индуктивной катушки с начальным током" , "chapter4/Glava_4/Chapter_1/4_1_5.htm" , 1 , "mainFrame" , 0)
+dbAdd( false,  "4.1.5.1. Схемы замещения заряженного конденсатора" , "chapter4/Glava_4/Chapter_1/4_1_5_bot_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.1.5.2. Схемы замещения катушки с начальным током" , "chapter4/Glava_4/Chapter_1/4_1_5_bot_2.htm" , 2, "mainFrame" , 0)
+dbAdd( false, "УПРАЖНЕНИЕ 4.1" ,"chapter4/Glava_4/Chapter_1/upr_4_1.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "УПРАЖНЕНИЕ 4.2" ,"chapter4/Glava_4/Chapter_1/upr_4_2.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "ЗАДАНИЕ 4.1, <em>а</em>" ,"chapter4/Glava_4/Chapter_1/ex_4_1_a.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "ЗАДАНИЕ 4.1, <em>б</em>" ,"chapter4/Glava_4/Chapter_1/ex_4_1_b.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "4.1.6.  Методы расчёта переходных процессов" ,"chapter4/Glava_4/Chapter_1/4_1_6.htm" , 1 , "mainFrame" , 0)
+
+
+
+dbAdd( true , "4.2. Классический метод расчета переходных процессов " , "chapter4/Glava_4/Chapter_2/4_2.htm" , 0 , "mainFrame" , 0)
+dbAdd( true,  "4.2.1. Переходные процессы в последовательной <em>RL</em>-цепи  при её подключении к источнику постоянного напряжения" , "chapter4/Glava_4/Chapter_2/4_2_1.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.2.1.1. Дифференциальное уравнение <em>RL </em>-цепи" , "chapter4/Glava_4/Chapter_2/4_2_1_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.1.2. Установившийся и свободный токи" , "chapter4/Glava_4/Chapter_2/4_2_1_2.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.1.3. Решение однородного и полного уравнений" , "chapter4/Glava_4/Chapter_2/4_2_1_3.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.1.4. График переходного тока" , "chapter4/Glava_4/Chapter_2/4_2_1_4.htm" , 2, "mainFrame" , 0) 
+dbAdd( false,  "4.2.1.5. Переходное напряжение на индуктивном элементе. Напряжение <em>u</em><em><sub>L</sub></em>(<em>t</em>) на индуктивном элементе" , "chapter4/Glava_4/Chapter_2/4_2_1_5.htm" , 2, "mainFrame" , 0) 
+
+dbAdd( true,  "4.2.2. Переходные процессы при включении последовательной <em>RС</em>-цепи под синусоидальное напряжение" , "chapter4/Glava_4/Chapter_2/4_2_2.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.2.2.1. Дифференциальное уравнение <em>RС</em>-цепи" , "chapter4/Glava_4/Chapter_2/4_2_2_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.2.2. Установившиеся ток и напряжение на конденсаторе" , "chapter4/Glava_4/Chapter_2/4_2_2_2.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.2.3. Напряжение на конденсаторе и ток в переходном процессе" , "chapter4/Glava_4/Chapter_2/4_2_2_3.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.2.4. Графики переходных процессов при различных моментах включения цепи" , "chapter4/Glava_4/Chapter_2/4_2_2_4.htm" , 2, "mainFrame" , 0) 
+
+dbAdd( true,  "4.2.3. Общая формула расчёта переходных процессов в линейной цепи первого порядка" , "chapter4/Glava_4/Chapter_2/4_2_3.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.2.3.1. Решение линейного неоднородного дифференциального уравнения для цепи с одним реактивным элементом" , "chapter4/Glava_4/Chapter_2/4_2_3_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.3.2. Определение постоянной времени цепи" , "chapter4/Glava_4/Chapter_2/4_2_3_2.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.3.3. Переходные процессы в <em>RС</em>-цепи при её включении к источнику постоянного напряжения" , "chapter4/Glava_4/Chapter_2/4_2_3_3.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.3.4. Переходные процессы при включении последовательной   <em>RL</em>-цепи под синусоидальное напряжение" , "chapter4/Glava_4/Chapter_2/4_2_3_4.htm" , 2, "mainFrame" , 0) 
+
+dbAdd( false,  "ЗАДАНИЕ 4.2" , "chapter4/Glava_4/Chapter_2/ex_4_2.htm" ,1, "mainFrame" , 0)
+
+dbAdd( true,  "4.2.4. Переходные процессы в последовательной <em>RLC</em>-цепи" , "chapter4/Glava_4/Chapter_2/4_2_4.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.2.4.1. Вывод дифференциального уравнения для цепи  второго порядка" , "chapter4/Glava_4/Chapter_2/4_2_4_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.4.2. Определение свободной составляющей тока" , "chapter4/Glava_4/Chapter_2/4_2_4_2.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.4.3. Представление свободной составляющей тока" , "chapter4/Glava_4/Chapter_2/4_2_4_3.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.4.4. Определение постоянных интегрирования при вещественных неравных корнях" , "chapter4/Glava_4/Chapter_2/4_2_4_4.htm" , 2, "mainFrame" , 0) 
+dbAdd( false,  "4.2.4.5. Ток <em>i</em>,  напряжения <em>u<sub>L</sub></em> и <em>u<sub>C</sub></em> в переходном процессе при  вещественных отрицательных корнях" , "chapter4/Glava_4/Chapter_2/4_2_4_5.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.4.6. Определение постоянных интегрирования при комплексно-сопряжённых корнях" , "chapter4/Glava_4/Chapter_2/4_2_4_6.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.4.7. Ток <em>i</em> в переходном процессе при  комплексно-сопряжённых корнях" , "chapter4/Glava_4/Chapter_2/4_2_4_7.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.2.4.8. Декремент затухания переходного процесса" , "chapter4/Glava_4/Chapter_2/4_2_4_8.htm" , 2, "mainFrame" , 0) 
+dbAdd( false,  "УПРАЖНЕНИЕ 4.3" , "chapter4/Glava_4/Chapter_2/upr_4_3.htm" , 2, "mainFrame" , 0) 
+dbAdd( false,  "4.2.4.9. Напряжения <em>u<sub>L</sub></em>, <em>u<sub>C</sub></em> и ток <em>i</em> при комплексно-сопряженных и равных корнях" , "chapter4/Glava_4/Chapter_2/4_2_4_9.htm" , 2, "mainFrame" , 0) 
+
+dbAdd( false,  "ЗАДАНИЕ 4.3" , "chapter4/Glava_4/Chapter_2/ex_4_3.htm" ,1, "mainFrame" , 0)
+
+dbAdd(false,  "4.2.5. Переходные процессы в разветвлённых электрических цепях второго порядка " , "chapter4/Glava_4/Chapter_2/4_2_5.htm" , 1, "mainFrame" , 0)
+
+dbAdd( false,  "УПРАЖНЕНИЕ 4.4 " , "chapter4/Glava_4/Chapter_2/upr_4_4.htm" ,1, "mainFrame" , 0)
+dbAdd( false,  "ЗАДАНИЕ 4.4" , "chapter4/Glava_4/Chapter_2/ex_4_4.htm" ,1, "mainFrame" , 0)
+
+
+	 dbAdd( true , "4.3. Расчет переходных процессов методом переменных состояния " , "chapter4/Glava_4/Chapter_3/4_3.htm" , 0 , "mainFrame" , 0)
+dbAdd( false,  "4.3.1. Общие положения" , "chapter4/Glava_4/Chapter_3/4_3_1.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.3.2. Формирование уравнений состояния с помощью уравнений Кирхгофа" , "chapter4/Glava_4/Chapter_3/4_3_2.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.3.3. Формирование уравнений состояния методом наложения" , "chapter4/Glava_4/Chapter_3/4_3_3.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "ЗАДАНИЕ 4.5" , "chapter4/Glava_4/Chapter_3/ex_4_5.htm" , 1, "mainFrame" , 0)
+
+ dbAdd( true , "4.4. Расчет переходных процессов операторным методом " , "chapter4/Glava_4/Chapter_4/4_4.htm" , 0 , "mainFrame" , 0)
+dbAdd( false,  "4.4.1. Общие сведения" , "chapter4/Glava_4/Chapter_4/4_4_1.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.4.2. Интегралы операторного преобразования" , "chapter4/Glava_4/Chapter_4/4_4_2.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.4.3. Достоинства операторного метода" , "chapter4/Glava_4/Chapter_4/4_4_3.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.4.4. Примеры изображений функций" , "chapter4/Glava_4/Chapter_4/4_4_4.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.4.5. Таблица соответствия изображений и их оригиналов" , "chapter4/Glava_4/Chapter_4/4_4_5.htm" , 1, "mainFrame" , 0)
+dbAdd(true,  "4.4.6. Законы Ома и Кирхгофа в операторной форме" , "chapter4/Glava_4/Chapter_4/4_4_6.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.4.6.1. Операторные сопротивления пассивных элементов цепи" , "chapter4/Glava_4/Chapter_4/4_4_6_1.htm" ,2, "mainFrame" , 0)
+dbAdd( false,  "4.4.6.2. Операторные схемы замещения и компонентные уравне-ния пассивных элементов" , "chapter4/Glava_4/Chapter_4/4_4_6_2.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "Таблица 4.3" , "chapter4/Glava_4/Chapter_4/tabl_4_3.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.4.6.3. Законы Ома и Кирхгофа в операторной форме" , "chapter4/Glava_4/Chapter_4/4_4_6_3.htm" ,2, "mainFrame" , 0)
+dbAdd( false,  "УПРАЖНЕНИЕ 4.5 " , "chapter4/Glava_4/Chapter_4/upr_4_5.htm" ,1, "mainFrame" , 0)
+dbAdd( false,  "УПРАЖНЕНИЕ 4.6 " , "chapter4/Glava_4/Chapter_4/upr_4_6.htm" ,1, "mainFrame" , 0)
+
+ dbAdd( true , "4.5. Передаточная функция цепи. Частотные и временные характеристики цепи " , "chapter4/Glava_4/Chapter_5/4_5.htm" , 0 , "mainFrame" , 0)
+dbAdd( false,  "4.5.1. Общие положения" , "chapter4/Glava_4/Chapter_5/4_5_1.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.5.2. Амплитудно-частотная и фазочастотная  характеристики цепи" , "chapter4/Glava_4/Chapter_5/4_5_2.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.5.3. Нормирование и построение АЧХ и ФЧХ " , "chapter4/Glava_4/Chapter_5/4_5_3.htm" , 1, "mainFrame" , 0)
+dbAdd( true,  "4.5.4. Расчет и построение ЛАЧХ и ЛФЧХ простейших звеньев" , "chapter4/Glava_4/Chapter_5/4_5_4.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.5.4.1. Реальное дифференцирующее звено" , "chapter4/Glava_4/Chapter_5/4_5_4_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.5.4.2. Идеальное дифференцирующее звено" , "chapter4/Glava_4/Chapter_5/4_5_4_2.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.5.4.3. Реальное интегрирующее звено" , "chapter4/Glava_4/Chapter_5/4_5_4_3.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.5.4.4. Идеальное интегрирующее звено" , "chapter4/Glava_4/Chapter_5/4_5_4_4.htm" , 2, "mainFrame" , 0)
+
+
+dbAdd( true , "4.6. Временные характеристики цепи" , "chapter4/Glava_4/Chapter_6/4_6.htm" , 0 , "mainFrame" , 0)
+dbAdd( false,  "4.6.1. Понятие об импульсных сигналах" , "chapter4/Glava_4/Chapter_6/4_6_1.htm" , 1, "mainFrame" , 0)
+
+dbAdd( true,  "4.6.2. Единичное ступенчатое воздействие 1(t)" , "chapter4/Glava_4/Chapter_6/4_6_2.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.6.2.1. Понятие о функции Хевисайда" , "chapter4/Glava_4/Chapter_6/4_6_2_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.6.2.2. Свойства функции 1(t)" , "chapter4/Glava_4/Chapter_6/4_6_2_2.htm" , 2, "mainFrame" , 0)
+
+dbAdd( true,  "4.6.3. Единичное импульсное воздействие&nbsp;<span class='symbol'>d</span>(<em>t</em>)" , "chapter4/Glava_4/Chapter_6/4_6_3.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.6.3.1. Понятие о функции Дирака" , "chapter4/Glava_4/Chapter_6/4_6_3_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.6.3.2. Свойства функции <em class='symbol'>d</em>(<em>t</em>)" , "chapter4/Glava_4/Chapter_6/4_6_3_2.htm" , 2, "mainFrame" , 0)
+
+dbAdd( true,  "4.6.4. Переходная функция h(t) цепи " , "chapter4/Glava_4/Chapter_6/4_6_4.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.6.4.1. Понятие о переходной функции цепи" , "chapter4/Glava_4/Chapter_6/4_6_4_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.6.4.2. Виды переходной функции" , "chapter4/Glava_4/Chapter_6/4_6_4_2.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.6.4.3. Расчёт переходной функции  классическим методом" , "chapter4/Glava_4/Chapter_6/4_6_4_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.6.4.4. Расчёт переходной функции  операторным методом" , "chapter4/Glava_4/Chapter_6/4_6_4_2.htm" , 2, "mainFrame" , 0)
+
+dbAdd( true,  "4.6.5. Импульсная функция g(t) цепи" , "chapter4/Glava_4/Chapter_6/4_6_5.htm" , 1, "mainFrame" , 0)
+dbAdd( false,  "4.6.5.1. Понятие об импульсной функции цепи" , "chapter4/Glava_4/Chapter_6/4_6_5_1.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.6.5.2. Расчёт функции g(t) с использованием переходной  функции цепи" , "chapter4/Glava_4/Chapter_6/4_6_5_2.htm" , 2, "mainFrame" , 0)
+dbAdd( false,  "4.6.5.3. Расчёт функции g(t) с использованием передаточной функции цепи" , "chapter4/Glava_4/Chapter_6/4_6_5_3.htm" , 2, "mainFrame" , 0)
+
+
+
+dbAdd( false,  "УПРАЖНЕНИЕ 4.7 " , "chapter4/Glava_4/Chapter_6/upr_4_7.htm" ,1, "mainFrame" , 0)
+dbAdd( false,  "УПРАЖНЕНИЕ 4.8 " , "chapter4/Glava_4/Chapter_6/upr_4_8.htm" ,1, "mainFrame" , 0)
+dbAdd( false,  "ЗАДАНИЕ 4.6" , "chapter4/Glava_4/Chapter_6/ex_4_6.htm" ,1, "mainFrame" , 0)
+dbAdd( false,  "4.6.6. Дифференцирующие и интегрирующие цепи" , "chapter4/Glava_4/Chapter_6/4_6_6.htm" , 1, "mainFrame" , 0)
+  dbAdd( false , "Лаб. работа 14" , "LabWorks/LwLauncher(14).exe" , 0 , "mainFrame" , 0)
+  dbAdd( false , "Лаб. работа 17" , "LabWorks/LwLauncher(17).exe" , 0 , "mainFrame" , 0)
+  dbAdd( false , "Вопросы к теме 4" , "chapter4/Glava_4/questions.htm" , 0 , "mainFrame" , 0)
+  dbAdd( false , "Самоконтроль" , "tests/utis/utlauncher(1_t4.tfp).exe" , 0 , "mainFrame" , 0)
+  
+    // dbAdd( false , "" , "" , 0 , "" , 0)
+
+// -- End modifications --
+
+// Get current cookie setting
+var current=getCurrState()
+function getCurrState() {
+  var label = "currState="
+  var labelLen = label.length
+  var cLen = document.cookie.length
+  var i = 0
+  while (i < cLen) {
+    var j = i + labelLen
+    if (document.cookie.substring(i,j) == label) {
+      var cEnd = document.cookie.indexOf(";",j)
+      if (cEnd == -1) { cEnd = document.cookie.length }
+      return unescape(document.cookie.substring(j,cEnd))
+    }
+    i++
+  }
+  return ""
+}
+
+// Add an entry to the database
+function dbAdd(mother,display,URL,indent,top,newitem) {
+  db[total] = new Object;
+  db[total].mother = mother
+  db[total].display = display
+  db[total].URL = URL
+  db[total].indent = indent
+  db[total].top = top
+  db[total].newitem = newitem
+  total++
+  }
+
+// Record current settings in cookie
+function setCurrState(setting) {
+  var expire = new Date();
+  expire.setTime(expire.getTime() + ( 7*24*60*60*1000 ) ); // expire in 1 week
+  document.cookie = "currState=" + escape(setting) + "; expires=" + expire.toGMTString();
+  }
+
+// toggles an outline mother entry, storing new value in the cookie
+function toggle(n) {
+  if (n != 0) {
+    var newString = ""
+    var expanded = current.substring(n-1,n) // of clicked item
+    newString += current.substring(0,n-1)
+    newString += expanded ^ 1 // Bitwise XOR clicked item
+    newString += current.substring(n,current.length)
+    setCurrState(newString) // write new state back to cookie
+  }
+}
+
+// returns padded spaces (in mulTIPles of 2) for indenting
+function pad(n) {
+  var result = ""
+  for (var i = 1; i <= n; i++) { result += "&nbsp;&nbsp;&nbsp;&nbsp;" }
+  return result
+}
+
+// Expand everything
+function explode() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "1"
+    current += "1"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+
+// Collapse everything
+function contract() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+
+function tree_close() {
+  window.parent.location = window.parent.content.location;
+  }
+
+// end -->
+
+
+</script>
+<title>Contents</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="styles/emx_nav_left.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/left.jpg);
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+}
+body,td,th {
+	color: #990000;
+}
+-->
+</style></head>
+
+<body bgcolor=#ffffff link="#006666" vlink="#004444">
+<table width=100% border=0 cellpadding=5 cellspacing=0 bordercolor="#005FA9">
+<tr>
+<td align=left><div align="right"><a href="javascript:contract();"><img src="images/minimize.gif" width=16 height=14 border=0></a>
+      <a href="javascript:explode();"><img src="images/maximize.gif" width=16 height=14 border=0 ></a>
+      <a href="javascript:tree_close();">      </a></div></td>
+</tr>
+<tr>
+  <td align=left><div align="center" class="style2 style1">Тема 4. ПЕРЕХОДНЫЕ 
+        ПРОЦЕССЫ В ЭЛЕКТРИЧЕСКИХ ЦЕПЯХ</div></td>
+  </tr>
+</table>
+<br>
+<table border=0 width=100%>
+  <tr><td>
+<font size="-1">
+
+<script language="JavaScript">
+<!--
+// Set the initial state if no current state or length changed
+if (current == "" || current.length != (db.length-1)) {
+  current = ""
+  initState = ""
+  for (i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState)
+  }
+var prevIndentDisplayed = 0
+var showMyDaughter = 0
+// end -->
+
+<!--
+var Outline=""
+// cycle through each entry in the outline array
+for (var i = 1; i < db.length; i++) {
+  var currIndent = db[i].indent           // get the indent level
+  var expanded = current.substring(i-1,i) // current state
+  var top = db[i].top
+  if (top == "") { top="content" }
+  // display entry only if it meets one of three criteria
+  if ((currIndent == 0 || currIndent <= prevIndentDisplayed || (showMyDaughter == 1 && (currIndent - prevIndentDisplayed == 1)))) {
+  Outline += pad(currIndent)
+
+  // Insert the appropriate GIF and HREF
+  newitem = "";
+  if (db[i].newitem) { newitem="_new"; }
+  if (!(db[i].mother)) {
+    Outline += "<IMG SRC=\"images/blank.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/document" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+    }
+  else {
+      if (current.substring(i-1,i) == 1) {
+        Outline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.parent.status=\'Click to collapse\';return true;\" onClick=\"toggle(" + i + ")\">"
+        Outline += "<IMG SRC=\"images/minus.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/open" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+        Outline += "</A>"
+        }
+      else {
+	    Outline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.parent.status=\'Click to expand\';return true;\" onClick=\"toggle(" + i + ")\">"
+        Outline += "<IMG SRC=\"images/plus.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/closed" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+        Outline += "</A>"
+        }
+      }
+    Outline += "&nbsp;";
+
+    if (db[i].URL == "" || db[i].URL == null) {
+      Outline += "" + db[i].display      // no link, just a listed item
+      }
+    else {
+      Outline += " <A HREF=\"" + db[i].URL + "\" TARGET=\"" + top + "\">" + db[i].display + "</A>"
+      }
+	// Bold if at level 0
+    if (currIndent == 0) {
+      Outline = "" + Outline + ""
+      }
+    Outline += "<BR>"
+    prevIndentDisplayed = currIndent
+    showMyDaughter = expanded
+    // if (i == 1) { Outline = ""}
+    if (db.length > 25) {
+      document.write(Outline)
+      Outline = ""
+      }
+    }
+  }
+document.write(Outline)
+// end -->
+</script>
+</font>
+</td>
+  </tr>
+</table>
+<br>
+<hr>
+</body>
+</html>

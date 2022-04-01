@@ -1,0 +1,87 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+// <!-- Begin
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     // document.write("<BGSOUND SRC=../Sound/Chapter1/1.3.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter1/1.3.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.3. Активные элементы цепей и их характеристики</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style123.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+<div align="center">1.3.2.  Источники тока и их характеристики</div>
+</td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><table width="100%"  border="0">
+          <tr>
+            
+<td width="70%" colspan="2" valign="middle" align="center"><div align="left"> 
+<br>
+  <p class="text"><span class="head2">Источник электрического тока</span> - это источник электрической энергии, характеризующийся электрическим током <span class="index">J</span> в нем и внутренней проводимостью <span class="index">G</span><span class="indexsmall">вт</span>.</p>
+  <p class="text">      На схеме замещения (рис. 1.12, а) независимый источник тока (ИТ) представляют в виде идеального ИТ (с бесконечно большим сопротивлением) с заданным током <span class="index">J</span> и параллельно с ним соединенного элемента (резистора) с внутренней проводимостью <span class="index">G</span><span class="indexsmall">вт</span>, равной 1/<span class="index">R</span><span class="indexsmall">вт</span> и, как правило, значительно меньшей проводимости приемника <span class="index">G</span> = 1/ <span class="index">R</span>, т. е. <span class="index">G</span><span class="indexsmall">вт</span>&lt;&lt; <span class="index">G</span> (<span class="index">R</span><span class="indexsmall">вт</span> &gt;&gt;<span class="index"> R</span>). В качестве примера можно привести схему замещения с ИТ выходной цепи транзисторного усилительного каскада с общим эмиттером.</p>
+  <p class="text">Пренебрегая сопротивлением проводов и принимая <span class="index">U</span><span class="indexsmalldigit">12</span> = <span class="index">U</span>, можно записать
+  <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="index">J</span><span class="text"> = </span><span class="index">I</span><span class="indexsmall">вт</span><span class="text"> + </span><span class="index">I</span><span class="text"> = </span><span class="index">G</span><span class="indexsmall">вт</span><span class="index">U</span><span class="indexsmalldigit">12</span><span class="text"> + </span><span class="index">I</span><span class="text"> = </span><span class="index">G</span><span class="indexsmall">вт</span><span class="index">U</span><span class="text"> + </span><span class="index">I</span><span class="text">,</span></td>
+      <td class="head2">
+        <div align="right">(1.21)</div></td>
+    </tr>
+  </table>
+  <span class="text">      где <span class="index">U</span> =<span class="index"> RI</span> - напряжение на зажимах приемника.</p>
+  <p align="center" class="text"><img src="page132/page131.jpg" width="468" height="156">
+<p align="center" class="text">Рис. 1.12</p>
+  <p class="text">      Из соотношения (1.21) получим уравнение <span class="head2">внешней характеристики </span>ИТ, т. е. <span class="index">I</span> = <span class="index">f</span>(<span class="index">U</span>): <br>
+  <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="index">&nbsp;I</span><span class="text"> =</span><span class="index"> J</span><span class="text"> - </span><span class="index">I</span><span class="indexsmall">вт</span><span class="text"> = </span><span class="index">J</span><span class="text"> - </span><span class="index">G</span><span class="indexsmall">вт</span><span class="index">U</span><span class="text">.</span></td>
+      <td class="head2">
+        <div align="right">(1.22)</div></td>
+    </tr>
+  </table>
+  <span class="text">      При увеличении сопротивления <span class="index">R</span> приемника, начиная от режима КЗ (<span class="index">R</span> = 0, <span class="index">I</span> = <span class="index">J</span>), ток <span class="index">I</span> изменяется незначительно, практически по линейному закону, от значения <span class="index">J</span> до номинального значения <span class="index">I</span><span class="indexsmall">н</span> (кривая <em>2</em>, рис. 1.12, <em>б</em>). При этом напряжение на зажимах ИТ изменяется в широких пределах (от нулевого значения до номинального значения <span class="index">U</span><span class="indexsmall">н</span>).</p>
+  <p class="text"> Если проводимость ИТ значительно меньше проводимости приемника, т. е. <span class="index">G</span><span class="indexsmall">вт</span>&lt;&lt; <span class="index">G</span> (<span class="index">R</span><span class="indexsmall">вт</span> &gt;&gt; <span class="index">R</span>), то при одном и том же напряжении <span class="index">U</span> = <span class="index">U</span><span class="indexsmalldigit">12</span> ток <span class="index">I</span><span class="indexsmall">вт</span> &lt;&lt; <span class="index">J</span>; при этом источник тока находится в режиме, близком к режиму короткого замыкания (КЗ). Значением тока <span class="index">I</span><span class="indexsmall">вт</span> = <span class="index">G</span><span class="indexsmall">вт</span><em>U </em>  можно пренебречь и ветвь с элементом <span class="index">G</span><span class="indexsmall">вт</span> можно из схемы (см. рис. 1.12, <em>а</em>) исключить. Такой источник энергии, обозначаемый на схемах в виде кружочка с двойной стрелкой с разрывом внутри (<span class="index">R</span><span class="indexsmall">вт</span> = <span class="symbol">Ґ</span>) с символом <span class="index">J</span>, называют <span class="head2">идеальным источником тока </span>(источником с заданным током <span class="index">J</span>). </p>
+  <p class="text">    Ток <span class="index">I </span>=<span class="index"> J</span> идеального ИТ не зависит от сопротивления <span class="index">R</span> приемника, а потому его внешняя характеристика - прямая, параллельная оси ординат (линия <em>3</em>, рис.1.12, <em>б</em>). </p>
+  <p class="text">Для идеального ИТ (<span class="index">R</span><span class="indexsmall">вт</span> = <span class="symbol">Ґ</span>) исключается режим ХХ (<span class="index">I</span> = 0).</p>
+  <p align="center" class="text">                <img src="page132/page13.jpg" width="550" height="190"></p>
+ <p align="center" class="text">Рис. 1.13</p>
+ <p class="text">                В зависимых ИТ (рис. 1.13,<em> а</em>) предусматривают две пары выводов: <em>1-1</em><span class="symbol">ў</span> - управляющие, <em>2-2</em><span class="symbol">ў</span> - собственно ИТ, и в которых ток <span class="index">J</span> = <span class="index">ku</span><span class="indexsmall">у</span> (ИТУН - источник тока, управляемый напряжением) или ток <span class="index">J</span> = <span class="index">ki</span><span class="indexsmall">у</span> (ИТУТ - источник тока, управляемый током), где <span class="index">u</span><span class="indexsmall">у</span> и <span class="index">i</span><span class="indexsmall">у</span> - управляющие напряжение и ток; <span class="index">k</span> - коэффициент пропорциональности. <br>
+                Условное графическое обозначение зависимого идеального ИТ изображено на рис. 1.13, <em>б</em>, а внешние характеристики: кривые <em>1</em> - идеального и кривые <em>2</em> - реального ИТ - на рис. 1.13, <em>в</em>.<br>
+  </p>
+</div></td>
+          </tr>
+      </table></td>
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page131.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="page14.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>LR17</title>
+</head>
+<body>
+<p><b>3. МОДЕЛИРОВАНИЕ СХЕМ ИССЛЕДУЕМЫХ ЦЕПЕЙ </b></p>
+<p>Для исследования динамических свойств цепей (звеньев) рекомендуется собрать на рабочем поле программы EWB обобщенную схему цепи (рис. 17.3) (или открыть файл <b>Lr17.ewb</b>). </p>
+<p><b>Примечание</b>. При выполнении работы в среде MS8SD открыть файл <b>Circuit\Lr17.ms8.</b> </p>
+<p>С помощью контактов, управляемых клавишами <i><b>S</b></i><b>,</b> <i><b>D</b> </i>и <i><b>F</b></i>, можно замкнуть накоротко соответственно элементы <i>R</i><sub>1</sub>, <i>L</i><sub>1</sub> и <i>C</i><sub>1</sub> первой ветви, а с помощью контактов, управляемых клавишами <i><b>Q</b></i>, <i><b>W</b></i> и <i><b>T</b></i>, &nbsp;можно отключить (включить в схему) элементы <i>R</i><sub>2</sub>, <i>L</i><sub>2</sub> и <i>C</i><sub>2 </sub>второй ветви. </p>
+<p>Таблица 17.2 </p>
+<table width="99%" border="1">
+<tr><td width="6.04%" valign="top"><br></td>
+<td width="37.7%" valign="top"><p>Изображение функции <i>F</i>(<i>p</i>)<i></i></p></td>
+<td width="56.3%" valign="top"><p>Оригинал <i>f</i>(t)<i></i></p></td></tr>
+<tr><td valign="top"><p>1</p></td>
+<td valign="top"><p>1<i>/p</i></p></td>
+<td valign="top"><p> f(t)</p></td></tr>
+<tr><td valign="top"><p>2</p></td>
+<td valign="top"><p>1</p></td>
+<td valign="top"><p><img alt="img80"  src="LR17/img80.gif"><i></i></p></td></tr>
+<tr><td valign="top"><p>3</p></td>
+<td valign="top"><p><i>U</i><sub>1<i> </i></sub><i>/p</i></p></td>
+<td valign="top"><p><i>U</i><sub>1</sub><i></i></p></td></tr>
+<tr><td valign="top"><p>4</p></td>
+<td valign="top"><p><img alt="img81"  src="LR17/img81.gif"><i></i></p></td>
+<td valign="top"><p><img alt="img82"  src="LR17/img82.gif"><i></i></p></td></tr>
+<tr><td valign="top"><p>5</p></td>
+<td valign="top"><p><img alt="img83"  src="LR17/img83.gif"><i></i></p></td>
+<td valign="top"><p><img alt="img84"  src="LR17/img84.gif"><i></i></p></td></tr>
+<tr><td valign="top"><p>6</p></td>
+<td valign="top"><p><img alt="img85"  src="LR17/img85.gif"><i></i></p></td>
+<td valign="top"><p><img alt="img86"  src="LR17/img86.gif"><i></i></p></td></tr>
+<tr><td valign="top"><p>7</p></td>
+<td valign="top"><p><img alt="img87"  src="LR17/img87.gif"><i></i></p></td>
+<td valign="top"><p><img alt="img88"  src="LR17/img88.gif"><i></i></p></td></tr>
+<tr><td valign="top"><p>8</p></td>
+<td valign="top"><p><img alt="img89"  src="LR17/img89.gif"><i></i></p></td>
+<td valign="top"><p><img alt="img90"  src="LR17/img90.gif"><i></i></p></td></tr>
+<tr><td valign="top"><p>9</p></td>
+<td valign="top"><p><img alt="img91"  src="LR17/img91.gif"><i></i></p></td>
+<td valign="top"><p><img alt="img92"  src="LR17/img92.gif"><i></i></p></td></tr>
+<tr><td valign="top"><p>10</p></td>
+<td valign="top"><p><img alt="img93"  src="LR17/img93.gif"><i></i></p></td>
+<td valign="top"><p><img alt="img94"  src="LR17/img94.gif"><i></i></p></td></tr>
+<tr><td valign="top"><br>
+<p>11</p></td>
+<td valign="top"><p><img alt="img95"  src="LR17/img95.gif"><i></i></p></td>
+<td valign="top"><p><img alt="img96"  src="LR17/img96.gif"><i></i></p></td></tr>
+<tr><td valign="top"><p>12</p></td>
+<td valign="top"><p><img alt="img97"  src="LR17/img97.gif"><i></i></p></td>
+<td valign="top"><p><img alt="img98"  src="LR17/img98.gif"><i></i></p></td></tr>
+</table>
+<img alt="img200"  src="LR17/img200.gif">
+<p>Схема подключается к источнику постоянного напряжения с ЭДС <i>Е</i> посредством управляемого временем &nbsp;контакта <i><b>Р</b></i>. Для моделирования входного воздействия 1(<i>t</i>) и получения реакции (переходной функции <i>h<sub>u</sub></i>(<i>t</i>) цепи по напряжению) установить следующие параметры управляемого контакта <i><b>Р</b></i>: <b>Time &nbsp;on =</b> 11 ms (11 мс); <b>Time off = </b>1 &#181;s (1 мкс). После запуска программы EWB цепь подключается к источнику <i>Е</i> = 1 В через интервал <b>Time off</b> = 1 мкс на время <i>t</i> = 10 мс, которое достаточно для практического завершения свободных колебаний в цепи. </p>
+<p>Для моделирования входного воздействия <i>&#948;</i>(<i>t</i>) и получения реакции (импульсной функции <i>g<sub>u</sub></i>(<i>t</i>) цепи по напряжению) установить: ЭДС источника &nbsp; &nbsp;<i>Е</i> = 1 кВ; <b>Time &nbsp;on =</b> 11 &#956;s (11 мкс); <b>Time off = </b>1 &#956;s (1 мкс) управляемого контакта <i><b>Р</b></i>. После запуска программы EWB (или программы MS8SD) цепь подключается к источнику напряжения с ЭДС <i>Е</i> через интервал <b>Time off</b> &nbsp;= 1 мкс на время <i>t<sub>и</sub></i> = 10 мкс. </p>
+<p>Примерный порядок параметров элементов цепи и настройки осциллографа приведены на рис. 17.3.</p>
+<p>При моделировании переходных процессов в исследуемых цепях рекомендуется установить следующие опции программы EWB (MS8):</p>
+<p>- Analysis Options\Transient\Transient Tolerance Factor = 0,05;</p>
+<p>- Analysis Options\Instrument\Pause after each screen – установить;</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \Points per cycle &nbsp;= &nbsp;400;</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \Generate time steps… = 500.</p>
+<br>
+</body>
+</html>
