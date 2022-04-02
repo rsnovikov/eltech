@@ -8,13 +8,10 @@ var NETS=navigator.userAgent.indexOf("Netscape");
 var OPER=navigator.userAgent.indexOf("Opera"); 
   if((MSIE>-1) || (OPER>-1)) 
    { 
-     // document.write("<BGSOUND SRC=../Sound/Chapter6/U_6.5.mp3 LOOP=FALSE>");
+     // document.write("<BGSOUND SRC=../Sound/Chapter6/U_6.5.mp3 >");
    } 
-  else 
-   { 
-    document.write("<EMBED SRC=../Sound/Chapter6/U_6.5.mp3 AUTOSTART=TRUE ");
-    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
-   } 
+  document.write("<audio SRC=../Sound/Chapter6/U_6.5.mp3 autoplay=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 >");
 // End --> 
 </SCRIPT>
 
@@ -33,7 +30,7 @@ var OPER=navigator.userAgent.indexOf("Opera");
             <param name="movie" value="Upr/U6_5.swf">
             <param name="quality" value="high">
             <embed src="Upr/U6_5.swf" width="720" height="450" align="middle" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
-          </object>          
+          </object>
           <strong> 
         </strong>        </p>
         <p>&nbsp;</p>
