@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>Интерфейс подпрограммы &quot;Трёхфазные цепи&quot; </title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style121.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+
+      <td height="20" colspan="2" class="head1">
+        
+<div align="center"> Интерфейс подпрограммы &quot;Трёхфазные цепи&quot;</div>
+</td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><table width="100%"  border="0">
+          <tr>      
+<td width="70%" colspan="2" valign="top" align="center"><div align="left">
+<p><span class="text">Вызов подпрограммы </span><span class="head2">&quot;Трёхфазные цепи&quot;</span><span class="text"> осуществляется щелчком мышью на одноимённой кнопке панели подпрограмм </span><span class="head2">&quot;Выберите режим работы калькулятора&quot;</span>
+<span class="text"> (рис. 9).</span><br>
+
+<center><align="center" class="text"><img src="pic/pic9.jpg" ></center>
+
+
+<span class="head2">Примечание.</span><span class="text"> Рисунки в описании программы ELCALC сжаты по горизонтали.<br><br>
+  Подпрограммой </span><span class="head2">Трёхфазные цепи</span><span class="text"> вычисляются и отображаются в виде векторов на комплексной плоскости фазные напряжения и токи трёхфазного приёмника (нагрузки) при соединении его фаз по схемам: </span><span class="head2">Звезда с нулём</span><span class="text">, </span><span class="head2">Звезда без нуля</span><span class="text"> и </span><span class="head2">Треугольник</span><span class="text">.<br><br>    
+  
+  Оси </span><span class="index">Im-Re</span><span class="text"> комплексной плоскости повернуты на 90° против хода часовой стрелки. Масштаб построения векторов токов на комплексной плоскости можно изменять в пределах от 10% до 10000% к вычисленным значениям, щелкнув мышью на стрелке в поле 100%, а также путем нажатия на клавиши &quot;<img src="pic/ArrowUp.gif" width="13" height="13">&quot; и &quot;<img src="pic/ArrowDown.gif" width="13" height="13">&quot; клавиатуры. Форматы вводимых значений электрических величин даны в правом верхнем углу рабочего окна (см. рис. 9).<br><br>
+  
+  </span><span class="head2">Внимание!</span><span class="text"> Аргументы комплексных сопротивлений фаз приёмника (при их представлении в показательной форме) необходимо вводить в </span><span class="head2">градусах</span><span class="text">, например, формат </span><span class="head2">5e(-45j)</span><span class="text"> соответствует </span><span class="index"><u>Z</u></span><span class="indexsmall">ф</span><span class="index"> = </span><span class="text">5</span><span class="text">е</span><span class="indexbig">-j&pi;/4</span><span class="index"> = </span><span class="text">5</span><span class="text">е</span><span class="indexbig">-j45°</span><span class="text"> Ом.<br>
+  <br>
+
+  После ввода модуля линейного напряжения сети и комплексов сопротивлений фаз при соединении нагрузки по схеме </span><span class="head2">Треугольник</span><span class="text"> и щелчка мышью на кнопке </span><span class="head2">&quot;Вычислить&quot;</span><span class="text"> выводятся значения и векторная диаграмма напряжений и токов. Если щёлкнуть мышью на кнопке </span><span class="head2">&quot;Преобразовать в звезду&quot;</span><span class="text"> приёмник, программа выполнит расчет комплексов сопротивлений, напряжений и токов фаз приёмника, соединённого по схеме </span><span class="head2">Звезда без нуля</span><span class="text">. И наоборот, программа выполнит расчет параметров схемы и построение векторной диаграммы после щелчка мышью на кнопке </span><span class="head2">&quot;Преобразовать в треугольник&quot;</span><span class="text"> приёмник, фазы которого были соединены по схеме </span><span class="head2">Звезда без нуля</span><span class="text">.<br><br>
+ 
+  Рассмотрим примеры расчёта трёхфазных цепей синусоидального тока в установившихся режимах, включая аварийные режимы (при коротком замыкании и обрыве фаз(ы)).</span>
+  
+<br><br>
+<center><span class=head1>  Соединение Звезда - Звезда с нулевым проводом</span></center>
+<br>
+  
+  <p><span class="text">Интерфейс подпрограммы </span><span class="head2">Звезда с нулём</span><span class="text"> представлен на рис. 9.<br>
+    <br>
+    Определим токи фаз и ток в нейтральном проводе приёмника, комплексы сопротивлений фаз которого: </span><u><span class="index">Z</span></u><span class="indexsmall">a</span><span class="text"> = 30 - </span><span class="index">j</span><span class="text">40 Ом;  </span><u><span class="index">Z</span></u><span class="indexsmall">b</span><span class="text"> = -</span><span class="index">j</span><span class="text">50 Ом;             </span><u><span class="index">Z</span></u><span class="indexsmall">с</span><span class="text"> = 74е</span><span class="indexbig">-j30°</span><span class="text"> Ом. Приёмник включен в сеть трёхфазного тока с линейным напряжением </span><span class="index">U</span><span class="indexsmall">л</span><span class="text"> = 380 В.<br>
+    <br>
+    Вводим значение напряжения </span><span class="head2">U</span><span class="text"> = 380 </span><span class="head2">B</span><span class="text"> (рис.10). После щелчка мышью на кнопке </span><span class="head2">ОК</span><span class="text"> на комплексную плоскость выводятся векторы (синего цвета) фазных напряжений приёмника: </span><u><span class="index">U</span></u><span class="indexsmall">a</span><span class="text"> = 220 B, <u><span class="index">U</span></u></span><span class="indexsmall">b</span><span class="text"> = 220е</span><span class="indexbig">-j120°</span><span class="text"> B и <u><span class="index">U</span></u></span><span class="indexsmall">c</span><span class="text"> = 220е<span class="indexbig">-j120°</span> В, равные по модулю (</span><span class="index">U</span><span class="indexsmall">ф</span><span class="text"> =
+
+ 
+      <span class="index">U</span></span><span class="indexsmall">л</span><span class="text"> /<img src="pic/Formula01.gif" width="21" height="22" align="absbottom">= 220 B) и сдвинутые относительно друг друга на угол 120°.<br>
+      <br>
+      После ввода комплексов сопротивлений фаз и щелчка мышью на кнопке </span><span class="head2">"Вычислить"</span><span class="text"> на рабочий стол выводятся значения комплексов токов (<u><span class="index">I</span></u></span><span class="indexsmall">a = <u><span class="index">U</span></u>a</span><span class=text>/</span><u><span class="index">Z</span></u><span class="indexsmall">a</span>; <span class="text"><u><span class="index">I</span></u><span class="indexsmall">b</span> = <u><span class="index">U</span></u><span class="indexsmall">b</span>/<u><span class="index">Z</span></u><span class="indexsmall">b</span>; <u><span class="index">I</span></u><span class="indexsmall">c</span> = <u><span class="index">U</span></u><span class="indexsmall">c</span>/<u><span class="index">Z</span></u><span class="indexsmall">с</span>) и векторная диаграмма (см. рис. 10). Комплекс тока в нейтральном проводе </span><u><span class="index">I</span></u><span class="indexsmall">n</span><span class="text"> = <u><span class="index">I</span></u></span><span class="indexsmall">a</span><span class="text"> + <u><span class="index">I</span></u></span><span class="indexsmall">b</span><span class="text"> + <u><span class="index">I</span></u></span><span class="indexsmall">c</span><span class="text">.</span><br>
+
+<center><img src="pic/pic10.jpg"></center>
+
+
+	  <span class="text">Рассмотрим </span><span class="head2">аварийные</span><span class="text"> режимы.<br>
+      <br>
+      При вводе значений модулей сопротивлений фаз трёхфазного приёмника |<u><span class="index">Z</span></u><span class="indexsmall">ф</span>| &#8804; 0,1 Ом (включая |<u><span class="index">Z</span></u></span><span class="indexsmall">ф</span><span class="text">| = 0,1 Ом) программа воспринимает как </span><span class="head2">короткое замыкание фазы</span><span class="text"> (о чём предупреждается пользователь), а при значении модуля  |<u><span class="index">Z</span></u><span class="indexsmall">ф</span>| &#8805; 2&middot;10</span><span class="indexbig">7</span><span class="text"> Ом - как </span><span class="head2">обрыв фазы</span><span class="text">.</span><br><br>
+
+	  <center><img src="pic/pic11.jpg"></center>
+
+
+      <span class="text">Введём <u class="index">Z</u></span><span class="indexsmall">a</span><span class="text"> = </span><span class="index">j</span><span class="text">0,08 Ом и <u><span class="index">Z</span></u><span class="indexsmall">b</span> = -</span><span class="index">j</span><span class="text">25е6 Ом, оставив комплекс <u><span class="index">Z</span></u><span class="indexsmall">с</span> без изменения. После щелчка мышью на кнопке </span><span class="head2">Вычислить</span><span class="text"> высвечивается сообщение: </span><span class="head2">"У Вас КЗ фазы 'а'. Перегорает предохранитель и I<span class="style1">a</span> = 0. ОК"</span><span class="text">. После щелчка мышью на кнопке </span><span class="head2">ОК</span><span class="text"> высвечивается второе сообщение </span><span class="head2">"У Вас обрыв фазы 'b': I<span class="style1">b</span> = 0. ОК"</span><span class="text">. После щелчка мышью на кнопке </span><span class="head2">ОК</span><span class="text"> на экран выводится значение и вектор тока фазы </span><span class="index">с</span><span class="text"> (рис. 11).<br>
+      <br>
+      Аналогичные сообщения высвечиваются при коротком замыкании или обрыве двух фаз. При аварийных режимах в трёх фазах высвечиваются сообщения об аварийных режимах, и расчёт цепи не проводится.</span>
+<br>
+<br>
+<br><center><span class=head1>Соединение звезда-звезда без нулевого провода</span></center>
+<br>
+<p><span class="text">После щелчка мышью на кнопке </span><span class="head2">Звезда без нуля</span><span class="text">, ввода линейного напряжения </span><span class="index">U</span><span class="indexsmall">л</span><span class="text"> = 380 B и комплексов сопротивлений фаз (рис.12) подпрограммой </span><span class="head2">вычисляются</span><span class="text">:<br><br>
+
+&#8226; напряжение смещения нейтрали по формуле<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="pic/Formula02.gif"align="middle">,<br><br>
+
+где </span><u><span class="index">Y</span></u><span class="indexsmall">a</span><span class="text"> = 1/</span><span class="index"><u>Z</u></span><span class="indexsmall">a</span><span class="text">; <u><span class="index">Y</span></u></span><span class="indexsmall">b</span><span class="text"> = 1/<span class="index"><u>Z</u></span></span><span class="indexsmall">b</span><span class="text">; <u><span class="index">Y</span></u></span><span class="indexsmall">c</span><span class="text"> = 1/<span class="index"><u>Z</u></span></span><span class="indexsmall">c</span><span class="text"> - комплексные проводимости фаз нагрузки; </span><u><span class="index">U</span></u><span class="indexsmall">A</span><span class="text"> = </span><span class="index">U</span><span class="indexsmall">ф</span><span class="text"> = <span class="index">U</span></span><span class="indexsmall">л</span><span class="text">/<img src="pic/Formula01.gif"align="middle">; <u><span class="index">U</span></u></span><span class="indexsmall">В</span><span class="text"> = <span class="index">U</span><span class="indexsmall">ф</span>е</span><span class="indexbig">-j120°</span><span class="text">; <u><span class="index">U</span></u></span><span class="indexsmall">C</span><span class="text"> =<span class="index">U</span><span class="indexsmall">ф</span>е</span><span class="indexbig"> j120°</span><span class="text">- комплексы фазных напряжений трёхфазной сети;<br>
+<br>
+
+&#8226; напряжения фаз приёмника по формулам:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><span class="index">U</span></u></span><span class="indexsmall">a</span><span class="text"> = <u><span class="index">U</span></u><span class="indexsmall">A</span>  - <u><span class="index">U</span></u></span><span class="indexsmall">nN </span><span class="text">; <u><span class="index">U</span></u></span><span class="indexsmall">b</span><span class="text"> = <u><span class="index">U</span></u><span class="indexsmall">В</span>  - <u><span class="index">U</span></u><span class="indexsmall">nN</span>   и  <u><span class="index">U</span></u></span><span class="indexsmall">c</span>
+<span class="text"> = <u class="index">U</u></span><span class="indexsmall">C</span><span class="text"> - <u class="index">U</u></span><span class="indexsmall">nN</span><span class="text"> ;</span><br>
+
+<center><img src="pic/pic12.jpg"></center>
+
+<span class="text"><br>
+&#8226; токи фаз приёмника:<br>
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><span class="index">I</span></u><span class="indexsmall">a</span><span class="text"> = <u><span class="index">U</span></u><span class="indexsmall">a</span>/<span class="index"><u>Z</u></span><span class="indexsmall">a</span>; <u><span class="index">I</span></u></span><span class="indexsmall">b = </span><span class="text"><u><span class="index">U</span></u></span><span class="indexsmall">b</span><span class="text">/<span class="index"><u>Z</u></span><span class="indexsmall">b</span>; <u><span class="index">I</span></u><span class="indexsmall">c = </span><u><span class="index">U</span></u><span class="indexsmall">c</span>/<span class="index"><u>Z</u></span><span class="indexsmall">c</span>.<br>
+<br>
+На комплексной плоскости отображаются напряжения (синим цветом) <u><span class="index">U</span></u><span class="indexsmall">a</span>, <u><span class="index">U</span></u><span class="indexsmall">b</span>, <u><span class="index">U</span></u><span class="indexsmall">c</span>, и токи <u><span class="index">I</span></u><span class="indexsmall">a</span>, <u><span class="index">I</span></u><span class="indexsmall">b</span>, <u><span class="index">I</span></u><span class="indexsmall">c</span> (красным цветом) фаз приёмника. Если соединить концы векторов фазных напряжений <u><span class="index">U</span></u><span class="indexsmall">a</span>, <u><span class="index">U</span></u><span class="indexsmall">b</span>, <u><span class="index">U</span></u><span class="indexsmall">c</span>, то получим треугольник линейных напряжений трёхфазной сети, а отрезок, проведенный из точки </span><span class="index">N</span><span class="text"> - точки пересечения медиан углов треугольника (нейтрали генератора) с точкой </span><span class="index">n</span><span class="text"> (нейтралью приёмника), отобразит вектор напряжения смещения нейтрали <u class="index">U</u></span><span class="indexsmall">nN</span><span class="text">.<br>
+<br>
+Введем комплекс <span class="index"><u>Z</u></span><span class="indexsmall">a</span> = </span><span class="index">j</span><span class="text">0,05 Ом и  <span class="index"><u>Z</u></span><span class="indexsmall">b</span> = -<span class="index">j</span>35e6Ом. После щелчка на кнопке </span><span class="head2">Вычислить</span><span class="text"> выводится сообщение </span><span class="head2">"У Вас КЗ фазы 'а'. ОК"</span><span class="text">, затем сообщение </span><span class="head2">"У Вас обрыв фазы 'b'. <u>I</u><span class="style1">b</span> = 0 ОК"</span><span class="text">. Вид рабочего поля дан на рис. 13. Вектор тока  <u class="index">I</u></span><span class="indexsmall">a</span><span class="text"> = -<u class="index">I</u></span><span class="indexsmall">c</span><span class="text">.<br>
+<br>
+
+
+</span>
+<center><img src="pic/pic13.jpg"></center>
+
+<span class="text"><br>
+При коротком замыкании двух фаз выводится сообщение </span><span class="head2">"Аварийный режим генератора"</span><span class="text">. При обрыве двух фаз вычисления не выполняются.</span>
+
+<br>
+<br>
+<br><center><span class=head1>Соединение нагрузки треугольником</span></center>
+<br>
+<p><span class="text">После щелчка мышью на кнопке </span><span class="head2">Треугольник</span><span class="text"> и ввода значений линейного напряжения и комплексов сопротивлений фаз приёмника,  подпрограммой вычисляются фазные и линейные токи по формулам:<br><br>
+
+     </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><span class="index">U</span></u><span class="indexsmall">ab</span><span class="text"> = <u><span class="index">U</span></u></span><span class="indexsmall">AB</span><span class="text">;  <u><span class="index">U</span></u></span><span class="indexsmall">bc</span><span class="text"> = <u><span class="index">U</span></u></span><span class="indexsmall">BC</span><span class="text">;  <u><span class="index">U</span></u></span><span class="indexsmall">ca</span><span class="text"> = <u><span class="index">U</span></u></span><span class="indexsmall">CA</span><span class="text">; <u><span class="index">U</span></u></span><span class="indexsmall">ф</span><span class="text"> = <u><span class="index">U</span></u></span><span class="indexsmall">л</span><span class="text">;<br></span>
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><span class="index">I</span></u><span class="indexsmall">ab</span><span class="text"> = <u><span class="index">U</span></u><span class="indexsmall">ab</span>/</span><u><span class="index">Z</span></u><span class="indexsmall">ab</span><span class="text">;  <u><span class="index">I</span></u></span><span class="indexsmall">bc</span><span class="text"> = <u><span class="index">U</span></u><span class="indexsmall">bc</span>/<u><span class="index">Z</span></u></span><span class="indexsmall">bc</span><span class="text">;  <u><span class="index">I</span></u></span><span class="indexsmall">ca</span><span class="text"> = <u><span class="index">U</span></u><span class="indexsmall">ca</span>/<u><span class="index">Z</span></u></span><span class="indexsmall">ca;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text"><u><span class="index">I</span></u></span><span class="indexsmall">A</span><span class="text"> = <u><span class="index">I</span></u><span class="indexsmall">ab</span>  - <u><span class="index">I</span></u><span class="indexsmall">ca</span>; <u><span class="index">I</span></u></span><span class="indexsmall">B</span><span class="text"> = <u><span class="index">I</span></u><span class="indexsmall">bc</span> - <u><span class="index">I</span></u><span class="indexsmall">ab</span>; <u><span class="index">I</span></u></span><span class="indexsmall">C</span>
+<span class="text"> = <u>I</u>ca - <u>I</u>bc.<br>
+<br>                                                  
+     
+	 Значения комплексов токов выводятся в соответствующих полях и отображаются на комплексной плоскости (рис. 14).</span><br>
+	 
+<center><img src="pic/pic14.jpg"></center>
+
+<span class="text"><br>
+ 
+     При аварийных режимах в фазах (например, короткое замыкание фазы </span><span class="index">а</span><span class="text"> и обрыв фазы </span><span class="index">с</span><span class="text">, рис. 15) выводятся на экран дисплея соответствующие сообщения и вычисляются подпрограммой </span><span class="head2">Треугольник</span><span class="text"> оставшиеся фазные и линейные токи по приведенным выше формулам.<br>
+  ../images/forward.gif<center><span class="text"><img src="pic/pic15.jpg"></center>
+
+     <span class="text"><br>
+     </span>
+
+      
+  </p>
+</div>
+</td>
+
+          </tr>
+      </table></td>
+    </tr>
+    <tr>
+      
+<td height="20"><a href="sistema.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="../helpprogs.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+
+  </table>
+</body>
+</html>

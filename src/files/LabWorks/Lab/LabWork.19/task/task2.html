@@ -1,0 +1,136 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>LR19</title>
+</head>
+<body>
+
+<p><b>Задание 2.</b> Ознакомиться с интерфейсом модели испытания АД, уточнив назначение окон (полей), в т. ч. снабженных стрелками для изменения, например, момента &nbsp;сопротивления на валу, сопротивления пускового реостата (для двигателей с фазным ротором), а также окон, в которые выводятся как рассчитанные параметры схемы замещения АД, так и значения электрических величин, имитирующих показания измерительных приборов.</p>
+<p>Осуществить &quot;пуск в ход&quot; АД (запустить программу моделирования и расчета параметров АД) и &quot;снять&quot; механическую и рабочие характеристики АД. &nbsp;С этой целью:</p>
+<p>- щелкнуть мышью на кнопке &quot;Пуск&quot;, т. е. &quot;подключить&quot; обмотки статора АД к трехфазной сети переменного тока и записать в строку 1 табл. 19.2 значения линейного напряжения <i>U</i><sub>1</sub>, линейного тока <i>I</i><sub>1</sub>, активной мощности <i>Р</i><sub>1</sub>, &quot;потребляемой&quot; АД из сети, частоты вращения ротора <i>n</i><sub>2</sub> в режиме холостого хода (полезный момент на валу <i>М</i> = 0), которые выводятся в соответствующих полях на экране дисплея; </p>
+<p>- &quot;снять&quot; механическую <i>n</i><sub>2</sub> = <i>f</i>(<i>M</i>) и рабочие <i>I</i><sub>1 </sub>= <i>f</i>(<i>Р</i><sub>2</sub>), cos<i><font face="Times New Roman">&#966;</font></i> = <i>f</i>(<i>Р</i><sub>2</sub>), <i>S </i>= <i>f</i>(<i>Р</i><sub>2</sub>), <i>Р</i><sub>1</sub> = <i>f</i>(<i>Р</i><sub>2</sub>), <i>M </i> = &nbsp;<i>f</i>(<i>Р</i><sub>2</sub>),  
+<font face="Times New Roman"><i>&#951;</i></font> = <i>f</i>(<i>Р</i><sub>2</sub>) характеристики двигателя. </p>
+<p>Для снятия характеристик необходимо:</p>
+<p>- щелкнуть мышью на кнопке &quot;<i>М</i><i><sub>с</sub></i> на валу, Нм&quot;, размещенной внизу экрана, т. е. &quot;подключить&quot; цепь обмотки возбуждения электромагнитного тормоза к сети;</p>
+<p>- ступенчато увеличивая момент сопротивления (нагрузку) <i>М</i><i><sub>с</sub></i> на валу АД (при необходимости, изменяя шаг ступени посредством щелчка правой клавишью мыши на слове &quot;Инкремент&quot; и выбора одного из значений шага: 1, 2, 3, 4, 5, 10 Нм), записать в табл. 19.2 показания &quot;измерительных приборов&quot; при восьми значениях момента <i>М</i><i><sub>с</sub></i> = <i>М</i>: от режима холостого хода (<i>М</i> = 0, <i>Р</i><sub>2</sub> = 0) до значения <i>М</i><i><sub>с</sub></i><sub> </sub>= (1,2...1,5)<i>М</i><i><sub>н</sub></i> или <i>Р</i><sub>2</sub> = (1,2...1,5)<i>Р</i><sub>2<i>н</i></sub>. </p>
+<p><b>Внимание.</b> После установления параметров моделирования щелкнуть мышью на кнопке &quot;Пауза&quot;, а после занесения параметров моделирования в электронный отчет и установки очередного значения момента сопротивления <i>М</i><i><sub>с</sub></i> на валу &nbsp;- щелкнуть мышью на кнопке &quot;Продолжить&quot;.</p>
+<p>Примечание. При установке момента сопротивления <i>М</i><i><sub>с</sub></i> на валу больше момента <i>М</i><i><sub>мах</sub></i>, развиваемого двигателем, &quot;срабатывает&quot; магнитный пускатель: обмотки статора отключаются от сети. </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Таблица 19.2 </p>
+<table width="89%" border="1">
+<tr><td rowspan="2" valign="top"><p>Номер</p>
+<p>измерения</p></td>
+<td colspan="5" valign="top"><p>Результаты измерений</p></td>
+<td colspan="4" valign="top"><p>Результаты вычислений</p></td></tr><tr>
+<td valign="top"><p><i>U</i><sub>1</sub>,</p>
+<p>В</p></td>
+<td valign="top"><p><i>I</i><sub>1</sub>,</p>
+<p>А</p></td>
+<td valign="top"><p><i>Р</i><sub>1</sub>,</p>
+<p>кВт</p></td>
+<td valign="top"><p><i>n</i><sub>2</sub>,</p>
+<p>об/мин</p></td>
+<td valign="top"><p><i>M</i>,</p>
+<p>Нм</p></td>
+<td valign="top"><p><i>Р</i><sub>2</sub>,</p>
+<p>кВт</p></td>
+<td valign="top"><p>S</p>
+<p>-</p></td>
+<td valign="top"><p>cos<i><font face="Times New Roman">&#966;</font></i></p>
+<p>-</p></td>
+<td valign="top">
+<p><font face="Times New Roman">&#951;</font></p>
+<p>-</p></td></tr>
+<tr><td width="15.3%" valign="top"><p>1</p></td>
+<td width="8.73%" valign="top"><br></td>
+<td width="8.73%" valign="top"><br></td>
+<td width="8.73%" valign="top"><br></td>
+<td width="12.7%" valign="top"><br></td>
+<td width="8.69%" valign="top"><br></td>
+<td width="8.68%" valign="top"><br></td>
+<td width="8.7%" valign="top"><br></td>
+<td width="10.7%" valign="top"><br></td>
+<td width="9.09%" valign="top"><br></td></tr>
+<tr><td valign="top"><p>2</p></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td></tr>
+<tr><td valign="top"><p>3</p></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td></tr>
+<tr><td valign="top"><p>4</p></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td></tr>
+<tr><td valign="top"><p>5</p></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td></tr>
+<tr><td valign="top"><p>6</p></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td></tr>
+<tr><td valign="top"><p>7</p></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td></tr>
+<tr><td valign="top"><p>8</p></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td></tr>
+<tr><td valign="top"><p>9</p></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td></tr>
+</table>
+<br>
+</body>
+</html>

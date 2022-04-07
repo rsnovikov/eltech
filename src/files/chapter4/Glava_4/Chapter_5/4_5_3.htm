@@ -1,0 +1,87 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+// <!-- Begin
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     // document.write("<BGSOUND SRC=../../../Sound/Chapter4/4.5.3.mp3 >");
+   } 
+  document.write("<audio SRC=../../../Sound/Chapter4/4.5.3.mp3 autoplay=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 ></audio>");
+// End --> 
+</SCRIPT>
+<title>4.5.3. Нормирование и построение АЧХ и ФЧХ </title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="file:///E|/flashMX%20backup/Project/TITOV1/var1/mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></SCRIPT>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV> <table width="100%" height="100%" border="0" cellspacing="0">
+  <tr align="center" valign="top">
+    <td height="20" colspan="2" class="head1">
+      <div align="center"> 
+        <p>          4.5.3. Нормирование и построение АЧХ и ФЧХ   </p>
+        <p><br>
+        </p>
+      </div></td>
+  </tr>
+  <tr align="center">
+    <td colspan="2" valign="top"><table width="100%"  border="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="100%" height="284" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="100%" height="282 " valign="top"><p class="text">Учитывая большой диапазон изменения частоты <em class="symbol">w</em>, при построении графиков АЧХ и ФЧХ (для наглядности и удобства) как частоту, так и величину <em class="index">H</em>(<em class="symbol">w</em>) и <em class="symbol">Y</em>(<em class="symbol">w</em>) нормируют и часто выражают в логарифмических единицах. Обозначим: 
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="gifs/f_02.gif">     <BR>          
+                  где <span class="symbol">w</span><span class="indexsmall">p</span> - резонансная частота. </p>
+                  <p class="text">На рис. 4.53, <em>а </em> и <em>б </em> приведен пример нормированных частотных характеристик цепи. При построении графиков принято по оси абсцисс откладывать не нормированную частоту <span class="symbol">W</span>, а равномерные отрезки lg<em class="symbol">w</em>, но на самой оси записывают значения частоты <span class="symbol"><em>w</em></span><em> = </em>10<em class="indexbig">n </em>, где <em>n </em> = …, -1, 0, 1, 2 , 3,… </p>
+                  <p class="text">Интервал частот, на концах которого частоты отличаются в 10 раз, т. е. <em class="symbol">w</em><span class="indexsmalldigit">2</span>/<em class="symbol">w</em><span class="indexsmalldigit">1</span> <em>= </em>10, назывaют <strong class="head2"><em>декадой </em></strong>(рис. 4.53, <span class=index>в</span>), а интервал частот, на кон­цах которого частоты отличаются в 2 раза, т. е. <em class="symbol">w</em><span class="indexsmalldigit">2</span>/<em class="symbol">w</em><span class="indexsmalldigit">1</span> <em>= </em>2, называют <strong class="head2"><em>октавой</em></strong><em>. </em>Таким образом, единицей частоты является декада, реже октава. </p>
+                  <p class="text">По оси ординат АЧХ откладывают значения <em class="index">H</em>(<em class="symbol">w</em>), выраженные в децибелах (дБ): <br><span class="text"><em class="index">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></span><span class="symbol"><em class="symbol">a</em></span><span class="text">(<em class="symbol">w</em>) <em> = </em>20lg<em class="index">H</em>(<em class="symbol">w</em>)</span>                  </p>
+                  <p align="center" class="text">&nbsp;
+                  </p>
+                  
+                  <table align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top" align="left"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td valign="top" align="left"><p align="center"><img src="../Chapter_4/clip_image002.gif"></p></td>
+                        </tr>
+                      </table>                      <p>&nbsp;</p></td>
+                    </tr>
+                  </table>
+                  <p align="center" class="text">
+                    </embed>
+                      
+                </p>
+                  <p class="text">В этом случае зависимость <em class="symbol">a</em>(<em class="symbol">w</em>) называют <strong class="head2"> логарифмической амплитудно-чаcтотной характеристикой </strong> (ЛАЧХ) звена (устройства)<em>. </em> Децибельная мера коэффициента передачи <em class="index">H</em>(<em class="symbol">w</em>) удобна для определения суммарной величины <em class="symbol">a </em> нескольких звеньев, включенных последовательно (рис. 4.53, <em>г</em>), как сумму <span class="symbol"><em>a</em></span><em><span class="indexsmall">k</span> </em>отдельных звеньев: 
+                  <br>
+                  <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="symbol"><em>a</em></span><em></em> = <span class="symbol"><em>a</em></span><em></em></em><span class="indexsmalldigit">1</span> <em>+ <span class="symbol"><em>a</em></span><em></em></em><span class="indexsmalldigit">2</span> <em>+... + <span class="symbol"><em>a</em></span><em></em><span class="indexsmall">n</span>. </em></p>
+                  <p class="text">Например, устройство состоит из двух звеньев с коэффициентами передачи <em class="index">H</em><span class="indexsmalldigit">1</span>(<em class="symbol">w</em><span class="indexsmalldigit">1</span>) <em>= </em>100 и <em class="index">H</em><span class="indexsmalldigit">2</span>(<em class="symbol">w</em><span class="indexsmalldigit">1</span>) = 1000 при частоте <em class="symbol">w </em>= <em class="symbol">w</em><span class="indexsmalldigit">1</span>. Коэффициенты 
+                 <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="symbol"><em>a</em></span><em></em><span class="indexsmalldigit">1</span> <em> = </em>20lg<em>H</em><span class="indexsmallDigit">1</span>(<em class="symbol">w</em><span class="indexsmalldigit">1</span>) <em> = </em>20lg100 = 40 дБ и <em>a</em><span class="indexsmalldigit">2</span> <em> = </em> 20lg<em>H</em><span class="indexsmallDigit">2</span>(<em class="symbol">w</em><span class="indexsmalldigit">1</span>) <em> = </em> 20lg1000 = 60 дБ, 
+                  <br>а суммарный коэффициент 
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="symbol"><em>a</em></span><em> = <span class="symbol"><em>a</em></span><em></em></em><span class="indexsmalldigit">1</span> <em>+ <span class="symbol"><em>a</em></span><em></em></em><span class="indexsmalldigit">2</span> <em>= </em> 40 + 60 = 100 дБ. </p>
+                  <p class="text">Фазочастотная характеристика <em class="symbol">Y</em>(<em class="symbol">w</em>) строится в том же логарифмическом масштабе частот для оси абсцисс, а по оси ординат откладывают фазовый угол в радианах или градусах. </p>
+                  <p class="text">При построении характеристики <span class="symbol"><em>a</em></span><em></em>(<em class="symbol">w</em>) многозвенного устройства ЛАЧХ отдельных звеньев аппроксимируют прямыми линиями, что упрощает их суммирование, вычитание и т. п. Примеры построения ЛАЧХ простейших звеньев приведены в 4.54. </p>
+                </td>
+              </tr>
+            </table></td>
+          <td></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="20"><a href="4_5_2.htm"><img src="../../../images/back.gif" width="55" height="25" border="0"></a> </td>
+    <td>
+      <div align="right"><a href="4_5_4.htm"><img src="../../../images/forward.gif" width="62" height="25" border="0"></a></div></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Задание 3</title>
+</head>
+
+<body>
+
+<p><b>Задание 3. </b>Измерить индуктивность катушки и ёмкость конденсатора косвенным методом по результатам прямых измерений напряжений, токов и мощностей ветвей и косвенных измерений углов сдвига фаз <i>&#966;<sub>k</sub></i>.</p>
+<p>С этой целью собрать на рабочем поле программы EWB схему цепи (см. рис. 1.4) или схему цепи (см. рис. 1.5) на рабочем поле программы MS8 Education (либо открыть файл <b>Lr1-3.ewb</b>. при выполнении работы в среде EWB или файл <b>Lr1-3.ms8</b> при выполнении работы в среде MS8SD) и &nbsp;установить:</p>
+<p>- параметры идеального источника синусоидального напряжения &nbsp;<sub><img alt="img1" src="task3.files/img1.gif"></sub>действующее значение ЭДС <i>Е </i>= 5 + <i>N</i>, В; частоту <i>f </i>= 1000 Гц при измерении индуктивности <i>L</i> катушки и<i> </i>
+частоту <i>f</i> = 10000 Гц при измерении ёмкости <i>C</i> конденсатора; начальную фазу напряжения <i>&Psi;<sub>u &nbsp;</sub></i>= 0;</p>
+<p>- режим работы <i><b>DС</b></i> вольтметра <i>Wt</i> (<i>R<sub>Wt</sub></i> = 1 MОм), режим работы <i><b>АС</b></i> амперметра А1 (<i>R<sub>А</sub></i> = 1 мОм)) и вольтметра V2 (<i>R<sub>V</sub></i><sub>2</sub> = 1 MОм); </p>
+<p>- значения сопротивления резистора <i>R</i><sub>1</sub> = 20 Ом (имитирующего активное сопротивление катушки) и резистора <i>R</i><sub>2</sub> = 10 Ом;</p>
+<p>- значение индуктивности катушки<i> L</i> = 5 + int(<i>N</i>/5), мГн и ёмкости &nbsp; &nbsp; конденсатора<i> С</i> = 1 + int(<i>N</i>/10), мкФ;</p>
+<p>- чувствительность 200 мВ/дел (mV/div) канала <i><b>А</b> </i>осциллографа, в котором регистрируется напряжение, снимаемое с ИТУН;<i> </i>чувствительность &nbsp; 5 или 10 B/дел (V/div) канала <i><b>В</b></i>,<i> </i>в котором регистрируется напряжение ветвей схемы; длительность развертки (TIME BASE) в режиме <i>Y/T - </i>0<i>,</i>2 мс/дел (2 ms/div). Указанные цены делений нужно изменять при измерениях таким образом, чтобы амплитуды напряжения и &quot;тока&quot; были равны не менее 0,5..0,75 высоты экрана осциллографа (в режиме Espand), &nbsp;а по оси времени укладывалось два-три периода колебаний исследуемых величин; </p>
+<p>- управляющую ключом кнопку <i>S</i> клавиатуры;</p>
+<p>- значение коэффициента передачи ИТУН <i>k</i> &nbsp;= 1 Ом;</p>
+<p>- красный цвет провода, подходящего к каналу <i><b>А</b></i> осциллографа, и синий для провода, подходящего к каналу <i><b>В</b></i> осциллографа;</p>
+<p>- установить управляемый контакт кнопки <i>S</i> в нижнее положение, &nbsp; &nbsp;т. е. подключить <i>R</i><sub>1</sub><i>L</i>-ветвь к источнику <i>е</i>.</p>
+<p><b>Запустить</b> программу EWB (щёлкнуть мышью на цифре <i>1</i> кнопки 
+<img alt="img2" src="task3.files/img2.gif">), <b>снять </b>показания приборов и занести их в табл. 1.2. Методика определения угла сдвига фаз <i>( </i>между напряжением и током &nbsp;описана в п. 2.4 раздела &quot;Теоретические положения и расчетные формулы&quot;. Для удобства измерений изменяйте чувствительность каналов и длительность развёртки осциллографа. Убедится, что ток<i> i</i><sub>1</sub><i> </i>в <i>R</i><sub>1</sub><i>L</i>-ветви отстаёт по фазе от напряжения <i>u</i> на угол <i>&#966;</i><sub>1</sub> = &nbsp;arctg(<i>X<sub>L</sub></i>/<i>R</i><sub>1</sub>) = arсcos(<i>P</i><sub>1</sub>/<i>UI</i><sub>1</sub>), где <i>Р</i><sub>1</sub> – показание ваттметра.</p>
+<p><b>Установить</b> частоту ЭДС <i>f</i> = 10 кГц &nbsp;источника <i>е</i> и 
+подключить <i>R</i><sub>2</sub><i>С</i>-ветвь (нажать кнопку<i> S</i>) к источнику<i>. </i>Показания приборов записать в табл. 1.2. Убедится, что ток <i>i</i><sub>2</sub> в <i>R</i><sub>2</sub><i>С</i>-ветви опережает по фазе напряжение <i>u</i> на угол <i>&#966;</i><sub>2</sub> = arctg(-<i>X<sub>C</sub></i>/<i>R</i><sub>2</sub>) = -arсcos(<i>P</i><sub>2</sub>/<i>UI</i><sub>2</sub>), где <i>Р</i><sub>2</sub> – показание ваттметра.</p>
+<p>Рассчитать полное <i>Z = U/I</i>, активное <i>R </i>= <i>Z</i>cos<i>&#966; </i>и реактивное <i>X </i>= <i>Z</i>sin<i>&#966; </i>&nbsp;сопротивления <i>R</i><sub>1</sub><i>L</i>-ветви и <i>R</i><sub>2</sub><i>С</i>-ветви и занести их в табл. 1.2. </p>
+<p>Так как индуктивное сопротивление катушки <i>X<sub>L </sub>= &omega;L = </i>2<i>&pi;fL</i>, Ом, а ёмкостное сопротивление конденсатора <i>X<sub>С</sub></i> <i>=</i> 1/<i>&#969;</i>С <i>= </i>1/2<i>&#960;fC</i>, Ом, то:</p>
+<p><i>L = X<sub>L</sub></i>/<i>&#969; = X<sub>L</sub></i>/2<i>&#960;f</i>, Гн или <i>L = </i>10<sup>3</sup><i>X<sub>L</sub></i>/2<i>&#960;f</i>, мГн - индуктивность катушки, включенной в <i>R</i><sub>1</sub><i>L</i>-ветвь;</p>
+<p><i>С</i> <i>=</i> 1/(<i>&#969;X<sub>C </sub>) =</i> 1/(2<i>&#960;f</i>&bull;<i>X<sub>C</sub></i>), Ф или <i>С = </i>10<sup>6</sup><i>/(</i>2<i>&#960;f</i>&bull;<i>X<sub>C</sub></i>), мкФ - ёмкость конденсатора, включенного в <i>R</i><sub>2</sub><i>С</i>-ветвь.</p>
+<p>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Таблица 1.2</p>
+<table width="95%" border="1">
+<tr><td rowspan="2" valign="top"><br>
+<p>Ветвь</p>
+<br></td>
+<td colspan="2" valign="top" align="center">Установлено</td>
+<td colspan="4" valign="top" align="center">Измерено</td>
+<td colspan="5" valign="top" align="center">Вычислено</td></tr><tr>
+<td valign="top"><i>E</i>, B</td>
+<td valign="top"><i>f</i>, кГц</td>
+<td valign="top"><i>U</i>, B</td>
+<td valign="top"><i>I</i>, мA</td>
+<td valign="top"><i>P = U<sub>Wt</sub></i>, Bт </td>
+<td valign="top"> <i>&#966;</i>, град</td>
+<td valign="top"><i>Z</i>, Ом</td>
+<td valign="top"><i>R</i>, Ом</td>
+<td valign="top"><i>X</i>, Ом</td>
+<td valign="top"><i>L</i>, мГн</td>
+<td valign="top"><i>C</i>, мкФ</td></tr>
+<tr><td valign="top"><i>R</i><sub>1</sub><i>L</i></td>
+<td valign="top"><br></td>
+<td valign="top">1</td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top">-----</td></tr>
+<tr><td valign="top"><i>R</i><sub>2</sub><i>C</i></td>
+<td valign="top"><br></td>
+<td valign="top">10</td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top"><br></td>
+<td valign="top">-----</td>
+<td valign="top"><br></td></tr>
+</table>
+<p>Вычисленные значения индуктивности <i>L</i> катушки и емкости <i>C</i> конденсатора занести в табл. 1.2. Сравнить полученные значения <i>R</i>, <i>L</i> и <i>С</i> с установленными их значениями в схеме цепи.</p>
+
+</body>
+
+</html>

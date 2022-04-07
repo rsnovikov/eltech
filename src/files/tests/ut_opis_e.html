@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Описание УТИС</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style122.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style122.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+<div align="center">Описание УТИС экзаменатора</div>
+</td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><table width="100%"  border="0">
+          <tr>
+<td width="70%" colspan="2" valign="top" align="center">
+<div align="left">
+<p class="text"><br>
+<span class="head2">Работа программы в обычном режиме.</span>          
+<br></p>
+<p class="text">При запуске программы появляется окно (рис. 21). <br>
+<br>В обычном режиме тестовый файл (проект) выбираются при помощи кнопки <img src="img/image008.gif" width="16" height="16">. При выборе тестового файла (.TFS) тестируемому предлагается ответить на все вопросы, хранящиеся в нем. При выборе файла проекта (.TFP) – на определенное число вопросов, указанных в нем. <br><br>
+<div align="center"> <img src="img/image039.gif" width="500" height="325"> <br> <br>
+<span class="head2">Рис. 21</span> </div> </p> 
+<p class="text"> Выбор вопросов из проекта производится по следующему правилу: из каждого        логического файла, входящего в проект, берется одинаковое число вопросов. Например, если в проект включено два файла и требуется выбрать десять вопросов, то из каждого файла будет выбрано по          пять вопросов. <br><br>
+<span class="head2">Работа программы из командной строки.</span> <br><br>
+Программе с командной строкой можно передать следующие параметры: <br><br>
+1. Имя тестового файла или файла проекта с полным путем до него. <br>
+2. Путь в реестре, где программа запишет свой результат (см. 6.5, предоставление результата другим приложениям). <br><br>
+По завершению тестирования выход из программы осуществляется автоматически. <br><br>
+<span class="head2">Настройки проэкта по умолчанию.</span> <br><br>
+При загрузке тестового файла (.TFS) настройки проекта принимают значения по умолчанию: <br><br>
+Число вопросов – все вопросы, хранящиеся в тестовом файле; <br>
+Время - нет; <br>
+Возврат - да; <br>
+Метка - да; <br>
+Подсчет - разносный; <br>
+Стиль отметки - дифференцированный; <br>
+Отметка (%) - отлично - 90; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; хотошо - 75; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; удовлетворительно - 60; <br>
+Отчет - графический, по каждому вопросу. <br><br>
+<span class="head2">Переход от одного вопроса к другому.</span> <br><br>
+Переход к предыдущему вопросу осуществляется нажатием кнопки <img src="img/image020.gif" width="16" height="16">. Если параметр проекта <b>Возврат</b> не установлен, то перейти к предыдущему вопросу нельзя. Переход к следующему вопросу осуществляется нажатием кнопки <img src="img/image021.gif" width="16" height="16">. <br><br>
+<span class="head2">Строка состояния.</span> <br><br>
+Внизу окна расположена строка состояния. Она разделяется на три части: <br><br>
+1. Краткая справка, появляющаяся при удержании курсора мыши над какой-нибудь кнопкой. <br>
+2. Номер текущего вопроса / общее число вопросов. <br>
+3. <img src="img/image069.gif" width="16" height="16"> – время, оставшееся до окончания тестирования. <br><br>
+<span class="head2">Подсчет и вывод результатов тестирования.</span> <br><br>
+Чтобы подсчитать и вывести результаты тестирования нажмите кнопку <img src="img/image040.gif" width="16" height="16">. <br><br>
+Если установлен параметр проекта <b>Возврат</b>, то перед выводом окончательного результата тестируемому предлагается просмотреть состояние вопросов (рис. 22). <br><br>
+<div align="center"> <img src="img/image070.gif" width="498" height="394"> <br> <br>
+<span class="head2">Рис. 22</span> </div> <br><br> </p>
+<p class="text"> Пометки напротив вопроса: <br><br>
+<img src="img/image071.gif" width="12" height="13"> – в данном вопросе не был отмечен ни один ответ; <br>
+<img src="img/image072.gif" width="12" height="13"> – вопрос был помечен (см. 6.4, создание проекта).
+<br> <br>
+Чтобы перейти к выбранному вопросу нажмите кнопку <b>Перейти</b>.
+Чтобы вывести результаты тестирования нажмите на кнопку <b>Закончить</b>. В зависимости от параметра проекта <b>Отчет</b>, результат выводится в cтатистическом (рис. 23) или графическом виде (рис. 24). <br><br>
+В верхней части окна указывается тема проекта. В рамке указан результат. <br><br>
+Статистический вид: <br><br>
+Максимальный результат – общее число существенных операций; <br>
+Результат, требуемый для сдачи – процент от числа существенных операций, при достижении которого тест считается сданным; <br>
+Ваш результат – число существенных операций, набранное тестируемым. <br><br>
+<div align="center"> <img src="img/image073.gif" width="497" height="258"> <br> <br>
+<span class="head2">Рис. 23</span> </div> <br><br> </p>
+<p class="text"> Графический вид: <br><br>
+Синяя полоска – процент от числа существенных операций, при достижении которого тест считается сданным; <br>
+Зеленая полоска – тест сдан; <br>
+Красная полоска – тест не сдан. <br><br>
+<div align="center"> <img src="img/image074.gif" width="497" height="250"> <br> <br>
+<span class="head2">Рис. 24</span> </div> <br><br> </p>
+<p class="text"> При нажатии кнопки <b>Подробно</b>, выводится статистика по каждому вопросу и темам, если установлены соответствующие параметры проекта (рис. 25). <br><br>
+<div align="center"> <img src="img/image075.gif" width="497" height="393"> <br> <br>
+<span class="head2">Рис. 25</span> </div> <br><br> </p>
+<p class="text"> <span class="head2">Предоставление результата другим приложениям.</span> <br><br>
+Вторым параметром в командной строке указывается путь в реестре, куда УТИС экзаменатор должен записать результат тестирования. <br><br>
+Пример: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<b>utise.exe  c:\test1.tfp software\tests\test1</b> <br><br>
+Результат тестирования будет записан в <b>HKEY_CURRENT_USER\Software\Tests\Test1\Result </b> <br><br>
+Если параметр проекта <b>Стиль отметки</b> является дифференцированным, то значение параметра <b>Result</b> изменяется от 2 до 5. Если – не дифференцированный, то значение сдал или не сдал.
+</p>
+</div>
+</TD>
+</tr>
+</table>
+</body>
+</html>

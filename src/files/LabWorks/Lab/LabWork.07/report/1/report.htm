@@ -1,0 +1,971 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./report.files/filelist.xml">
+<link rel=Edit-Time-Data href="./report.files/editdata.mso">
+<link rel=OLE-Object-Data href="./report.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>        Запустить программу EWB; занести показания приборов и значения
+вычисленных фазовых углов  , где k – номер ветви, и угл</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Deathray</o:Author>
+  <o:LastAuthor>Deathray</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>35</o:TotalTime>
+  <o:Created>2005-01-23T18:24:00Z</o:Created>
+  <o:LastSaved>2005-01-23T18:24:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Company>FBI</o:Company>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+h5
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;
+	font-style:italic;}
+h6
+	{mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:12.0pt;
+	mso-ansi-language:EN-US;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:14.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+strong
+	{mso-ansi-font-size:12.0pt;}
+p
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:1715083792;
+	mso-list-type:hybrid;
+	mso-list-template-ids:785010768 68747265 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:35.4pt;
+	mso-level-number-position:left;
+	margin-left:35.4pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;
+margin-bottom:.0001pt;text-align:justify'><strong><span style='font-size:14.0pt;
+font-weight:normal'><span style="mso-spacerun: yes">        </span><span
+style='color:black'>Запустить программу </span></span></strong><strong><span
+lang=EN-US style='font-size:14.0pt;color:black;mso-ansi-language:EN-US;
+font-weight:normal'>EWB</span></strong><strong><span style='font-size:14.0pt;
+color:black;font-weight:normal'>; занести показания приборов и значения вычисленных
+фазовых углов </span></strong><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:84pt;
+ height:19.5pt' o:ole="" o:allowoverlap="f">
+ <v:imagedata src="./report.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=112 height=26
+src="./report.files/image002.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1168020640">
+ </o:OLEObject>
+</xml><![endif]-->, где </span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>k</span></i><span
+style='font-size:14.0pt'> – номер ветви, и угла</span> <span style='font-size:
+14.0pt'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:111.75pt;height:19.5pt' o:ole="">
+ <v:imagedata src="./report.files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=149 height=26
+src="./report.files/image004.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1168020641">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes"> </span>на зажимах цепи, <strong><span
+style='mso-ansi-font-size:14.0pt;color:black;font-weight:normal'>в табл. 7.2.<o:p></o:p></span></strong></span></p>
+
+<p align=right style='margin-top:0cm;margin-right:0cm;margin-bottom:2.0pt;
+margin-left:0cm;text-align:right;text-indent:8.5pt'><strong><span
+style='font-weight:normal'>Таблица 7.2</span></strong></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=600 style='width:450.3pt;
+ margin-left:7.2pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=98 valign=top style='width:73.4pt;border:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=42 valign=top style='width:31.4pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><i><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  mso-bidi-font-weight:bold'>f</span></i><span style='mso-bidi-font-size:14.0pt;
+  mso-bidi-font-weight:bold;mso-bidi-font-style:italic'>,<o:p></o:p></span></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt;mso-bidi-font-weight:bold;mso-bidi-font-style:
+  italic'>Гц<o:p></o:p></span></p>
+  </td>
+  <td width=34 colspan=2 valign=top style='width:25.7pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><i><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  mso-bidi-font-weight:bold'>E</span></i><span style='mso-bidi-font-weight:
+  bold'>, В<o:p></o:p></span></p>
+  </td>
+  <td width=50 valign=top style='width:37.8pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><sub><span
+  style='mso-bidi-font-size:14.0pt'><span style="mso-spacerun: yes"> </span></span></sub><i><span
+  style='mso-bidi-font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+  mso-symbol-font-family:Symbol;mso-bidi-font-weight:bold'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>j</span></span></i><sub><span
+  style='mso-bidi-font-size:14.0pt'>,<o:p></o:p></span></sub></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>град</span></strong><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=41 valign=top style='width:30.7pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><em><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  mso-bidi-font-weight:bold'>U</span></em><em><sub><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:bold;
+  font-style:normal'>1</span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>,<o:p></o:p></span></strong></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>В</span></strong><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=42 colspan=2 valign=top style='width:31.4pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><em><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  mso-bidi-font-weight:bold'>I</span></em><em><sub><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:bold;
+  font-style:normal'>1</span></sub></em><span lang=EN-US style='mso-ansi-language:
+  EN-US;mso-bidi-font-weight:bold'>, <o:p></o:p></span></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  font-weight:normal'>A</span></strong><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=44 colspan=2 valign=top style='width:33.3pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><i><span
+  style='mso-bidi-font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+  mso-symbol-font-family:Symbol;mso-bidi-font-weight:bold'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>j</span></span></i><em><sub><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:
+  bold;font-style:normal'>1</span></sub></em><span lang=EN-US style='mso-ansi-language:
+  EN-US;mso-bidi-font-weight:bold'>, <span style="mso-spacerun: yes"> </span></span><span
+  style='mso-bidi-font-weight:bold'>град</span><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=39 valign=top style='width:29.55pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><em><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  mso-bidi-font-weight:bold'>U</span></em><em><sub><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:bold;
+  font-style:normal'>2</span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>,<o:p></o:p></span></strong></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  font-weight:normal'><span style="mso-spacerun: yes"> </span></span></strong><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>В</span></strong><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=37 valign=top style='width:27.45pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><em><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  mso-bidi-font-weight:bold'>I</span></em><em><sub><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:bold;
+  font-style:normal'>2</span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>,
+  <o:p></o:p></span></strong></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  font-weight:normal'>A</span></strong><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=47 colspan=2 valign=top style='width:35.35pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><i><span
+  style='mso-bidi-font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+  mso-symbol-font-family:Symbol;mso-bidi-font-weight:bold'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>j</span></span></i><sub><span
+  style='font-size:14.0pt;mso-bidi-font-weight:bold'>2</span></sub><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>,</span></strong><sub><span
+  style='font-size:14.0pt;mso-bidi-font-weight:bold'><o:p></o:p></span></sub></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-weight:bold'>град</span><span style='mso-bidi-font-size:
+  14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=42 valign=top style='width:31.4pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><em><span
+  style='mso-bidi-font-size:14.0pt;mso-bidi-font-weight:bold'>U</span></em><em><sub><span
+  style='font-size:14.0pt;mso-bidi-font-weight:bold;font-style:normal'>3</span></sub></em><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>,<o:p></o:p></span></strong></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>В</span></strong><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=35 valign=top style='width:25.95pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><em><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:
+  bold'>I</span></em><em><sub><span lang=EN-US style='font-size:14.0pt;
+  mso-ansi-language:EN-US;mso-bidi-font-weight:bold;font-style:normal'>3</span></sub></em><strong><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  font-weight:normal'>, <o:p></o:p></span></strong></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  font-weight:normal'>A</span></strong><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=49 colspan=2 valign=top style='width:36.9pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><i><span
+  style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+  Symbol;mso-bidi-font-weight:bold'><span style='mso-char-type:symbol;
+  mso-symbol-font-family:Symbol'>j</span></span></i><sub><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:bold'>3</span></sub><span
+  lang=EN-US style='mso-ansi-language:EN-US;mso-bidi-font-weight:bold'>, </span><span
+  style='mso-bidi-font-weight:bold'>град</span><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=98 valign=top style='width:73.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>Рассчитано</span></strong><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=42 valign=top style='width:31.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><i><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>f</span></i></strong><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=34 colspan=2 valign=top style='width:25.7pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=50 valign=top style='width:37.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=41 valign=top style='width:30.7pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 colspan=2 valign=top style='width:31.4pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 valign=top style='width:31.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 colspan=2 valign=top style='width:31.4pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=37 valign=top style='width:27.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=47 colspan=2 valign=top style='width:35.35pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 valign=top style='width:31.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=35 valign=top style='width:25.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>#txt@</span><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=49 colspan=2 valign=top style='width:36.9pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>#txt@</span><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=98 rowspan=2 valign=top style='width:73.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+  margin-left:0cm;margin-bottom:.0001pt;text-align:center'><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>Измерено</span></strong><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=42 valign=top style='width:31.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>f</span></i><i style='mso-bidi-font-style:
+  normal'><span style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></i></p>
+  </td>
+  <td width=34 colspan=2 valign=top style='width:25.7pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=50 valign=top style='width:37.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=41 valign=top style='width:30.7pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 colspan=2 valign=top style='width:31.4pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 valign=top style='width:31.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 colspan=2 valign=top style='width:31.4pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=37 valign=top style='width:27.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=47 colspan=2 valign=top style='width:35.35pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 valign=top style='width:31.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=35 valign=top style='width:25.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>#txt@</span><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=49 colspan=2 valign=top style='width:36.9pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>#txt@</span><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=42 valign=top style='width:31.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>2</span></strong><em><span
+  style='mso-bidi-font-size:14.0pt;mso-bidi-font-weight:bold'>f</span></em><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'><o:p></o:p></span></strong></p>
+  </td>
+  <td width=34 colspan=2 valign=top style='width:25.7pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=50 valign=top style='width:37.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=41 valign=top style='width:30.7pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 colspan=2 valign=top style='width:31.4pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 valign=top style='width:31.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 colspan=2 valign=top style='width:31.4pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=37 valign=top style='width:27.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=47 colspan=2 valign=top style='width:35.35pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=42 valign=top style='width:31.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=35 valign=top style='width:25.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>#txt@</span><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=49 colspan=2 valign=top style='width:36.9pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US'>#txt@</span><span
+  style='mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:15.85pt'>
+  <td width=98 rowspan=4 valign=top style='width:73.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.85pt'>
+  <p align=center style='margin-top:0cm;text-align:center'><strong><span
+  style='mso-bidi-font-size:14.0pt;font-weight:normal'>Рассчитано по данным
+  эксперимента<o:p></o:p></span></strong></p>
+  </td>
+  <td width=503 colspan=17 valign=top style='width:376.9pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.85pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>Полные сопротивления двухполюсников<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-row-margin-right:.9pt'>
+  <td width=46 colspan=2 valign=top style='width:34.2pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><strong><i
+  style='mso-bidi-font-style:normal'><span style='mso-bidi-font-size:14.0pt;
+  font-weight:normal'><o:p></o:p></span></i></strong></p>
+  </td>
+  <td width=152 colspan=4 valign=top style='width:113.9pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><em><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  mso-bidi-font-weight:bold'>Z</span></em><em><sub><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:bold;
+  font-style:normal'>1 </span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>=
+  <i style='mso-bidi-font-style:normal'>U</i></span></strong><em><sub><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:
+  bold;font-style:normal'>1</span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>/<i
+  style='mso-bidi-font-style:normal'>I</i></span></strong><em><sub><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:
+  bold;font-style:normal'>1</span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>,
+  </span></strong><strong><span style='mso-bidi-font-size:14.0pt;font-weight:
+  normal'>Ом</span></strong><span lang=EN-US style='mso-bidi-font-size:14.0pt;
+  mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=152 colspan=6 valign=top style='width:113.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><em><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  mso-bidi-font-weight:bold'>Z</span></em><em><sub><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:bold;
+  font-style:normal'>2 </span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>=
+  <i style='mso-bidi-font-style:normal'>U</i></span></strong><em><sub><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:
+  bold;font-style:normal'>2</span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>/<i
+  style='mso-bidi-font-style:normal'>I</i></span></strong><em><sub><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:
+  bold;font-style:normal'>2</span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>,
+  </span></strong><strong><span style='mso-bidi-font-size:14.0pt;font-weight:
+  normal'>Ом</span></strong><span lang=EN-US style='mso-bidi-font-size:14.0pt;
+  mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=152 colspan=4 valign=top style='width:113.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><em><span
+  lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;
+  mso-bidi-font-weight:bold'>Z</span></em><em><sub><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:bold;
+  font-style:normal'>3 </span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>=
+  <i style='mso-bidi-font-style:normal'>U</i></span></strong><em><sub><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:
+  bold;font-style:normal'>3</span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>/<i
+  style='mso-bidi-font-style:normal'>I</i></span></strong><em><sub><span
+  lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US;mso-bidi-font-weight:
+  bold;font-style:normal'>3</span></sub></em><strong><span lang=EN-US
+  style='mso-bidi-font-size:14.0pt;mso-ansi-language:EN-US;font-weight:normal'>,
+  </span></strong><strong><span style='mso-bidi-font-size:14.0pt;font-weight:
+  normal'>Ом</span></strong><span lang=EN-US style='mso-bidi-font-size:14.0pt;
+  mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm'
+  width=1><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-row-margin-right:.9pt'>
+  <td width=46 colspan=2 valign=top style='width:34.2pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US;font-weight:normal'>f</span></i></strong><strong><i
+  style='mso-bidi-font-style:normal'><span style='mso-bidi-font-size:14.0pt;
+  font-weight:normal'><o:p></o:p></span></i></strong></p>
+  </td>
+  <td width=152 colspan=4 valign=top style='width:113.9pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=152 colspan=6 valign=top style='width:113.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=152 colspan=4 valign=top style='width:113.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm'
+  width=1><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-row-margin-right:.9pt'>
+  <td width=46 colspan=2 valign=top style='width:34.2pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><strong><i
+  style='mso-bidi-font-style:normal'><span style='mso-bidi-font-size:14.0pt;
+  font-weight:normal'>2</span></i></strong><strong><i style='mso-bidi-font-style:
+  normal'><span lang=EN-US style='mso-bidi-font-size:14.0pt;mso-ansi-language:
+  EN-US;font-weight:normal'>f</span></i></strong><strong><i style='mso-bidi-font-style:
+  normal'><span style='mso-bidi-font-size:14.0pt;font-weight:normal'><o:p></o:p></span></i></strong></p>
+  </td>
+  <td width=152 colspan=4 valign=top style='width:113.9pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=152 colspan=6 valign=top style='width:113.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td width=152 colspan=4 valign=top style='width:113.95pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='mso-bidi-font-size:14.0pt'>#</span><span lang=EN-US style='mso-bidi-font-size:
+  14.0pt;mso-ansi-language:EN-US'>txt</span><span style='mso-bidi-font-size:
+  14.0pt'>@<o:p></o:p></span></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0cm 0cm 0cm 0cm'
+  width=1><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <![if !supportMisalignedColumns]>
+ <tr height=0>
+  <td width=98 style='border:none'></td>
+  <td width=42 style='border:none'></td>
+  <td width=4 style='border:none'></td>
+  <td width=31 style='border:none'></td>
+  <td width=50 style='border:none'></td>
+  <td width=41 style='border:none'></td>
+  <td width=30 style='border:none'></td>
+  <td width=12 style='border:none'></td>
+  <td width=42 style='border:none'></td>
+  <td width=2 style='border:none'></td>
+  <td width=39 style='border:none'></td>
+  <td width=37 style='border:none'></td>
+  <td width=20 style='border:none'></td>
+  <td width=27 style='border:none'></td>
+  <td width=42 style='border:none'></td>
+  <td width=35 style='border:none'></td>
+  <td width=48 style='border:none'></td>
+  <td width=1 style='border:none'></td>
+ </tr>
+ <![endif]>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:35.4pt'><strong><span
+style='font-size:14.0pt;color:black;font-weight:normal'>Сравните результаты измерений
+электрических величин с значениями, полученными в результате расчёта. В случае
+расхождения значений более чем на 5%, проверить результаты расчета и схему соединения
+элементов на рабочем поле программы </span></strong><strong><span lang=EN-US
+style='font-size:14.0pt;color:black;mso-ansi-language:EN-US;font-weight:normal'>EWB</span></strong><strong><span
+style='font-size:14.0pt;color:black;font-weight:normal'>, а также установленные
+(согласно варианту) параметры элементов цепи (см. табл. 7.1).</span></strong><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;
+margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt'><strong><span
+style='font-size:14.0pt;font-family:Arial;color:black;mso-bidi-font-weight:
+normal'>Задание 3. </span></strong><strong><span style='font-size:14.0pt;
+font-weight:normal'>Повторить задание 1, удвоив частоту </span></strong><em><span
+style='font-size:14.0pt;mso-bidi-font-weight:bold'>f</span></em><strong><span
+style='font-size:14.0pt;font-weight:normal'> синусоидального напряжения </span></strong><strong><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US;font-weight:normal'>u</span></i></strong><strong><span
+style='font-size:14.0pt;font-weight:normal'>. Результаты измерений занести в
+табл. 7.2. По результатам измерений на двух частотах рассчитать полные
+сопротивления двухполюсников и занести в табл. 7.2.</span></strong><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:35.4pt'><strong><span
+style='font-size:14.0pt;font-weight:normal'>Рассчитать активные и реактивные
+сопротивления двухполюсников и построить (в масштабе) шесть треугольников
+сопротивлений&nbsp; двухполюсников, указав на них (стрелками) фазовые углы.</span></strong><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;
+margin-bottom:.0001pt;text-align:justify;text-indent:34.6pt'><strong><span
+style='font-size:14.0pt;font-family:Arial;color:black;mso-bidi-font-weight:
+normal'>Задание 4. </span></strong><strong><span style='font-size:14.0pt;
+font-weight:normal'>Вычертить графики мгновенных значений напряжения </span></strong><em><span
+style='font-size:14.0pt;mso-bidi-font-weight:bold'>u</span></em><strong><span
+style='font-size:14.0pt;font-weight:normal'>(</span></strong><em><span
+style='font-size:14.0pt;mso-bidi-font-weight:bold'>t</span></em><strong><span
+style='font-size:14.0pt;font-weight:normal'>) = </span></strong><em><span
+style='font-size:14.0pt;mso-bidi-font-weight:bold'>e</span></em><strong><span
+style='font-size:14.0pt;font-weight:normal'>(</span></strong><em><span
+style='font-size:14.0pt;mso-bidi-font-weight:bold'>t</span></em><strong><span
+style='font-size:14.0pt;font-weight:normal'>)</span></strong><em><span
+style='font-size:14.0pt;mso-bidi-font-weight:bold'> </span></em><strong><span
+style='font-size:14.0pt;font-weight:normal'>и тока</span></strong><em><span
+style='font-size:14.0pt;mso-bidi-font-weight:bold'> i</span></em><strong><sub><span
+style='font-size:16.0pt;mso-bidi-font-size:14.0pt;font-weight:normal'>1</span></sub></strong><strong><span
+style='font-size:14.0pt;font-weight:normal'>(</span></strong><em><span
+style='font-size:14.0pt;mso-bidi-font-weight:bold'>t</span></em><strong><span
+style='font-size:14.0pt;font-weight:normal'>) при заданной <span
+style="mso-spacerun: yes"> </span></span></strong><strong><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US;
+font-weight:normal'>f</span></i></strong><strong><span lang=EN-US
+style='font-size:14.0pt;font-weight:normal'> </span></strong><strong><span
+style='font-size:14.0pt;font-weight:normal'>и удвоенной частоте. <o:p></o:p></span></strong></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

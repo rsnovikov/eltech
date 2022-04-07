@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>4</title>
+</head>
+
+<body>
+
+<p><b>4. МОДЕЛИРОВАНИЕ И РАСЧЁТ МАГНИТНОЙ ЦЕПИ ПО ПРОГРАММЕ EWB (MS8)</b> </p>
+
+<p>Соберём схему магнитной цепи (см. рис. 15.1) на рабочем поле среды EWB или MS8 Education (рис. 15.4), состоящей из источника постоянного напряжения, имитирующего источник МДС <i>F</i>; нелинейного элемента <i>RM1</i>, моделирующего ферромагнитный сердечник, и резистора <i>RM2</i>, сопротивление которого равно магнитному сопротивлению <i>R<sub>&delta; &nbsp; </sub></i>воздушного зазора.</p>
+<p>&nbsp;Для измерения магнитного потока <i>Ф</i> используется амперметр <i>А</i> (режим <b>DC</b>, внутреннее сопротивление <i>R<sub>А</sub></i> = 1 мОм), а для измерения магнитных напряжений на ферромагнитном сердечнике и воздушном зазоре – вольтметры <i>V1</i> и <i>V2</i> (режим <b>DC</b>, внутренние сопротивления <i>R<sub>V</sub></i> = 1000 МОм).</p>
+<img src="th4.files/3.gif"><br>
+<p>В качестве элемента <i>RM1</i> использован имеющийся в библиотеках элементов EWB и &nbsp;MS8 Education магнитный элемент (<i><b>Мagnetic Core</b></i>), в окне свойств которого (<i><b>Properthies</b></i>) необходимо открыть раздел моделей (<i><b>Models</b></i>) и добавить в библиотеку (<i><b>New Library</b></i>) новый элемент путем копирования (<i><b>Copy</b></i>) элемента <i><b>ideal</b></i> и вставки (<i><b>Paste</b></i>) под новым именем, например, <i>RM1</i>. Затем нужно щелкнуть мышью на кнопке редактирования (<i><b>Edit</b></i><b>)</b> и в открывшемся окне ввести геометрические размеры сердечника и 6…10 координатных точек (см. табл. 15.1) кривой намагничивания <i>В</i>(<i>Н</i>) материала сердечника (в рассматриваемом примере для литой стали 10895 число <i>k</i> = 4):</p>
+<p>- площадь поперечного сечения сердечника (<i><b>Cross-sectional area</b></i>) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i>S<sub>м</sub></i> = 0,004 м<sup>2</sup>;</p>
+<p>- длина средней м. с. л. в сердечнике (<i><b>Core Length</b></i>) <i>l<sub>м</sub></i> = 0,9 м;</p>
+<p>- коэффициент <i><b>ISD</b></i> = 1;</p>
+<p>- число координатных точек таблицы кривой намагничивания <i>В</i>(<i>Н</i>) (<i><b>Numder of coordintes</b></i>) 10:</p>
+<p>- напряжённость магнитного поля в первой точке (<i><b>Magnetic field coordinate 1</b></i>) <i>Н</i><sub>1 </sub>= 0;</p>
+<p>- магнитная индукция в первой точке (<i><b>Flux density coordinate 1</b></i>)<i> В</i><sub>1</sub> = 0;</p>
+<p>- напряжённость магнитного поля во второй точке (<i><b>Magnetic field coordinate</b></i><b> <i>2</i></b>) <i>Н</i><sub>2</sub> = 100 А;</p>
+<p>- магнитная индукция во второй точке (<i><b>Flux density coordinate 2</b></i>) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i> В</i><sub>2</sub> = 0,25 Вб/м<sup>2</sup>;</p>
+<p>……………………………………………………………………………</p>
+<p>- напряжённость магнитного поля в десятой точке (<i><b>Magnetic field co-ordinate</b></i><b> <i>10</i></b>) <i>Н</i><sub>10</sub> = 5000 А;</p>
+<p>- магнитная индукция в десятой точке (<i><b>Flux density coordinate 10</b></i>) &nbsp; &nbsp; &nbsp; &nbsp; <i>&nbsp;В</i><sub>10</sub> = 1,6 Вб/м<sup>2</sup>.</p>
+<p> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Таблица 15.1</p>
+<table width="98%" border="1" id="table1">
+<tr><td rowspan="2" valign="top"><i>k</i></td>
+<td colspan="10" valign="top">Магнитная индукция <i>В</i>, Тл, при напряжённости магнитного поля <i>Н</i>, кА/м</td></tr><tr>
+<td valign="top"><i>Н </i>= 0</td>
+<td valign="top">0,1</td>
+<td valign="top">0,2</td>
+<td valign="top">0,3</td>
+<td valign="top">0,4</td>
+<td valign="top">0,5</td>
+<td valign="top">0,8</td>
+<td valign="top">1,0</td>
+<td valign="top">2,5</td>
+<td valign="top">5,0</td></tr>
+<tr><td width="3.74%" valign="top">1</td>
+<td width="9.62%" valign="top"><i>В </i>= 0</td>
+<td width="9.62%" valign="top">1,1</td>
+<td width="9.63%" valign="top">1,34</td>
+<td width="9.62%" valign="top">1,42</td>
+<td width="9.63%" valign="top">1,44</td>
+<td width="9.62%" valign="top">1,46</td>
+<td width="9.62%" valign="top">1,49</td>
+<td width="9.63%" valign="top">1,52</td>
+<td width="9.62%" valign="top">1,75</td>
+<td width="9.63%" valign="top">1,78</td></tr>
+<tr><td valign="top">2</td>
+<td valign="top"><i>В </i>= 0</td>
+<td valign="top">0,42</td>
+<td valign="top">0,62</td>
+<td valign="top">0,85</td>
+<td valign="top">1,12</td>
+<td valign="top">1,16</td>
+<td valign="top">1,18</td>
+<td valign="top">1,29</td>
+<td valign="top">1,45</td>
+<td valign="top">1,56</td></tr>
+<tr><td valign="top">3</td>
+<td valign="top"><i>В </i>= 0</td>
+<td valign="top">0,33</td>
+<td valign="top">0,58</td>
+<td valign="top">0,75</td>
+<td valign="top">0,89</td>
+<td valign="top">1,0</td>
+<td valign="top">1,17</td>
+<td valign="top">1,25</td>
+<td valign="top">1,5</td>
+<td valign="top">1,62</td></tr>
+<tr><td valign="top">4</td>
+<td valign="top"><i>В </i>= 0</td>
+<td valign="top">0,25</td>
+<td valign="top">0,45</td>
+<td valign="top">0,6</td>
+<td valign="top">0,73</td>
+<td valign="top">0,84</td>
+<td valign="top">1,02</td>
+<td valign="top">1,12</td>
+<td valign="top">1,38</td>
+<td valign="top">1,6</td></tr>
+<tr><td colspan="11" valign="top"><b>Примечание</b>. Координатные точки магнитной индукции <i>B</i>, Тл при <i>Н</i> = 1; 2,5 и 5 кА/м взяты из справочника [2, с. 333-335], остальные точки определены из графиков кривых намагничивания <i>В</i>(<i>Н</i>), приведенных в справочнике [2].</td></tr>
+</table>
+<p>&nbsp;</p>
+<p>Результаты моделирования и расчёта магнитной цепи по программе EWB (или MS8) (см. рис. 15.4) соответствуют магнитным величинам, расчитанным в п. 3 4 раздела &quot;Теоретические сведения …&quot; графическим методом.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>2</title>
+</head>
+
+<body>
+
+<p><b>2. ПАРАМЕТРЫ СХЕМЫ ЗАМЕЩЕНИЯ МАГНИТНОЙ ЦЕПИ</b></p>
+<p>В данной работе исследуется неразветвлённая неоднородная цепь, имеющая однородный ферромагнитный сердечник и воздушный зазор. &nbsp;Магнитный поток в цепи создаётся МДС <i>F = wI</i> катушки c числом витков <i>w</i>, подключаемой к источнику постоянного или линейно изменяющегося напряжения <i>U<sub>э</sub></i> (рис. 15.1, <i>а</i>). </p>
+<p>&nbsp;</p>
+<img src="th2.files/1.gif"><br>
+<p>В частности, нужно определить </p>
+<p>магнитный поток <i>Ф</i> и магнитную индукцию <i>В<sub>&delta;</sub></i> &nbsp;в воздушном зазоре <i>&delta;</i>, если известны:</p>
+<p><i> - </i>геометрические размеры (длина <i>l<sub>м</sub></i> средней магнитной силовой линии (м. с. л.) и площадь поперечного сечения <i>S<sub>м</sub></i> ферромагнитного сердечника, длина <i>&delta; &nbsp;</i>воздушного зазора и площадь поперечного сечения 
+<i><span lang="EN-US" style="font-size: 14.0pt; font-family: Times New Roman">S</span><sub><span style="font-size: 16.0pt; font-family: Symbol">d</span></sub></i><span style="font-size: 14.0pt; font-family: Times New Roman">&nbsp;
+</span><span style="font-size: 14.0pt; font-family: Symbol">@</span><span style="font-size: 14.0pt; font-family: Times New Roman">
+</span><i>
+<span lang="EN-US" style="font-size: 14.0pt; font-family: Times New Roman">S</span><sub><span style="font-size: 16.0pt; font-family: Times New Roman">м</span></sub></i><span style="font-size: 14.0pt; font-family: Times New Roman">
+</span>&nbsp;магнитного потока 
+<sub><img src="th2.files/img01.jpg"></sub> в зазоре);</p>
+<p>- магнитные свойства магнитопровода (марка стали и её кривая намагничивания <i>B</i>(<i>H</i>));</p>
+<p>- напряжение <i>U<sub>э</sub></i> источника энергии, число витков <i>w</i> и электрическое сопротивление <i>R<sub>э</sub></i> катушки. </p>
+<p>Необходимо также смоделировать (в среде EWB) магнитную цепь для снятия характеристики 
+<img src="th2.files/img02.jpg" align="absmiddle"> - зависимости магнитной индукции 
+<img src="th2.files/img03.jpg" align="absmiddle"> &nbsp;в зазоре от изменения тока <i>I</i> катушки; оценить долю потерь магнитного напряжения на сердечнике и др.</p>
+<p>В виду того, что зависимость магнитной индукции <i>В</i> от напряженности магнитного поля <i>H</i> в ферромагнетиках нелинейная, то магнитные цепи, как правило, являются <b>нелинейными,</b> и все расчёты магнитных цепей ведут с определённой степенью точности с использованием графо-аналитических методов. </p>
+<p>В основе расчёта магнитных цепей лежит <b>закон полного тока</b>, который для магнитной цепи (рис. 15.1, <i>а</i>) записывают следующим образом:</p>
+<p><img src="th2.files/img04.jpg" align="absmiddle"></p>
+<p>где <i>Н<sub>м</sub></i><sub> </sub>и <i>l<sub>м</sub></i> - напряжённость магнитного поля и длина средней м. с. л. в сердечнике; <i>Н<sub>&delta; &nbsp;</sub></i>и <i>&delta; </i>- напряжённость магнитного поля и длина воздушного зазора; <i>F </i>= <i>wI </i>- МДС катушки; <i>I</i> – ток в катушке.</p>
+<p>Заменив <img src="th2.files/img05.jpg" align="absmiddle"> и <img src="th2.files/img06.jpg" align="absmiddle">, имеем </p>
+<p><img src="th2.files/img07.jpg" align="absmiddle"></p>
+<p>где <img src="th2.files/img08.jpg" align="absmiddle"> (<img src="th2.files/img09.jpg" align="absmiddle"> и <img src="th2.files/img10.jpg" align="absmiddle">) – магнитный поток в сердечнике, Вб; 
+<img src="th2.files/img11.jpg" align="absmiddle"> и <img src="th2.files/img12.jpg" align="absmiddle"> - магнитные напряжения на ферромагнитном сердечнике и воздушном зазоре, А; 
+<img src="th2.files/img13.jpg" align="absmiddle"> - нелинейное магнитное сопротивление сердечника, 1/Гн; 
+<img src="th2.files/img14.jpg" align="absmiddle"> - линейное сопротивление воздушного зазора, 1/Гн; 
+<img src="th2.files/img15.jpg" align="absmiddle"> Гн/м - магнитная проницаемость пустоты.</p>
+<p>Последнему уравнению соответствует схема замещения магнитной цепи (рис. 15.1, <i>б</i>), состоящая из источника МДС <i>F</i>, нелинейного <img src="th2.files/img16.jpg" align="absmiddle"> и линейного 
+<img src="th2.files/img17.jpg" align="absmiddle"> магнитных сопротивлений, на которых магнитный поток <i>Ф</i> &quot;вызывает&quot; падение напряжений 
+<img src="th2.files/img18.jpg" align="absmiddle"> и <img src="th2.files/img19.jpg" align="absmiddle">.</p>
+
+</body>
+
+</html>

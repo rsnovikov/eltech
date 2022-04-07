@@ -1,0 +1,2223 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="ewb.files/filelist.xml">
+<link rel=Edit-Time-Data href="ewb.files/editdata.mso">
+<link rel=OLE-Object-Data href="ewb.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Методические указания к выполнению лабораторного прак-тикума (выпуск 1)
+по дисциплине &quot;Теория электрических цепей и сигналов&quot; предназначены
+для студентов, обучающихся по специ-альности &quot;Конструирование и технология
+электронно-вычисли-тельных средств&quot;</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Sergey IO</o:Author>
+  <o:LastAuthor>Deathray</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>6</o:TotalTime>
+  <o:LastPrinted>2005-03-27T10:31:00Z</o:LastPrinted>
+  <o:Created>2005-11-30T16:31:00Z</o:Created>
+  <o:LastSaved>2005-11-30T16:32:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2113</o:Words>
+  <o:Characters>12046</o:Characters>
+  <o:Company>Drakull  House</o:Company>
+  <o:Lines>100</o:Lines>
+  <o:Paragraphs>28</o:Paragraphs>
+  <o:CharactersWithSpaces>14131</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:AutoHyphenation/>
+  <w:HyphenationZone>7</w:HyphenationZone>
+  <w:DoNotHyphenateCaps/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>0,3 пт</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0,3 пт</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:DrawingGridVerticalOrigin>99,25 пт</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseWord97LineBreakingRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+h2
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:9.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:15.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.FR1, li.FR1, div.FR1
+	{mso-style-name:FR1;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:2.0pt;
+	margin-bottom:.0001pt;
+	text-indent:25.0pt;
+	line-height:116%;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.FR2, li.FR2, div.FR2
+	{mso-style-name:FR2;
+	mso-style-parent:"";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+p.FR3, li.FR3, div.FR3
+	{mso-style-name:FR3;
+	mso-style-parent:"";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+p.FR4, li.FR4, div.FR4
+	{mso-style-name:FR4;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.1, li.1, div.1
+	{mso-style-name:"заголовок 1";
+	mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	font-weight:bold;}
+p.3, li.3, div.3
+	{mso-style-name:"заголовок 3";
+	mso-style-next:Обычный;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:106.2pt;
+	margin-bottom:.0001pt;
+	text-indent:-35.4pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+ /* Page Definitions */
+ @page
+	{mso-mirror-margins:yes;
+	mso-footnote-separator:url("ewb.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("ewb.files/header.htm") fcs;
+	mso-endnote-separator:url("ewb.files/header.htm") es;
+	mso-endnote-continuation-separator:url("ewb.files/header.htm") ecs;}
+@page Section1
+	{size:595.0pt 841.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-page-numbers:160;
+	mso-header:url("ewb.files/header.htm") h1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:200243107;
+	mso-list-type:simple;
+	mso-list-template-ids:68747279;}
+@list l0:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:260572829;
+	mso-list-type:simple;
+	mso-list-template-ids:-1747007292;}
+@list l1:level1
+	{mso-level-start-at:6;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:53.45pt;
+	mso-level-number-position:left;
+	margin-left:53.45pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:280767881;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-965950024 92064060 92064060 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l2:level1
+	{mso-level-tab-stop:87.95pt;
+	mso-level-number-position:left;
+	margin-left:87.95pt;
+	text-indent:-52.5pt;}
+@list l2:level2
+	{mso-level-tab-stop:87.95pt;
+	mso-level-number-position:left;
+	margin-left:87.95pt;
+	text-indent:-52.5pt;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:125.45pt;
+	mso-level-number-position:right;
+	margin-left:125.45pt;
+	text-indent:-9.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:161.45pt;
+	mso-level-number-position:left;
+	margin-left:161.45pt;
+	text-indent:-18.0pt;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:197.45pt;
+	mso-level-number-position:left;
+	margin-left:197.45pt;
+	text-indent:-18.0pt;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:233.45pt;
+	mso-level-number-position:right;
+	margin-left:233.45pt;
+	text-indent:-9.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:269.45pt;
+	mso-level-number-position:left;
+	margin-left:269.45pt;
+	text-indent:-18.0pt;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:305.45pt;
+	mso-level-number-position:left;
+	margin-left:305.45pt;
+	text-indent:-18.0pt;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:341.45pt;
+	mso-level-number-position:right;
+	margin-left:341.45pt;
+	text-indent:-9.0pt;}
+@list l3
+	{mso-list-id:281960587;
+	mso-list-type:simple;
+	mso-list-template-ids:-444530804;}
+@list l3:level1
+	{mso-level-tab-stop:53.45pt;
+	mso-level-number-position:left;
+	margin-left:53.45pt;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:320892093;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1039269008 68747289 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l4:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+@list l4:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:107.45pt;
+	mso-level-number-position:left;
+	margin-left:107.45pt;
+	text-indent:-18.0pt;}
+@list l4:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:143.45pt;
+	mso-level-number-position:right;
+	margin-left:143.45pt;
+	text-indent:-9.0pt;}
+@list l4:level4
+	{mso-level-tab-stop:179.45pt;
+	mso-level-number-position:left;
+	margin-left:179.45pt;
+	text-indent:-18.0pt;}
+@list l4:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:215.45pt;
+	mso-level-number-position:left;
+	margin-left:215.45pt;
+	text-indent:-18.0pt;}
+@list l4:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:251.45pt;
+	mso-level-number-position:right;
+	margin-left:251.45pt;
+	text-indent:-9.0pt;}
+@list l4:level7
+	{mso-level-tab-stop:287.45pt;
+	mso-level-number-position:left;
+	margin-left:287.45pt;
+	text-indent:-18.0pt;}
+@list l4:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:323.45pt;
+	mso-level-number-position:left;
+	margin-left:323.45pt;
+	text-indent:-18.0pt;}
+@list l4:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:359.45pt;
+	mso-level-number-position:right;
+	margin-left:359.45pt;
+	text-indent:-9.0pt;}
+@list l5
+	{mso-list-id:337275645;
+	mso-list-type:simple;
+	mso-list-template-ids:68747279;}
+@list l5:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l6
+	{mso-list-id:431819404;
+	mso-list-type:simple;
+	mso-list-template-ids:-2073022376;}
+@list l6:level1
+	{mso-level-start-at:6;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:57.2pt;
+	mso-level-number-position:left;
+	margin-left:57.2pt;
+	text-indent:-18.0pt;}
+@list l7
+	{mso-list-id:760224720;
+	mso-list-type:simple;
+	mso-list-template-ids:68747279;}
+@list l7:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l8
+	{mso-list-id:1041637095;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+@list l9
+	{mso-list-id:1094978567;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1134608884 68747265 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+@list l9:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:107.45pt;
+	mso-level-number-position:left;
+	margin-left:107.45pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l9:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:143.45pt;
+	mso-level-number-position:left;
+	margin-left:143.45pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+@list l9:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:179.45pt;
+	mso-level-number-position:left;
+	margin-left:179.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+@list l9:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:215.45pt;
+	mso-level-number-position:left;
+	margin-left:215.45pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l9:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:251.45pt;
+	mso-level-number-position:left;
+	margin-left:251.45pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+@list l9:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:287.45pt;
+	mso-level-number-position:left;
+	margin-left:287.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+@list l9:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:323.45pt;
+	mso-level-number-position:left;
+	margin-left:323.45pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l9:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:359.45pt;
+	mso-level-number-position:left;
+	margin-left:359.45pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+@list l10
+	{mso-list-id:1142504161;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+@list l11
+	{mso-list-id:1786581851;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1465560220 68747289 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l11:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:71.45pt;
+	mso-level-number-position:left;
+	margin-left:71.45pt;
+	text-indent:-18.0pt;}
+@list l11:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:107.45pt;
+	mso-level-number-position:left;
+	margin-left:107.45pt;
+	text-indent:-18.0pt;}
+@list l11:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:143.45pt;
+	mso-level-number-position:right;
+	margin-left:143.45pt;
+	text-indent:-9.0pt;}
+@list l11:level4
+	{mso-level-tab-stop:179.45pt;
+	mso-level-number-position:left;
+	margin-left:179.45pt;
+	text-indent:-18.0pt;}
+@list l11:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:215.45pt;
+	mso-level-number-position:left;
+	margin-left:215.45pt;
+	text-indent:-18.0pt;}
+@list l11:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:251.45pt;
+	mso-level-number-position:right;
+	margin-left:251.45pt;
+	text-indent:-9.0pt;}
+@list l11:level7
+	{mso-level-tab-stop:287.45pt;
+	mso-level-number-position:left;
+	margin-left:287.45pt;
+	text-indent:-18.0pt;}
+@list l11:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:323.45pt;
+	mso-level-number-position:left;
+	margin-left:323.45pt;
+	text-indent:-18.0pt;}
+@list l11:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:359.45pt;
+	mso-level-number-position:right;
+	margin-left:359.45pt;
+	text-indent:-9.0pt;}
+@list l12
+	{mso-list-id:1968898481;
+	mso-list-type:simple;
+	mso-list-template-ids:-28406958;}
+@list l12:level1
+	{mso-level-start-at:6;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:57.2pt;
+	mso-level-number-position:left;
+	margin-left:57.2pt;
+	text-indent:-18.0pt;}
+@list l13
+	{mso-list-id:2078624647;
+	mso-list-type:simple;
+	mso-list-template-ids:-1998936634;}
+@list l13:level1
+	{mso-level-start-at:2;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:63.45pt;
+	mso-level-number-position:left;
+	margin-left:63.45pt;
+	text-indent:-18.0pt;}
+@list l14
+	{mso-list-id:2122843262;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-552981332 92064060 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l14:level1
+	{mso-level-tab-stop:87.95pt;
+	mso-level-number-position:left;
+	margin-left:87.95pt;
+	text-indent:-52.5pt;}
+@list l14:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:89.45pt;
+	mso-level-number-position:left;
+	margin-left:89.45pt;
+	text-indent:-18.0pt;}
+@list l14:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:125.45pt;
+	mso-level-number-position:right;
+	margin-left:125.45pt;
+	text-indent:-9.0pt;}
+@list l14:level4
+	{mso-level-tab-stop:161.45pt;
+	mso-level-number-position:left;
+	margin-left:161.45pt;
+	text-indent:-18.0pt;}
+@list l14:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:197.45pt;
+	mso-level-number-position:left;
+	margin-left:197.45pt;
+	text-indent:-18.0pt;}
+@list l14:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:233.45pt;
+	mso-level-number-position:right;
+	margin-left:233.45pt;
+	text-indent:-9.0pt;}
+@list l14:level7
+	{mso-level-tab-stop:269.45pt;
+	mso-level-number-position:left;
+	margin-left:269.45pt;
+	text-indent:-18.0pt;}
+@list l14:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:305.45pt;
+	mso-level-number-position:left;
+	margin-left:305.45pt;
+	text-indent:-18.0pt;}
+@list l14:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:341.45pt;
+	mso-level-number-position:right;
+	margin-left:341.45pt;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<p class=1 align=center style='margin-top:6.0pt;text-align:center'>ИНСТРУКЦИЯ
+ПОЛЬЗОВАТЕЛЮ ПРОГРАММЫ</p>
+
+<p class=1 align=center style='margin-top:0cm;text-align:center'><span
+lang=EN-US style='mso-ansi-language:EN-US'>ELECTRONICS</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>WORKBENCH</span> <o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Компьютерный лабораторный практикум по электротехнике может
+проводиться <span style='mso-spacerun:yes'> </span>на рабочем поле ранее
+распространяемой в России программы схемотехнического моделирования и расчета
+электрических схем средней сложности </span><b><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>Electronics</span></b><b><span
+lang=EN-US style='font-size:14.0pt'> </span></b><b><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>Work</span></b><b><span
+style='font-size:14.0pt'>­</span></b><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>bench</span></b><span lang=EN-US style='font-size:
+14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>v</span><span style='font-size:14.0pt'>5.1 … </span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>v</span><span
+style='font-size:14.0pt'>5.12 для </span><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>Windows</span><span style='font-size:14.0pt'>
+(в дальнейшем </span><b><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>EWB</span></b><span style='font-size:14.0pt'>)<span style='letter-spacing:
+-.1pt'>, входящей в компанию </span></span><span lang=EN-US style='font-size:
+14.0pt;letter-spacing:-.1pt;mso-ansi-language:EN-US'>National</span><span
+lang=EN-US style='font-size:14.0pt;letter-spacing:-.1pt'> </span><span
+lang=EN-US style='font-size:14.0pt;letter-spacing:-.1pt;mso-ansi-language:EN-US'>Instruments</span><span
+style='font-size:14.0pt'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;text-align:justify;text-indent:35.45pt'><!--[if gte vml 1]><o:wrapblock><v:group
+  id="_x0000_s1031" style='position:absolute;left:0;text-align:left;
+  margin-left:-.55pt;margin-top:0;width:455.7pt;height:114.6pt;z-index:1'
+  coordorigin="1443,5705" coordsize="9114,2292" o:allowincell="f">
+  <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+   o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="_x0000_s1032" type="#_x0000_t75" style='position:absolute;
+   left:1467;top:5733;width:9090;height:2264' o:regroupid="3">
+   <v:imagedata src="ewb.files/image001.png" o:title="" cropbottom="12656f"/>
+  </v:shape><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+   path="m,l,21600r21600,l21600,xe">
+   <v:stroke joinstyle="miter"/>
+   <v:path gradientshapeok="t" o:connecttype="rect"/>
+  </v:shapetype><v:shape id="_x0000_s1033" type="#_x0000_t202" style='position:absolute;
+   left:6931;top:6438;width:1468;height:723' o:regroupid="3" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1033'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal align=center style='text-align:center'><span
+      style='font-size:12.0pt'>Поле<o:p></o:p></span></p>
+      <p class=MsoNormal align=center style='text-align:center'><span
+      style='font-size:12.0pt'>библиотек</span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1034" type="#_x0000_t202" style='position:absolute;
+   left:4614;top:5705;width:969;height:364' o:regroupid="3" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1034'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span style='font-size:12.0pt'>Меню<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shapetype id="_x0000_t66" coordsize="21600,21600" o:spt="66"
+   adj="5400,5400" path="m@0,l@0@1,21600@1,21600@2@0@2@0,21600,,10800xe">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="val #0"/>
+    <v:f eqn="val #1"/>
+    <v:f eqn="sum 21600 0 #1"/>
+    <v:f eqn="prod #0 #1 10800"/>
+    <v:f eqn="sum #0 0 @3"/>
+   </v:formulas>
+   <v:path o:connecttype="custom" o:connectlocs="@0,0;0,10800;@0,21600;21600,10800"
+    o:connectangles="270,180,90,0" textboxrect="@4,@1,21600,@2"/>
+   <v:handles>
+    <v:h position="#0,#1" xrange="0,21600" yrange="0,10800"/>
+   </v:handles>
+  </v:shapetype><v:shape id="_x0000_s1035" type="#_x0000_t66" style='position:absolute;
+   left:4085;top:5846;width:541;height:176' o:regroupid="3"/>
+  <v:shape id="_x0000_s1036" type="#_x0000_t202" style='position:absolute;
+   left:8507;top:5758;width:1180;height:881' o:regroupid="3" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1036'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal align=center style='margin-top:2.0pt;text-align:center;
+      line-height:8.0pt;mso-line-height-rule:exactly'><span style='font-size:
+      12.0pt'>Поле управляющих кнопок<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1037" type="#_x0000_t66" style='position:absolute;
+   left:8351;top:6157;width:295;height:183' o:regroupid="3"/>
+  <v:shape id="_x0000_s1038" type="#_x0000_t202" style='position:absolute;
+   left:8399;top:7015;width:1829;height:729' o:regroupid="3" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1038'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal align=center style='text-align:center'><span
+      style='font-size:12.0pt'>Виртуальные<o:p></o:p></span></p>
+      <p class=MsoNormal align=center style='text-align:center'><span
+      style='font-size:12.0pt'>выключатели</span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1039" type="#_x0000_t66" style='position:absolute;
+   left:9351;top:6701;width:528;height:181;rotation:7545820fd' o:regroupid="3"/>
+  <v:shape id="_x0000_s1040" type="#_x0000_t66" style='position:absolute;
+   left:6895;top:6575;width:294;height:182' o:regroupid="3"/>
+  <v:shape id="_x0000_s1041" type="#_x0000_t202" style='position:absolute;
+   left:3225;top:7301;width:1860;height:429' o:regroupid="3" filled="f"
+   stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1041'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span style='font-size:12.0pt'>Рабочее поле<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1042" type="#_x0000_t202" style='position:absolute;
+   left:5853;top:7535;width:1330;height:417' o:regroupid="3" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1042'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span style='font-size:12.0pt'>Рис. П1.1<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1043" type="#_x0000_t202" style='position:absolute;
+   left:1443;top:6803;width:5584;height:376' o:regroupid="3" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1043'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal>1<span style='mso-spacerun:yes'>         
+      </span>2<span style='mso-spacerun:yes'>    </span>3<span
+      style='mso-spacerun:yes'>     </span>4<span style='mso-spacerun:yes'>    
+      </span>5<span style='mso-spacerun:yes'>       </span>6<span
+      style='mso-spacerun:yes'>    </span>7<span style='mso-spacerun:yes'>    
+      </span>8<span style='mso-spacerun:yes'>       </span>9<span
+      style='mso-spacerun:yes'>    </span>10<span style='mso-spacerun:yes'>   
+      </span>11<span style='mso-spacerun:yes'>   </span>12<span
+      style='mso-spacerun:yes'>   </span>13<span style='mso-spacerun:yes'>   
+      </span>14</p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><w:wrap type="topAndBottom"/>
+ </v:group><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+ relative;z-index:1;left:-1px;top:0px;width:610px;height:155px'><img width=610
+ height=155 src="ewb.files/image020.gif" v:shapes="_x0000_s1031 _x0000_s1032 _x0000_s1033 _x0000_s1034 _x0000_s1035 _x0000_s1036 _x0000_s1037 _x0000_s1038 _x0000_s1039 _x0000_s1040 _x0000_s1041 _x0000_s1042 _x0000_s1043"></span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:14.0pt'>Программа </span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>EWB</span><span lang=EN-US
+style='font-size:14.0pt'> </span><span style='font-size:14.0pt'>имеет простой и
+ясный интерфейс, выполненный в тради­ци­­онном для </span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>Windows</span><span
+style='font-size:14.0pt'> виде. После <span style='letter-spacing:-.2pt'>заг­ру­­зки
+программы </span></span><span lang=EN-US style='font-size:14.0pt;letter-spacing:
+-.2pt;mso-ansi-language:EN-US'>EWB</span><span style='font-size:14.0pt;
+letter-spacing:-.2pt'> на экране монитора появляется рабочее окно (рис. П1.1).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'><span style='mso-spacerun:yes'> </span>В верхней части
+окна расположены <b>меню</b>, <b>поле управляющих кнопок</b>, <b>поле библиотек</b>
+элементов и приборов. Электрическая цепь (точнее, её схема замещения) собирается
+на <b>рабочем поле</b> из элементов, размещенных в 14 библиотеках элементов и
+приборов (табл. П1.1). <o:p></o:p></span></p>
+
+<p class=MsoNormal align=right style='margin-top:4.0pt;margin-right:0cm;
+margin-bottom:3.0pt;margin-left:0cm;text-align:right;text-indent:35.45pt'><span
+style='font-size:12.0pt'>Таблица 1. Библиотеки элементов и приборов<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=612
+ style='width:459.0pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=30 valign=top style='width:22.25pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>№<o:p></o:p></span></p>
+  </td>
+  <td width=280 valign=top style='width:209.95pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>Наименование библиотеки<o:p></o:p></span></p>
+  </td>
+  <td width=38 valign=top style='width:1.0cm;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>№<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>Наименование библиотеки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=30 valign=top style='width:22.25pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=280 valign=top style='width:209.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Favorites</span></b><span lang=EN-US style='font-size:12.0pt;
+  mso-ansi-language:EN-US'> (</span><span style='font-size:12.0pt'>Личная</span><span
+  lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>)</span><span
+  style='font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=38 valign=top style='width:1.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>8<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Digital Ics</span></b><span lang=EN-US style='font-size:12.0pt;
+  mso-ansi-language:EN-US'> </span><span style='font-size:12.0pt'>(Цифровые
+  микросхемы)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=30 valign=top style='width:22.25pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>2<o:p></o:p></span></p>
+  </td>
+  <td width=280 valign=top style='width:209.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Sources</span></b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'><span style='mso-spacerun:yes'>  </span>(</span><span
+  style='font-size:12.0pt'>Источники</span><span lang=EN-US style='font-size:
+  12.0pt;mso-ansi-language:EN-US'>)</span><span style='font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=38 valign=top style='width:1.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>9<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Logic Gates </span></b><span style='font-size:12.0pt'>(Логические
+  элементы)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=30 valign=top style='width:22.25pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>3<o:p></o:p></span></p>
+  </td>
+  <td width=280 valign=top style='width:209.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Basic</span></b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'> (</span><span style='font-size:12.0pt'>Пассивные элементы)<o:p></o:p></span></p>
+  </td>
+  <td width=38 valign=top style='width:1.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>10<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Digital</span></b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'> </span><span style='font-size:12.0pt'>(Триггеры)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=30 valign=top style='width:22.25pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>4<o:p></o:p></span></p>
+  </td>
+  <td width=280 valign=top style='width:209.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Diodes</span></b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'> (</span><span style='font-size:12.0pt'>Диоды)<o:p></o:p></span></p>
+  </td>
+  <td width=38 valign=top style='width:1.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>11<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Indicators</span></b><span lang=EN-US style='font-size:12.0pt;
+  mso-ansi-language:EN-US'> </span><span style='font-size:12.0pt'>(Индикаторы)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=30 valign=top style='width:22.25pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>5<o:p></o:p></span></p>
+  </td>
+  <td width=280 valign=top style='width:209.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Transistors</span></b><span lang=EN-US style='font-size:12.0pt;
+  mso-ansi-language:EN-US'> </span><span style='font-size:12.0pt'>(Транзисторы)<o:p></o:p></span></p>
+  </td>
+  <td width=38 valign=top style='width:1.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>12<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Controls </span></b><span style='font-size:12.0pt'>(Преобразователи)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=30 valign=top style='width:22.25pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>6<o:p></o:p></span></p>
+  </td>
+  <td width=280 valign=top style='width:209.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Analog Ics</span></b><span lang=EN-US style='font-size:12.0pt;
+  mso-ansi-language:EN-US'> </span><span style='font-size:12.0pt'>(Операционные
+  усилители)<o:p></o:p></span></p>
+  </td>
+  <td width=38 valign=top style='width:1.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>13<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Miscellaneous</span></b><span lang=EN-US style='font-size:12.0pt;
+  mso-ansi-language:EN-US'> </span><span style='font-size:12.0pt'>(Разное)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes'>
+  <td width=30 valign=top style='width:22.25pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>7<o:p></o:p></span></p>
+  </td>
+  <td width=280 valign=top style='width:209.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Mixed</span></b><b><span lang=EN-US style='font-size:12.0pt'> </span></b><b><span
+  lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>Ics</span></b><span
+  style='font-size:12.0pt'> (АЦП и ЦАП)<o:p></o:p></span></p>
+  </td>
+  <td width=38 valign=top style='width:1.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt'>14<o:p></o:p></span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+  EN-US'>Instruments </span></b><span style='font-size:12.0pt'>Приборы)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="_x0000_s1044" type="#_x0000_t75" style='position:absolute;left:0;
+  text-align:left;margin-left:73.25pt;margin-top:0;width:299.3pt;height:74.25pt;
+  z-index:2;mso-position-horizontal-relative:text;
+  mso-position-vertical-relative:page' o:allowincell="f" o:allowoverlap="f">
+  <v:imagedata src="ewb.files/image003.png" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+  <w:anchorlock/>
+ </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+ <table cellpadding=0 cellspacing=0>
+  <tr>
+   <td width=98 height=0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=399 height=99 src="ewb.files/image004.jpg" v:shapes="_x0000_s1044"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                    </span></span><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span></span><span lang=EN-US style='font-size:
+12.0pt'><span style='mso-spacerun:yes'> </span></span><i><span
+style='font-size:12.0pt'>а</span></i><span style='font-size:12.0pt'>)
+Библиотека источников 2 (</span><span lang=EN-US style='font-size:12.0pt;
+mso-ansi-language:EN-US'>Sources</span><span style='font-size:12.0pt'>):<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;line-height:
+12.0pt;mso-line-height-rule:exactly'><b><span style='font-size:12.0pt'>верхняя
+стро</span></b><span style='font-size:12.0pt'>ка (слева направо): заземление
+(нулевой потенциал); источник постоянного напряжения; источник постоянного
+тока; источник синусоидального напряжения, источник синусоидального тока; источник
+напряжения, управляемый напряжением; источник тока, управляемый напряжением;
+источник напряжения, управляемый током; источник тока, управляемый током;
+источник напряжения 5 В;<span style='mso-spacerun:yes'>  </span>источник напряжения
+15 В; генератор прямоугольных импульсов<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1045" type="#_x0000_t75" style='position:absolute;left:0;
+ text-align:left;margin-left:0;margin-top:3.75pt;width:276.05pt;height:70.5pt;
+ z-index:3;mso-position-horizontal:left' o:allowincell="f">
+ <v:imagedata src="ewb.files/image005.png" o:title=""/>
+ <w:wrap type="square"/>
+ <w:anchorlock/>
+</v:shape><![endif]--><![if !vml]><img width=368 height=94
+src="ewb.files/image006.jpg" align=left hspace=12 v:shapes="_x0000_s1045"><![endif]><b><span
+style='font-size:14.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt;line-height:
+12.0pt;mso-line-height-rule:exactly'><i><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                       </span>б</span></i><span
+style='font-size:12.0pt'>) Библиотека пассивных элементов 3 (</span><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>Basic</span><span
+style='font-size:12.0pt'>):<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:12.0pt;mso-line-height-rule:
+exactly'><b><span style='font-size:12.0pt'>верхняя строчка</span></b><span
+style='font-size:12.0pt'>: потенциальный узел; резистор; конденсатор;
+индуктивная катушка; воздушный трансформатор; реле; управляемый ключ;
+управляемый ключ с задержкой срабатывания; ключ, управляемый напряжением; ключ,
+управляемый током; источник напряжения логической единицы; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;line-height:
+12.0pt;mso-line-height-rule:exactly'><b><span style='font-size:12.0pt'>нижняя
+строка</span></b><span style='font-size:12.0pt'>: потенциометр; панель
+резисторов; преобразователь-ограничитель напряжения; полярный конденсатор;
+конденсатор переменной ёмкости; катушка индуктивности с переменной
+индуктивностью; управляемый источник МДС; линейный трансформатор; нелинейный
+трансформатор<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1046" type="#_x0000_t75" style='position:absolute;left:0;
+ text-align:left;margin-left:0;margin-top:.85pt;width:203.2pt;height:46.5pt;
+ z-index:6;mso-position-horizontal:left' o:allowincell="f">
+ <v:imagedata src="ewb.files/image007.png" o:title=""/>
+ <w:wrap type="square"/>
+ <w:anchorlock/>
+</v:shape><![endif]--><![if !vml]><img width=271 height=62
+src="ewb.files/image008.jpg" align=left hspace=12 v:shapes="_x0000_s1046"><![endif]><b><span
+style='font-size:14.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i><span
+style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                    </span>в</span></i><span
+style='font-size:12.0pt'>) Библиотека диодов 4 (</span><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Diodes</span><span
+style='font-size:12.0pt'>):<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt'>выпрямительный
+диод; стабилитрон; светодиод; диодный мостик; динистор; тиристор<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1047" type="#_x0000_t75" style='position:absolute;left:0;
+ text-align:left;margin-left:0;margin-top:8.35pt;width:225.05pt;height:45pt;
+ z-index:4;mso-position-horizontal:left' o:allowincell="f">
+ <v:imagedata src="ewb.files/image009.png" o:title=""/>
+ <w:wrap type="square"/>
+ <w:anchorlock/>
+</v:shape><![endif]--><![if !vml]><img width=300 height=60
+src="ewb.files/image010.jpg" align=left hspace=12 v:shapes="_x0000_s1047"><![endif]><span
+style='font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt;line-height:
+12.0pt;mso-line-height-rule:exactly'><i><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                             </span>г)</span></i><span
+style='font-size:12.0pt'> Библиотека индикаторов 11 (</span><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Indicators</span><span
+style='font-size:12.0pt'>):<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;line-height:
+12.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt'>вольтметр </span><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>V</span><span
+style='font-size:12.0pt'> (устанавливается величина внутреннего сопротивления и
+режим измерения постоянного или переменного напряжения); амперметр </span><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>A</span><span
+style='font-size:12.0pt'> (устанавливается величина внутреннего сопротивления и
+режим измерения постоянного или переменного тока); лампа накаливания;
+светоиндикатор; семисегментный индикатор; семисегментный индикатор с дешифратором;
+звуковой индикатор (зуммер)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1048" type="#_x0000_t75" style='position:absolute;left:0;
+ text-align:left;margin-left:0;margin-top:.2pt;width:171.75pt;height:46.5pt;
+ z-index:5;mso-position-horizontal:left' o:allowincell="f">
+ <v:imagedata src="ewb.files/image011.png" o:title=""/>
+ <w:wrap type="square"/>
+ <w:anchorlock/>
+</v:shape><![endif]--><![if !vml]><img width=229 height=62
+src="ewb.files/image012.jpg" align=left hspace=12 v:shapes="_x0000_s1048"><![endif]><b><span
+style='font-size:14.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt;line-height:
+12.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                           </span><i>д</i>) Библиотека
+приборов 14 (</span><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+EN-US'>Instruments</span><span style='font-size:12.0pt'>):<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:12.0pt;mso-line-height-rule:
+exactly'><span style='font-size:12.0pt'>мультиметр; функциональный генератор
+(генератор сигналов специальной формы); осциллограф; измеритель АЧХ и ФЧХ цепи
+(устройства); генератор слова; логический анализатор; логический
+преобразователь <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:4.0pt;text-align:justify;text-indent:35.45pt'><span
+style='font-size:12.0pt'><span style='mso-spacerun:yes'>                       
+</span><span
+style='mso-spacerun:yes'>                                 </span>Рис. П1.2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:4.0pt;text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Библиотека раскрываются после щелчка мышью на её
+кнопке. Предусмотрено место для личной библиотеки (см. слева панели библиотек
+кнопку </span><b><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>Favorites</span></b><span style='font-size:14.0pt'>, рис. П1.1), в которую
+заносятся нестандартные элементы и приборы, созданные автором. На рис. П1.2 показаны
+элементы некоторых биб­лиотек, и наименование отдельных элементов (кнопок), которые
+использованы в моделях виртуальной лаборатории. В соответствии с заданием схемотехнического
+моделирования на рабочем поле программы </span><span lang=EN-US
+style='font-size:14.0pt;letter-spacing:-.2pt;mso-ansi-language:EN-US'>EWB</span><span
+lang=EN-US style='font-size:14.0pt;letter-spacing:-.2pt'> </span><span
+style='font-size:14.0pt'>(см. рис. П1.1) собирается электрическая цепь из
+заранее &quot; перетащенных&quot; из библиотек нужных элементов и приборов и
+последующего их соединения &quot;проводниками&quot; между собой.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><b><span
+style='font-size:14.0pt'>Внимание!</span></b><span style='font-size:14.0pt'> Из
+перечисленных выше элементов и приборов библиотек на рабочее поле можно
+поместить только<b> один осциллограф</b>, <b>один трансформатор</b>, <b>один
+управляемый источник энергии, один плоттер </b>(из­меритель АЧХ и ФЧХ),<b> один</b>
+<b>операционный усилитель и один мультиметр</b>. Однако в библиотеке
+индикаторов 11 (</span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>Indicators</span><span style='font-size:12.0pt'>)</span><span
+style='font-size:14.0pt'> имеются <b>вольт­метр</b> (постоянного или
+переменного тока) и <b>амперметр</b> (постоянного или переменного тока), число
+которых, как и число других используемых в работах элементов и приборов
+программы </span><span lang=EN-US style='font-size:14.0pt;letter-spacing:-.2pt;
+mso-ansi-language:EN-US'>EWB</span><span lang=EN-US style='font-size:14.0pt;
+letter-spacing:-.2pt'> </span><span style='font-size:14.0pt'>не ограничено.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Для<b> &quot;перетаскивания&quot;</b> прибора или
+элемента на рабочее поле нужно поместить указатель (курсор) мыши на требуемый
+объект; при этом указатель изменит свой вид со “стрелки” на “руку”. Нужно<span
+style='mso-spacerun:yes'>  </span>нажать <b>левую</b> кнопку мыши и, удерживая
+ее в нажатом состоянии, переместить указатель вместе с объектом в требуемое
+место рабочего поля. Аналогичным образом можно перемещать приборы и элементы по
+рабочему полю.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Для<b> соединения выводов (зажимов) </b>элементов
+и/или приборов нуж­но подвести курсор мыши к требуемому выводу; при этом вместо
+вывода появится большая черная точка. Нужно нажать <b>левую</b> кнопку мыши и,
+удерживая ее в нажатом состоянии, перемещать указатель к требуемому выводу другого
+компонента до появления вместо него большой черной точки. После этого можно
+отпустить левую кнопку мыши. Два вывода будут соединены линией
+(&quot;проводником&quot;). Аналогично можно соединить любой вывод элемента
+(прибора) с любым проводником, на котором появляется (при соединении) черная
+точка.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Для <b>разрыва</b> <b>проводника</b> нужно подвести
+курсор мыши к требуемому выводу элемента до появления вместо него большой
+черной точки. После этого нажать левую кнопку мыши и, удерживая ее в нажатом состоянии,
+переместить мышь, разрывая цепь. Затем нужно отпустить <b>левую </b>кнопку мыши.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt;line-height:
+15.0pt;mso-line-height-rule:exactly'><span style='font-size:14.0pt;letter-spacing:
+-.2pt'>Для <b>удаления компонента</b> его нужно выделить (навести на него курсор
+мыши и щелкнуть левой кнопкой<span style='mso-spacerun:yes'>  </span>(компонент
+станет красным) и нажать клавишу </span><b><span lang=EN-US style='font-size:
+14.0pt;letter-spacing:-.2pt;mso-ansi-language:EN-US'>Delete</span></b><span
+style='font-size:14.0pt;letter-spacing:-.2pt'> или </span><b><span lang=EN-US
+style='font-size:14.0pt;letter-spacing:-.2pt;mso-ansi-language:EN-US'>Del</span></b><span
+style='font-size:14.0pt;letter-spacing:-.2pt'> на клавиатуре и подтвердить
+удаление (</span><b><span lang=EN-US style='font-size:14.0pt;letter-spacing:
+-.2pt;mso-ansi-language:EN-US'>Accept</span></b><span style='font-size:14.0pt;
+letter-spacing:-.2pt'>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt;line-height:
+15.0pt;mso-line-height-rule:exactly'><span style='font-size:14.0pt'>Для <b>более
+точного расположения</b> элемента или прибора его нужно выделить, а затем
+переместить, нажимая на соответствующие клавиатурные клавиши (со стрелками)
+управления курсором, или посредством перемещения мыши.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt;line-height:
+15.0pt;mso-line-height-rule:exactly'><b><span style='font-size:14.0pt'>Для
+выделения группы компонентов</span></b><span style='font-size:14.0pt'>
+необходимо устанавливать поочередно на каждый компонент курсор и нажимать <b>правую</b>
+кнопку мыши. Выделенную группу элементов можно перемещать и удалять аналогично
+перемещению и удалению одного элемента. Для выделения всей схемы (кадра) нужно
+нажать </span><b><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>Select</span></b><b><span lang=EN-US style='font-size:14.0pt'> </span></b><b><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>All</span></b><span
+style='font-size:14.0pt'> в меню </span><b><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>Edit</span></b><span style='font-size:14.0pt'>
+(Правка).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt;line-height:
+15.0pt;mso-line-height-rule:exactly'><span style='font-size:14.0pt'><span
+style='mso-spacerun:yes'> </span>Измерительные приборы <b>убираются со стола</b>
+аналогично тому, как их поместили на стол.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Для <b>поворота компонента</b> его нужно выделить и
+нажать одновременно на клавиатуре кнопки<span style='mso-spacerun:yes'> 
+</span></span><b><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>Ctrl</span></b><b><span style='font-size:14.0pt'>+</span></b><b><i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>R</span></i></b><span
+style='font-size:14.0pt'> (при режиме </span><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>EN</span><span style='font-size:14.0pt'> на
+клавиатуре).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt;letter-spacing:-.2pt'>Чтобы <b>изменить цвет</b>
+соединительных проводов или компонентов, нужно навести курсор мыши на
+соответствующий провод или компонент и щелкнуть <b>два раза</b> левой кнопкой.
+В появившемся окне выбирается его цвет. При этом временные диаграммы на экране
+двухканального осциллографа и многоканального логического анализатора окрашиваются
+в те же цвета.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Для <b>установки требуемых параметров</b> элемента или
+прибора, нужно навести на него курсор мыши и щелкнуть <b>два раза</b> левой
+кнопкой. В появившемся окне устанавливаются значения параметров, после чего нужно
+подтвердить (нажать кнопку </span><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>Accept</span></b><span style='font-size:14.0pt'>) или
+отменить (</span><b><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>Cancel</span></b><span style='font-size:14.0pt'>) выбранные значения
+(установки) параметров. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Предусмотрена возможность изменения параметров
+элементов. Например, если на схеме имеется потенциометр </span><i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>R</span></i><span
+style='font-size:14.0pt'>1, то путем нажатия на клавишу </span><i><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>R</span></i><span
+style='font-size:14.0pt'> клавиатуры можно умень­шить значение его сопротивления
+(в про­центах), или увеличить нажатием клавиш </span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>Shift</span><span
+style='font-size:14.0pt'>+</span><i><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>R</span></i><span style='font-size:14.0pt'>. Есть
+кнопочные переключатели (ключи), управляемые буквенными или цифровыми кнопками
+клавиатуры. При этом, как в реальном эксперименте, параметры можно плавно изменять,
+не прерывая процесс моделирования и наблюдения за изменениями электрических
+величин. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Для <b>управления измерительными приборами,</b>
+например, осциллографом, и снятия с них показаний, надо навести курсор мыши на
+изоб­ражение прибора и щелкнуть <b>два раза </b>левой кнопкой. Появится<span
+style='mso-spacerun:yes'>  </span>увеличен­­ное изображение панели прибора с
+окнами установки, например, усиления каналов и развертки; с помощью двух
+электронных визиров можно провести точные измерения параметров на временных и
+частотных характеристиках напряжения и тока.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Назначение и примеры установки параметров элементов и
+приборов даны в описании соответствующей лабораторной работы. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'><span style='mso-spacerun:yes'> </span>В качестве<span
+style='mso-spacerun:yes'>  </span>примера соберем схему, изображенную на рис. П1.3.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>1. &quot;Перенесём&quot; из библиотеки приборов на
+рабочий поле генератор сигналов </span><i><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>FG</span></i><span style='font-size:14.0pt'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>2. Из библиотеки индикации &quot;перенесем&quot;
+амперметр (прямоугольник с буквой<span style='mso-spacerun:yes'>  </span>&quot;<b>А</b>&quot;).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>3. Соединим клемму &quot; + &quot;<span
+style='mso-spacerun:yes'>  </span>генератора сигналов с ближайшим выводом
+амперметра.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>4. Из библиотеки<span style='mso-spacerun:yes'> 
+</span>пассивных элементов &quot;перенесем&quot; на рабочее поле катушку индуктивности.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><!--[if gte vml 1]><o:wrapblock><v:group
+  id="_x0000_s1049" style='position:absolute;left:0;text-align:left;
+  margin-left:45.65pt;margin-top:0;width:353.95pt;height:160.3pt;z-index:9'
+  coordorigin="2235,6945" coordsize="7079,3206" o:allowincell="f">
+  <v:shape id="_x0000_s1050" type="#_x0000_t75" style='position:absolute;
+   left:2235;top:6945;width:7079;height:3206'>
+   <v:imagedata src="ewb.files/image013.png" o:title=""/>
+  </v:shape><v:shape id="_x0000_s1051" type="#_x0000_t202" style='position:absolute;
+   left:4293;top:9719;width:1344;height:432' o:allowincell="f" stroked="f">
+   <v:textbox>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span style='font-size:12.0pt'>Рис. П1.3<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><w:wrap type="topAndBottom"/>
+  <w:anchorlock/>
+ </v:group><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+ <table cellpadding=0 cellspacing=0>
+  <tr>
+   <td width=61 height=0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=472 height=215 src="ewb.files/image021.gif" v:shapes="_x0000_s1049 _x0000_s1050 _x0000_s1051"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:14.0pt'>5. Соединим один из выводов катушки
+индуктивности со свободным выводом амперметра.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>6. Из этой же библиотеки возьмем &quot;потенциальный
+узел” и совместим его со свободным выводом катушки индуктивности.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>7. Возьмем еще один &quot;потенциальный узел”,
+поместим его под предыдущим узлом и соединим с выводом<span
+style='mso-spacerun:yes'>  </span>&quot; -<span style='mso-spacerun:yes'>  
+</span>генератора </span><i><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>FG</span></i><span style='font-size:14.0pt'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>9. Из библиотеки индикаторов возьмем вольтметр
+(прямоугольник с буквой &quot;</span><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>V</span></b><span style='font-size:14.0pt'>&quot;).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:-.05pt;text-align:justify;text-indent:
+35.45pt'><span style='font-size:14.0pt'>10. Выводы вольтметра подключим
+параллельно зажимам генератора сигналов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>11. Из библиотеки пассивных элементов возьмем
+изображение заземления и соединим его с проводником, идущим к выводу<span
+style='mso-spacerun:yes'>  </span>&quot; + &quot;<span
+style='mso-spacerun:yes'>  </span>генератора сигналов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>12. &quot;Перенесем&quot; осциллограф на рабочее поле.
+Клемму канала &quot;<b>А</b>&quot; (левую нижнюю точку на изображении прибора)
+соединим с проводником, идущим к клемме &quot; - &quot; генератора сигналов.
+Клемму канала “<b>В</b>” (правую ниж­нюю точку на изображении прибора) соединим
+с проводником, соединяющим катушку индуктивности с амперметром.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>13.&quot;Возьмем&quot; изображение
+&quot;заземления&quot;, &quot;перенесем&quot; его к осциллографу и соединим с
+клеммой массы (</span><b><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>GROUND</span></b><span style='font-size:14.0pt'>) осциллографа (с
+верхней правой точкой на изображении прибора).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'><span style='mso-spacerun:yes'> </span>14.
+&quot;Перенесём&quot; на рабочее поле конденсатор, повернём его на 90</span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>°</span></span><span
+style='font-size:14.0pt'> (нажав клавиши </span><b><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>Ctrl</span></b><b><span
+style='font-size:14.0pt'>+</span></b><b><i><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>R</span></i></b><span style='font-size:14.0pt'>).
+Один его вывод соединим с проводником, соединяющим катушку индуктивности и
+амперметр, а другой соединим с проводником, идущим к зажиму<span
+style='mso-spacerun:yes'>  </span>&quot; - &quot; генератора сигналов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>15. &quot;Возьмём&quot; еще один конденсатор, повернем
+его на 90°. Один его вывод соединим с проводником, соединяющим катушку
+индуктивности и свободный &quot;потенциальный узел&quot;, а другой вывод - с
+проводником, идущим к зажиму<span style='mso-spacerun:yes'>  </span>&quot; -
+&quot; генератора сигналов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>16. Щелкнем два раза левой кнопкой мыши на изображении
+генератора </span><i><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>FG</span></i><span style='font-size:14.0pt'> и выберем синусоидальную
+форму сигнала, частоту (</span><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>FREQUE</span></b><b><span style='font-size:14.0pt'>­</span></b><b><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>N</span></b><b><span
+style='font-size:14.0pt'>­</span></b><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>CY</span></b><span style='font-size:14.0pt'>) 1 кГц
+(соответствие русских и латинских символов единиц измерения: Гц </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>Hz</span><span style='font-size:14.0pt'>, кГц </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>kHz</span><span style='font-size:14.0pt'>, МГц </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>MHz</span><span style='font-size:14.0pt'>), амплитуду
+сигнала (</span><b><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>AMPLITUDE</span></b><span style='font-size:14.0pt'>) 1 В (мкВ </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span style='font-size:14.0pt;font-family:
+Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>m</span></span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>V</span><span
+style='font-size:14.0pt'>, мВ </span><span style='font-size:14.0pt;font-family:
+Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>«</span></span><span style='font-size:
+14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>mV</span><span style='font-size:14.0pt'>,<span
+style='mso-spacerun:yes'>  </span>В </span><span style='font-size:14.0pt;
+font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>V</span><span style='font-size:14.0pt'>, кВ </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>kV</span><span style='font-size:14.0pt'>). Закроем
+окно генератора (щелчком<span style='mso-spacerun:yes'>  </span>левой кнопки
+мыши на кнопке закрытия </span><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>Close</span></b><span style='font-size:14.0pt'>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>17. Щелкнем два раза левой кнопкой мыши на изображении
+вольтметра и установим режим измерения переменного напряжения [для переменного
+напряжения выбираем среди параметров </span><b><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>Mode</span></b><span
+style='font-size:14.0pt'> параметр </span><b><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>AC</span></b><span style='font-size:14.0pt'>,
+для постоянного напряжения - </span><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>DC</span></b><span style='font-size:14.0pt'> и т. п.]
+и подтвердим установку (</span><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>Accept</span></b><span style='font-size:14.0pt'>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>18. Повторим процедуры п. 16<span
+style='mso-spacerun:yes'>  </span>установки рода тока <b>АС</b> для амперметра.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>19. Установим значения ёмкостей конденсаторов, равных
+1 мкФ<span style='mso-spacerun:yes'>   </span>(пФ </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>pF</span><span style='font-size:14.0pt'>, нФ </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>nF</span><span style='font-size:14.0pt'>, мкФ </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span style='font-size:14.0pt;font-family:
+Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>m</span></span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>F</span><span
+style='font-size:14.0pt'>, мФ </span><span style='font-size:14.0pt;font-family:
+Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>«</span></span><span style='font-size:
+14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>mF</span><span style='font-size:14.0pt'>, Ф </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>F</span><span style='font-size:14.0pt'>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>20. Установим значение индуктивности катушки, равное
+10,5 мГн (мкГн </span><span style='font-size:14.0pt;font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>«</span></span><span style='font-size:
+14.0pt'> </span><span style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>m</span></span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>H</span><span style='font-size:14.0pt'>, мГн </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>mH</span><span style='font-size:14.0pt'>, Гн </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>«</span></span><span
+style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>H</span><span style='font-size:14.0pt'>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>21. Проводник, идущий к каналу &quot;<b>А</b>&quot;
+осциллографа, &quot;окрасим&quot; в синий цвет (два раза щелкнем по нему левой
+кнопкой мыши и выберем синий цвет), а проводник, идущий к каналу &quot;<b>В</b>&quot;
+осциллографа, выделим<span style='mso-spacerun:yes'>  </span>красным цветом.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>22. Щелкнем два раза<span style='mso-spacerun:yes'> 
+</span>левой кнопкой мыши на изображении осциллографа и установим масштаб
+времени на оси абсцисс (</span><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>TIME</span></b><b><span lang=EN-US style='font-size:
+14.0pt'> </span></b><b><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>BASE</span></b><span style='font-size:14.0pt'>), равный 0,20 мс/дел
+(0.20 </span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>ms</span><span
+style='font-size:14.0pt'>/</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>div</span><span style='font-size:14.0pt'>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>23. Замкнем выключатель, расположенный в верхнем
+правом углу экрана, щелкнув кнопкой мыши на его изображении. Манипулируя делителями
+напряжения каналов &quot;<b>А</b>&quot; и &quot;<b>В</b>&quot; (</span><b><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>CHANNEL</span></b><b><span
+lang=EN-US style='font-size:14.0pt'> </span></b><b><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>A</span></b><span
+style='font-size:14.0pt'>, </span><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>CHANNEL</span></b><b><span lang=EN-US
+style='font-size:14.0pt'> </span></b><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>B</span></b><span style='font-size:14.0pt'>) осциллографа,
+получим нужные размеры осциллограмм напряжений на экране осциллографа.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>24. Далее проводится исследование модели цепи согласно
+заданию.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.3pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;mso-line-height-alt:
+1.0pt'><b><span lang=EN-US style='font-size:14.0pt;font-family:Arial;
+text-transform:uppercase;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=1 align=center style='margin-top:6.0pt;text-align:center'>ИНСТРУКЦИЯ
+ПОЛЬЗОВАТЕЛЮ ПРОГРАММЫ </p>
+
+<p class=1 align=center style='margin-top:0cm;text-align:center'><span
+lang=EN-US style='mso-ansi-language:EN-US'>MULTISIM</span> 8 <span lang=EN-US
+style='mso-ansi-language:EN-US'>STUDENT</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>DEMO</span> (<span lang=EN-US
+style='mso-ansi-language:EN-US'>MS</span>8<span lang=EN-US style='mso-ansi-language:
+EN-US'>SD</span>)</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><!--[if gte vml 1]><o:wrapblock><v:group
+  id="_x0000_s1052" style='position:absolute;left:0;text-align:left;
+  margin-left:-2.95pt;margin-top:0;width:462.35pt;height:325.5pt;z-index:7'
+  coordorigin="1281,5909" coordsize="9325,6510" o:allowincell="f">
+  <v:shape id="_x0000_s1053" type="#_x0000_t75" style='position:absolute;
+   left:1281;top:5933;width:9064;height:5979' o:regroupid="4" o:allowincell="f">
+   <v:imagedata src="ewb.files/image015.png" o:title="" gain="2.5"
+    blacklevel="-1966f"/>
+  </v:shape><v:shape id="_x0000_s1054" type="#_x0000_t75" style='position:absolute;
+   left:10272;top:5909;width:334;height:5995' o:regroupid="5" o:allowincell="f">
+   <v:imagedata src="ewb.files/image016.png" o:title="" cropleft="8258f"
+    cropright="12762f" gain="79922f" blacklevel="-3932f"/>
+  </v:shape><v:shape id="_x0000_s1055" type="#_x0000_t202" style='position:absolute;
+   left:8415;top:8309;width:2064;height:697' o:regroupid="5" o:allowincell="f"
+   filled="f" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1055'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoBodyText align=center style='text-align:center'><span
+      style='font-size:8.0pt'>Панель измеритель­ных приборов и осциллографов<span
+      style='mso-spacerun:yes'>       </span></span><span style='font-size:
+      8.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+      mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+      Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&THORN;</span></span><span
+      style='font-size:8.0pt'><o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1056" type="#_x0000_t202" style='position:absolute;
+   left:6539;top:10139;width:2581;height:318' o:regroupid="5" o:allowincell="f"
+   stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1056'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='line-height:8.0pt;mso-line-height-rule:exactly'><span
+      style='font-size:8.0pt'>Панель пассивных элементов<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:line id="_x0000_s1057" style='position:absolute' from="1600,11977"
+   to="5933,11977" o:regroupid="5" o:allowincell="f" strokecolor="navy"
+   strokeweight="1.5pt"/>
+  <v:shape id="_x0000_s1058" type="#_x0000_t202" style='position:absolute;
+   left:2289;top:10193;width:2443;height:312' o:regroupid="5" o:allowincell="f"
+   stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1058'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='line-height:7.0pt;mso-line-height-rule:exactly'><span
+      style='font-size:8.0pt'>Файлы моделей схем цепей<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1059" type="#_x0000_t202" style='position:absolute;
+   left:7696;top:10649;width:2413;height:330' o:regroupid="5" o:allowincell="f"
+   stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1059'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span style='font-size:8.0pt'>Панель источников
+      питания<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1060" type="#_x0000_t202" style='position:absolute;
+   left:6947;top:11261;width:2959;height:334' o:regroupid="5" o:allowincell="f"
+   stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1060'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='line-height:8.0pt;mso-line-height-rule:exactly'><span
+      style='font-size:8.0pt'>Панель измерительных приборов<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1061" type="#_x0000_t202" style='position:absolute;
+   left:6227;top:6155;width:972;height:293' o:regroupid="5" o:allowincell="f"
+   filled="f" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1061'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='text-align:justify;line-height:6.0pt;
+      mso-line-height-rule:exactly'><span style='font-size:8.0pt;font-family:
+      Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+      "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+      style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&Uuml;</span></span><span
+      style='font-size:8.0pt'> Меню<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1062" type="#_x0000_t202" style='position:absolute;
+   left:7203;top:6101;width:2635;height:377' o:regroupid="5" o:allowincell="f"
+   filled="f" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1062'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span style='font-size:8.0pt;font-family:Symbol;
+      mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+      mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+      style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&szlig;</span></span><span
+      style='font-size:8.0pt'> Поле управляющих кнонок<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1063" type="#_x0000_t202" style='position:absolute;
+   left:7131;top:6653;width:2395;height:363' o:regroupid="5" o:allowincell="f"
+   filled="f" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1063'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span style='font-size:8.0pt'>Виртуальный выключатель </span><span
+      style='font-size:8.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+      mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+      Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&THORN;</span></span><span
+      style='font-size:8.0pt'><o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1064" type="#_x0000_t202" style='position:absolute;
+   left:8565;top:9377;width:1542;height:654' o:regroupid="5" o:allowincell="f"
+   stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1064'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <h1 align=center style='text-align:center;line-height:9.0pt;mso-line-height-rule:
+      exactly'>Исследуемая</h1>
+      <p class=MsoNormal align=center style='text-align:center;line-height:
+      9.0pt;mso-line-height-rule:exactly'><b>схема цепи<o:p></o:p></b></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:line id="_x0000_s1065" style='position:absolute' from="8325,9401"
+   to="8643,9655" o:regroupid="5" o:allowincell="f" strokecolor="red"
+   strokeweight="2pt">
+   <v:stroke startarrow="classic"/>
+  </v:line><v:shape id="_x0000_s1066" type="#_x0000_t202" style='position:absolute;
+   left:5459;top:12023;width:1326;height:396' o:regroupid="5" o:allowincell="f"
+   filled="f" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1066'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span style='font-size:11.0pt'>Рис.</span> <span
+      style='font-size:11.0pt'>П2-1<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><w:wrap type="topAndBottom"/>
+  <w:anchorlock/>
+ </v:group><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="PBrush"
+  ShapeID="_x0000_s1053" DrawAspect="Content" ObjectID="_1194884327">
+ </o:OLEObject>
+ <![endif]><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="PBrush"
+  ShapeID="_x0000_s1054" DrawAspect="Content" ObjectID="_1194884328">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+ relative;z-index:7;left:-4px;top:0px;width:616px;height:436px'><img width=616
+ height=436 src="ewb.files/image022.gif" v:shapes="_x0000_s1052 _x0000_s1053 _x0000_s1054 _x0000_s1055 _x0000_s1056 _x0000_s1057 _x0000_s1058 _x0000_s1059 _x0000_s1060 _x0000_s1061 _x0000_s1062 _x0000_s1063 _x0000_s1064 _x0000_s1065 _x0000_s1066"></span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:14.0pt'>Интерфейс программы </span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>Multisim</span><span
+style='font-size:14.0pt'> 8 </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>Education</span><span lang=EN-US style='font-size:
+14.0pt'> </span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>v</span><span style='font-size:14.0pt'>. </span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>SP</span><span
+style='font-size:14.0pt'>1 с вызванной на рабочее поле схемой цепи и внешним
+видом некоторых панелей элементов и приборов представлены на рис. П2-1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Схемы замещения электрических цепей и устройств (всего
+28 схем), исследуемых в лабораторных работах, прошли аттестацию в компании </span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>Electronics</span><span
+lang=EN-US style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>Work</span><span style='font-size:14.0pt'>­</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>bench</span><span
+style='font-size:14.0pt'> (</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>http</span><span style='font-size:14.0pt'>://</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>www</span><span
+style='font-size:14.0pt'>.</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>electronicsworkbench</span><span style='font-size:
+14.0pt'>.</span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>com</span><span style='font-size:14.0pt'>), расположенной в г. Торонто,
+Канада, и записаны ею на мастер-диске вместе с студенческой программой </span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>Multisim</span><span
+style='font-size:14.0pt'> 8 </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>Student</span><span lang=EN-US style='font-size:14.0pt'>
+</span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>Demo</span><span
+style='font-size:14.0pt'> (в дальней­шем </span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>MS</span><span
+style='font-size:14.0pt'>8</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>SD</span><span style='font-size:14.0pt'>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>Компания </span><b><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>Electronics</span></b><b><span lang=EN-US
+style='font-size:14.0pt'> </span></b><b><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>Work</span></b><b><span style='font-size:14.0pt'>­</span></b><b><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>bench</span></b><b><span
+lang=EN-US style='font-size:14.0pt'> </span></b><span style='font-size:14.0pt'>(входящая
+в компанию<b><span style='letter-spacing:-.1pt'> </span></b></span><span
+lang=EN-US style='font-size:14.0pt;letter-spacing:-.1pt;mso-ansi-language:EN-US'>National</span><span
+lang=EN-US style='font-size:14.0pt;letter-spacing:-.1pt'> </span><span
+lang=EN-US style='font-size:14.0pt;letter-spacing:-.1pt;mso-ansi-language:EN-US'>Instruments</span><span
+style='font-size:14.0pt;letter-spacing:-.1pt'>)</span><span style='font-size:
+14.0pt'> разрешила &quot;МАТИ&quot;-РГТУ им. К. Э. Циолковского записывать (с
+мастер-диска) программу </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>MS</span><span style='font-size:14.0pt'>8</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>SD</span><span
+style='font-size:14.0pt'> на диски и распростра­нять вместе с написанными
+книгами на территории Российской Федерации. В предоставленной нам для
+распространения версии программы </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>MS</span><span style='font-size:14.0pt'>8</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>SD</span><span
+style='font-size:14.0pt'> разрешена толь­ко переустановка (в соответствии с
+вари­антами заданий) значений параметров элементов прошедших аттестацию схем, настройка
+источников энергии, измерительных приборов, осциллографа, и проведение экспериментов.
+Моделирование других схем и изменение топологии записанных на мастер-диске схем
+цепей в данной версии не предусмотрены. Разработанные в других версиях
+программы </span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>MS</span><span style='font-size:14.0pt'>8 модели цепей выводятся на рабочее
+поле программы </span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>MS</span><span style='font-size:14.0pt'>8</span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>SD</span><span
+style='font-size:14.0pt'>, но не запускаются (отключен виртуальный включатель
+моделирования процессов в цепях). Поля библиотек элементов </span><!--[if gte vml 1]><o:wrapblock><v:group
+  id="_x0000_s1067" style='position:absolute;left:0;text-align:left;
+  margin-left:-3.85pt;margin-top:0;width:460.5pt;height:250.8pt;z-index:8;
+  mso-position-horizontal-relative:text;mso-position-vertical-relative:text'
+  coordorigin="1329,1499" coordsize="9210,4704" o:allowincell="f">
+  <v:shape id="_x0000_s1068" type="#_x0000_t75" style='position:absolute;
+   left:1329;top:1499;width:9210;height:4185' o:allowincell="f">
+   <v:imagedata src="ewb.files/image018.png" o:title="" cropbottom="27748f"
+    blacklevel="1966f"/>
+  </v:shape><v:shape id="_x0000_s1069" type="#_x0000_t202" style='position:absolute;
+   left:5319;top:5693;width:1464;height:510' o:allowincell="f" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1069'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span style='font-size:12.0pt'>Рис. П2-2<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><w:wrap type="topAndBottom"/>
+  <w:anchorlock/>
+ </v:group><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+ relative;z-index:8;left:-5px;top:0px;width:614px;height:336px'><img width=614
+ height=336 src="ewb.files/image023.gif" v:shapes="_x0000_s1067 _x0000_s1068 _x0000_s1069"></span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:14.0pt'>и приборов отключены (рис. П2-2).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>После <span style='letter-spacing:-.2pt'>заг­ру­­зки
+программы на экране монитора появляется рабочее окно. </span>Нужный файл с записанной
+моделью электрической цепи можно найти и открыть после щелчка мышью на кнопках:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'><span style='mso-spacerun:yes'> </span></span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>File</span><span
+style='font-size:14.0pt'>\</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>Circuits</span><span style='font-size:14.0pt'>\</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>lr</span><span
+style='font-size:14.0pt'>1... </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>lr</span><span style='font-size:14.0pt'>18.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:14.0pt'>В отличие от программ </span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>EWB</span><span lang=EN-US
+style='font-size:14.0pt'> </span><span style='font-size:14.0pt'>последних
+версий в программе </span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>MS</span><span style='font-size:14.0pt'>8</span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>SD</span><span lang=EN-US
+style='font-size:14.0pt'> </span><span style='font-size:14.0pt'>несколько изменен
+внешний вид источников энергии, измерительных приборов и осциллографа, добавлен
+ваттметр, другие элементы и приборы, неиспользуемые в данном практикуме. Однако
+процедуры установки параметров элементов и приборов аналогичны таковым программы
+</span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>EWB</span><span
+style='font-size:14.0pt'>: после щелчка мышью на элементе выводится меню с
+параметрами, значения которых могут<b><span style='text-transform:uppercase'> </span></b>быть
+изменены с помощью клавиатуры или щелчка мышью на единицах измерений.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+35.45pt;mso-line-height-alt:1.0pt'><b><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;text-align:justify;line-height:13.0pt;
+mso-line-height-rule:exactly'><b><span style='font-size:14.0pt;font-family:
+Arial;text-transform:uppercase'><o:p>&nbsp;</o:p></span></b></p>
+
+</div>
+
+</body>
+
+</html>

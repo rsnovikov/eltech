@@ -1,0 +1,42 @@
+[OPTIONS]
+Compiled File=Help.chm
+Title=Rotor
+Contents File=Help.hhc
+Index File=Help.hhk
+Default topic=О_программе.htm
+Default Window=NewWindow
+Error log file=
+Display compile progress=No
+Display compile notes=No
+Full-text search=Yes
+Binary Index=No
+Auto Index=No
+Enhanced decompilation=No
+Binary TOC=No
+Flat=No
+
+[WINDOWS]
+NewWindow="New Window Caption","Help.hhc","Help.hhk","","",,,,,0x80420,0,0x200e,[0,0,500,400],0x0,0x0,,0,0,0
+
+[FILES]
+First_Topic.htm
+О_программе.htm
+Расчет_основных_параметров_двигателей_общего_применения.htm
+Испытание_двигателей.htm
+Имитация_работы.htm
+Выбор_типа_двигателя.htm
+Лабораторный_практикум.htm
+Практика.htm
+Теория.htm
+
+Help.glo
+Help.brs
+ehlpdhtm.js
+[ALIAS]
+#include Help.ali
+
+[MAP]
+
+[TEXT POPUPS]
+
+

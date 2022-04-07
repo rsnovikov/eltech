@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>4.3.3. Формирование уравнений состояния методом наложения</title>
+<SCRIPT LANGUAGE="JavaScript"> 
+// <!-- Begin
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     // document.write("<BGSOUND SRC=../../../Sound/Chapter4/4.3.3.mp3 >");
+   } 
+  document.write("<audio SRC=../../../Sound/Chapter4/4.3.3.mp3 autoplay=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 ></audio>");
+// End --> 
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></div> <table width="100%" height="100%" border="0" cellspacing="0">
+  <tr align="center" valign="top">
+    <td height="20" colspan="2" class="head1">
+      <div align="center"> 
+        <p>4.3.3. Формирование уравнений состояния методом наложения
+</p>
+        <p>&nbsp; </p>
+      </div></td>
+  </tr>
+  <tr align="left"> 
+    <td colspan="2" valign="top"><p class="text">        Заменив индуктивные и ёмкостные элементы в послекоммутационной схеме соответственно 
+        источниками тока и напряжения, получают резистивную схему с дополнительными 
+        источниками. Записав напряжение <em>u</em><span class="indexsmall">Lk</span> = <em>L</em>[<em>di</em><span class="indexsmall">Lk</span>/<em>dt</em>] и ток <em>i</em><span class="indexsmall">Ck</span> = <em>C</em>[<em>du</em><span class="indexsmall">Ck</span>/<em>dt</em>] 
+        для каждого индуктивного и ёмкостного элемента, составляют систему уравнений 
+        состояния для <em>n</em> схем, в каждой из которых оставлен один источник. Полученную 
+        методом наложения систему уравнений состояния цепи решают, как правило, 
+        посредством численных методов на ЭВМ.</p>
+      <p class="text"> Для конкретизации этапов формирования уравнений состояния 
+        методом наложения рассмотрим еще раз послекоммутационную схему (см. рис. 
+        4.36), выделив в ней ёмкостный <em>С</em> и индуктивный <em>L</em> элементы (рис. 4.38, 
+        <em>а</em>) так, чтобы оставшаяся часть схемы содержала только резистивные элементы 
+        <em>R</em><span class="indexsmallDigit">1</span> и <em>R</em><span class="indexsmallDigit">2</span> и источник напряжения <span class="index">е</span>.</p>
+      <p align="center" class="text">        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="100%" height="137">
+          <param name="movie" value="swf/4_38.swf">
+          <param name=quality value=high>
+          <embed src="swf/4_38.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="100%" height="137"></embed>
+        </object>
+      </p>
+      <p class="text">Согласно принципу компенсации индуктивный элемент <em>L</em> заменим 
+        источником тока <em class="index">J</em><span class="indexsmall">L</span> =<em> <span class="index">i</span></em><span class="indexsmall">L</span>, который доставляет ток в том же направлении, 
+        что и в исходной схеме, с напряжением на нём <em class="index">u</em><span class="indexsmall">L</span> = <em class="index">Ldi</em><span class="indexsmall">L</span>/<em>dt</em>, а ёмкостный 
+        элемент <em>С</em> - источником напряжения с ЭДС <em>E</em><span class="indexsmall">C</span> = <em>u</em><span class="indexsmall">C</span>, направленной встречно 
+        току <em>i</em><span class="indexsmall">С </span>(рис. 4.38, <em>б</em>).</p>
+      <p class="text"> Запишем алгебраические уравнения для <em>u</em><span class="indexsmall">L</span> и <em>i</em><span class="indexsmall">С</span> в общем виде: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="gifs/f_14.gif" width="425" height="39"><br>
+     Коэффициенты <em>h</em><span class="indexsmall">kk</span> в уравнениях определим методом наложения, 
+      исходя из схем (рис. 4.39), в каждой из которых оставлен один источник:</p>
+      <p align="center" class="text">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="550" height="145">
+          <param name="movie" value="swf/4_39.swf">
+          <param name=quality value=high>
+          <embed src="swf/4_39.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="550" height="145"></embed>
+        </object>
+      </p>
+            <img src="gifs/f_15.gif" width="382" height="42">
+      <p class="text">Откуда <img src="gifs/f_16.gif" width="406" height="16" align="absmiddle"></p>
+      <p class="text"><a name="us"></a>Следовательно, уравнения состояния для этой схемы:<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="gifs/f_17.gif" width="175" height="41"><br>
+      где 
+
+ 
+      <em class="index">a</em><span class="indexsmalldigit">0 </span><em>= <span class="index">e</span></em>/(<span class="index"><em>R</em></span><span class="indexsmalldigit">1<em></em></span><span class="index"><em>C</em></span>); <em class="index"> a</em><span class="indexsmalldigit">1</span><em>= </em>-1/(<span class="index"><em>R</em></span><span class="indexsmalldigit">1</span><span class="index"><em>C</em></span>); <em class="index"> a</em><span class="indexsmalldigit">2</span> <em>= </em>-1/<em class="index">C </em>; <em class="index">b</em><span class="indexsmalldigit">0</span> <em>= </em>0; <em class="index"> b</em><span class="indexsmalldigit">1</span> <em>= </em>1/<em class="index">L </em>; <em class="index"> b</em><span class="indexsmalldigit">2</span><em>= - <span class="index">R</span></em><span class="indexsmalldigit">2</span>/<span class="index"><em>L</em></span><em>. </em> </p>
+      <p class="text">&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+    <td height="20"><a href="4_3_2.htm"><img src="../../../images/back.gif" width="55" height="25" border="0"></a> </td>
+    <td>
+      <div align="right"><a href="ex_4_5.htm"><img src="../../../images/forward.gif" width="62" height="25" border="0"></a></div></td>
+  </tr>
+</table>
+</body>
+</html>

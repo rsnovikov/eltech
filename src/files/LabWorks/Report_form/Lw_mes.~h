@@ -1,0 +1,27 @@
+#ifndef lw_mes
+#define lw_mes
+
+#define WM_LABWORKS (WM_APP + 476)
+
+struct TLWStrct
+{
+  Cardinal Msg;                      // first parameter is the message ID
+  Word Command;                    // this is the first wParam
+  Word Unused;
+  Longint Parameter;                   // this is the lParam
+  Longint Result;                    // this is the result data member
+};
+
+#define SEND_WORKNUM          1
+#define START_SENDING_DATA    2
+#define END_SENDING_DATA      3
+#define CONFIRM               4
+#define DATA                  5
+#define EXIT                  6
+#define REPORT_OPENED         7
+#define PIC1_SEND             8
+#define PIC2_SEND             9
+#define PIC3_SEND             10
+#define REP_REQUEST           11
+
+#endif

@@ -1,0 +1,69 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+// <!-- Begin
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     // document.write("<BGSOUND SRC=../Sound/Temy/T7.mp3 >");
+   } 
+  document.write("<audio SRC=../Sound/Temy/T7.mp3 autoplay=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 ></audio>");
+// End --> 
+</SCRIPT>
+<script language="javascript">
+
+var pos=0;
+var speed=75;            
+var msg="В эту тему включены вопросы устройства и принципа функционирования однофазных трансформаторов в различных режимах. Отмечены особенности работы трёхфазных трансформаторов, автотрансформаторов и измерительных трансформаторов.";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:0px;left:0px;font-family:Courier New;font-size:18px;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+<title>Тема 7</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="fon" onLoad="Type()">
+<br>
+<div align="center"><center><span class=head1 align="center">Тема 7</span></center></div>
+<center><span class=head1>ТРАНСФОРМАТОРЫ</span></center>
+
+<table width="75%" height="80%" border="0" align="center"><tr><td valign="top">
+<br><br><br><div id="layerA" class=text align="absmiddle"></div>
+</table>
+<table width="100%" height="5%" border=0 align="bottom"><span class=text>
+<tr><td>
+<br><center><div valign="bottom"><a href="page7111.html" align="">Начать</a></span></div></center>
+</td></tr>
+</table>
+
+
+
+
+</span>
+</body>
+</html>

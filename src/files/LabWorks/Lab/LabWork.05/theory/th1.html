@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Метод эквивалентного генератора</title>
+</head>
+
+<body>
+<p><b>ОСНОВНЫЕ ПОЛОЖЕНИЯ</b></p>
+<p>Метод эквивалентного генератора основан на теореме Тевенина об эквивалентном генераторе (<b>активном двухполюснике</b>), которая гласит: любую сложную линейную электрическую цепь с произвольным числом источников тока и источников напряжения (рис. 5.1, <i>а</i>) можно заменить простой схемой (рис. 5.1, <i>б</i>),<img border="0" src="th1.files/1.gif"></p>
+<p>&nbsp;состоящей из эквивалентного генератора (ЭГ) с ЭДС <i>E<sub>ЭГ</sub></i> и последовательно соединенного с ним внутреннего сопротивления <i>R<sub>ЭГ</sub></i>; при этом обе схемы оказываются идентичными по отношению к выходным зажимам 1 и 0, к которым подключена нагрузка <i>R</i><sub>6</sub>.<b> </b>Тогда ток <i>I</i><sub>6</sub> и напряжение <i>U</i><sub>10 </sub>на зажимах 1 и 0 нагрузки(см. рис. 5.1, <i>б</i>) равны:</p>
+<p><i>I</i><sub>6 </sub>= <i>E<sub>ЭГ</sub></i>/(<i>R<sub>ЭГ </sub></i>+ <i>R</i><sub>6</sub>); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p><i>U</i><sub>10 </sub>= <i>U</i><sub>6 </sub>= <i>R</i><sub>6</sub><i>I</i><sub>6 </sub><i>=</i> <i>E<sub>ЭГ</sub> </i>-<i> R<sub>ЭГ</sub>I</i><sub>6</sub>. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(5.1)</p>
+<p>Второе выражение соответствует уравнению внешней характеристики источника напряжения (ИН), параметры которого (<i>E<sub>ЭГ</sub></i> и <i>R<sub>ЭГ</sub></i>) можно определить из двух режимов работы ИН: </p>
+<p>- режима холостого хода (<i>I</i><sub>6 </sub>= 0, шестая ветвь разомкнута)</p>
+<p><i>E<sub>ЭГ </sub></i>= <i>U</i><sub>10<i>X</i></sub>,   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(5.2)</p>
+<p>т. е. ЭДС эквивалентного генератора равна напряжению <i>U</i><sub>10<i>X</i></sub> холостого хода (ХХ) на зажимах нагрузки;</p>
+<p>- режима короткого замыкания (КЗ) (<i>U</i><sub>10</sub> = 0) </p>
+<p><i>R<sub>ЭГ </sub></i>= <i>E<sub>ЭГ</sub></i>/<i>I</i><sub>6<i>K</i></sub>,<i> </i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(5.3)</p>
+<p>где <i>I</i><sub>6<i>K</i></sub> - ток короткого замыкания (шестой) ветви с нагрузкой. </p>
+<p>Таким образом, для определения тока, например, в шестой ветви по первой формуле (5.1), достаточно провести два опыта: опыт ХХ, измерив <i>U</i><sub>6<i>Х</i> </sub>= <i>E<sub>ЭГ</sub></i>, и опыт КЗ, измерив ток <i>I</i><sub>6<i>K</i></sub>, и вычислить внутреннее сопротивление ЭГ: <i>R<sub>ЭГ </sub></i>= <i>E<sub>ЭГ</sub></i>/<i>I</i><sub>6<i>K</i></sub>. &nbsp;</p>
+<p>При теоретических расчетах параметров ЭГ (<i>E<sub>ЭГ</sub></i> и <i>R<sub>ЭГ</sub></i>) выбирают метод расчёта с минимально необходимым числом уравнений для нахождения напряжения <i>U</i><sub>10<i>X</i></sub> = <i>E<sub>ЭГ</sub></i>. Так, для схемы рис. 5.1, в которой источник тока <i>J</i> заменён двумя источниками напряжения с параметрами <i>E</i><sub>4</sub> = <i>R</i><sub>4</sub><i>J</i> и <i>E'</i><sub>1</sub> = <i>R</i><sub>1</sub><i>J</i> (рис. 5.2, <i>а</i>), при разомкнутой шестой ветви напряжение </p>
+<p><i>U</i><sub>10<i>X</i></sub> = <i>-E</i><sub>5</sub> + <i>R</i><sub>5</sub><i>I</i><sub>5<i>X</i></sub> <i>-</i> <i>R</i><sub>2</sub><i>I</i><sub>2<i>X</i></sub>.</p>
+<p>
+<img border="0" src="th1.files/2.gif"></p>
+<p>Токи <i>I</i><sub>5<i>X</i></sub> и <i>I</i><sub>2<i>X</i></sub> определим методом контурных токов (см. рис. 5.2, <i>а</i>): </p>
+<p><i>I</i><sub>5<i>X</i></sub> = <i>I<sub>K</sub></i><sub>1</sub>; <i>I</i><sub>2<i>X</i> </sub>= <i>-I<sub>K</sub></i><sub>2</sub>;</p>
+<p>(<i>R</i><sub>3</sub> + <i>R</i><sub>4 </sub>+ <i>R</i><sub>5</sub>) <i>I<sub>K</sub></i><sub>1 </sub><i>-</i> <i>R</i><sub>3</sub><i>I<sub>K</sub></i><sub>2 </sub>= <i>E</i><sub>4 </sub>+ <i>E</i><sub>5</sub>;        12<i>I<sub>K</sub></i><sub>1 </sub><i>-</i> 3<i>I<sub>K</sub></i><sub>2 </sub>= 28;</p>
+<p><i>-R</i><sub>3</sub><i>I<sub>K</sub></i><sub>1 </sub>+ (<i>R</i><sub>1</sub> + <i>R</i><sub>2 </sub>+ <i>R</i><sub>3</sub>)<i>I<sub>K</sub></i><sub>2<i> </i></sub>= <i>E</i><sub>1 </sub>+ <i>E</i><sub>1</sub>';      <i>-</i>3<i>I<sub>K</sub></i><sub>1 </sub>+ 6<i>I<sub>K</sub></i><sub>2 </sub>= 12</p>
+<p>(принято: <i>R</i><sub>1</sub> = 1 Ом; <i>R</i><sub>2</sub> = 2 Ом; <i>R</i><sub>3</sub> = 3 Ом; 
+<i>R</i><sub>4</sub> 
+= 4 Ом; <i>R</i><sub>5</sub> = 5 Ом; <i>R</i><sub>6</sub> = 6 Ом;<br>
+<i>J</i> = 2 A;&nbsp; <i>E</i><sub>1</sub> = 10 
+В; <i>E</i><sub>5</sub> = 20 В);</p>
+<p>
+<img src="th1.files/3.gif"></p>
+<p>Тогда <i>I</i><sub>5<i>X</i></sub> = 3,24 А; <i>I</i><sub>2</sub> = <i>-</i>3,62 А; <i>U</i><sub>10<i>X &nbsp;</i></sub>= <i>-</i>20 + 5&#8729;3,24 + 2&#8729;3,62 = 3,44 В.</p>
+<p>Для определения сопротивления <i>R<sub>ЭГ</sub></i> вычертим схему без источников энергии (рис. 5.2, <i>б</i>) и определим входное сопротивление по отношению к зажимам 1 и 0, предварительно заменив треугольник сопротивлений <i>R</i><sub>5 </sub><i>-</i> <i>R</i><sub>4 </sub><i>-</i> <i>R</i><sub>3</sub> эквивалентной звездой <i>R</i><sub>34 </sub><i>-</i> <i>R</i><sub>45 </sub><i>-</i> <i>R</i><sub>35</sub>, сопротивления лучей которой равны:</p>
+<p><img border="0" src="th1.files/4.gif"></p>
+
+</body>
+
+</html>

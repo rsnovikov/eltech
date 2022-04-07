@@ -1,0 +1,1773 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Lab.files/filelist.xml">
+<link rel=Edit-Time-Data href="Lab.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Лабораторная работа №1 «Электродвигатель параллельного возбуждения»</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Никитин Михаил Николаевич</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Никитин Михаил Николаевич</o:LastAuthor>
+  <o:Revision>10</o:Revision>
+  <o:TotalTime>14</o:TotalTime>
+  <o:Created>2002-06-23T10:02:00Z</o:Created>
+  <o:LastSaved>2002-06-23T10:42:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>1567</o:Words>
+  <o:Characters>8932</o:Characters>
+  <o:Company>North Studio</o:Company>
+  <o:Lines>74</o:Lines>
+  <o:Paragraphs>20</o:Paragraphs>
+  <o:CharactersWithSpaces>10479</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DoNotHyphenateCaps/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 пт</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>6 пт</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>3</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:DoNotShadeFormData/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseWord97LineBreakingRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+table.MsoTableGrid
+	{mso-style-name:"Сетка таблицы";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="5122"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:36.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-family:Arial;color:navy'>Лабораторная
+работа №1 </span><b><span style='font-family:Arial'>«Электродвигатель
+параллельного возбуждения»</span></b><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;background:white;
+mso-layout-grid-align:none;text-autospace:none'><b><span style='color:black'>План
+работы</span><o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>1.</span></i></b><span
+style='color:black'> Ознакомиться с установкой и записать данные щитка машины,
+пусковых и регулировочных аппаратов и измерительных приборов. Собрать схему.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>2.</span></i></b><span
+style='color:black'> Пустить двигатель и ознакомиться со способами
+регулирования скорости вращения и изменения направ­ления вращения.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>3</span></i></b><i><span
+style='color:black'>.</span></i><span style='color:black'> Определить <i>положение
+геометрической <span class=SpellE>нейтрали</span> </i>«способом двигателя».</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>4.</span></i></b><span
+style='color:black'> Получить <i>рабочие характеристики </i>двигателя — за­висимость
+тока двигателя, вращающего момента, к. п. д. и скорости вращения от полезной
+мощности на валу при неизменных напряжении на зажимах двигателя и токе
+возбуждения, т. е. </span><i><span lang=EN-US style='color:black;mso-ansi-language:
+EN-US'>I</span><span style='color:black'>,</span></i><span style='color:black'>
+<i>М,</i></span><i><span lang=EN-US style='font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black;mso-ansi-language:EN-US'>h</span></i><span style='color:
+black'>, </span><i><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>n</span><span
+style='color:black'>=</span></i><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>f</span><span style='color:black'>(</span></i><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>P</span><sub><span
+style='color:black'>2</span></sub><span style='color:black'>) </span></i><span
+style='color:black'>при </span><span class=GramE><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>U</span></span><span class=SpellE><sub><span
+style='color:black'>н</span></sub></span><span style='color:black'> и </span><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span></i><sub><span
+style='color:black'>в</span></sub><span style='color:black'>.<sub>н</sub>.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>5.</span></i></b><span
+style='color:black'> Получить <i>механические характеристики </i>двигате­ля— <span
+class=GramE>за</span>висимость скорости вращения от момента при не­изменных
+напряжении на зажимах, токе возбуждения и сопротивлении в цепи якоря, т. е. </span><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>n</span><span
+style='color:black'>=</span></i><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>f</span><span style='color:black'>(</span></i><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>M</span><span
+style='color:black'>) </span></i><span style='color:black'>при </span><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>U</span><span
+style='color:black'>=</span></i><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>U</span><span class=SpellE><span style='color:black'>н</span></span><span
+style='color:black'>, </span></i><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>I</span><span style='color:black'>в</span></i><span
+style='color:black'> = </span><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>I</span><span class=SpellE><span style='color:black'>вн</span></span></i><span
+style='color:black'> и <span class=SpellE>г<sub>я</sub></span> + <span
+class=SpellE>г<sub>д</sub></span> = </span><span class=SpellE><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>const</span></span><span
+style='color:black'>, где <span class=SpellE>г<sub>д</sub></span> —
+сопротивление добавоч­ного реостата.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>6.</span></i></b><span
+style='color:black'> Получить <i>скоростные характеристики </i>двигателя — зависимости
+скорости вращения от тока якоря при <span class=GramE>неиз­менных</span>
+напряжении и токе возбуждения, т. е. </span><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>n</span><span style='color:black'>
+= </span></i><i><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>f</span><span
+style='color:black'>(</span></i><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>I</span><span style='color:black'>) </span></i><span
+style='color:black'>при </span><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>U</span><span style='color:black'>=</span></i><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>U<sub>H</sub></span><span
+style='color:black'><span style='mso-spacerun:yes'>  </span>и </span></i><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span><span
+style='color:black'>в </span></i><span style='color:black'>= </span><span
+class=SpellE><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>const</span></span><span
+style='color:black'>.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span style='color:black'>Сделать три опыта: при </span><span
+class=GramE><i><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span></i></span><sub><span
+style='color:black'>в</span></sub><span style='color:black'>=1,<i>2</i></span><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span><span
+class=SpellE><sub><span style='color:black'>вн</span></sub></span></i><span
+style='color:black'>, </span><i><span lang=EN-US style='color:black;mso-ansi-language:
+EN-US'>I</span></i><sub><span style='color:black'>в</span></sub><span
+style='color:black'> = </span><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>I</span></i><span class=SpellE><span style='color:
+black'>вн</span></span><span style='color:black'> и </span><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>I</span></i><sub><span
+style='color:black'>в</span></sub><span style='color:black'> =<span
+style='mso-spacerun:yes'>  </span>0,<i>75</i></span><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>I</span><sub><span
+style='color:black'>в</span></sub></i><span style='color:black'>.н.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>7.</span></i></b><span
+style='color:black'> Получить <i>регулировочные характеристики </i>двига­теля.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>а)</span></i></b><span
+style='color:black'> Зависимости скорости вращения от тока возбуж­дения при
+неизменном напряжении на зажимах и момен­те на валу, т. е<i>. </i></span><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>n</span><span
+style='color:black'>=</span></i><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>f</span><span style='color:black'>(/<sub>в</sub>)</span></i><span
+style='color:black'> при </span><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>U<sub>H</sub></span><span lang=EN-US style='color:
+black'> </span></i><span style='color:black'>и </span><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>M</span><sub><span
+style='color:black'>2</span></sub><span style='color:black'> = </span></i><span
+class=SpellE><i><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>const</span></i></span><i><span
+style='color:black'>.</span></i></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span style='color:black'>Сделать два опыта: при <i>М<span
+class=GramE><sub>2</sub></span>=0 </i>(холостой ход) и <i>М<sub>2</sub>=М<sub>2И</sub>.</i></span></p>
+
+<p class=MsoNormal style='text-align:justify;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>б)</span></i></b><span
+style='color:black'> Зависимость тока возбуждения от тока якоря при неизменном напряжении
+на зажимах и неизменной ско­рости вращения, т. е. </span><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>I</span><span class=SpellE><sub><span
+style='color:black'>в</span></sub><span style='color:black'>=</span></span></i><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>f</span><span
+style='color:black'>(</span></i><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>I</span><span style='color:black'>)</span></i><span
+style='color:black'> при </span><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>U</span><span style='color:black'>=</span></i><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>U<sub>B</sub></span><span
+style='color:black'><span style='mso-spacerun:yes'>  </span></span></i><span
+style='color:black'>и<span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE><i>п</i></span></span><i> = <span class=SpellE>п<sub>н</sub></span><sub>.<o:p></o:p></sub></i></span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>в)</span></i></b><span
+style='color:black'> Зависимость скорости вращения от изменения напряжения на
+зажимах якоря при неизменном токе воз­буждения, т. е. </span><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>n</span><span
+style='color:black'> = </span></i><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>f</span><span style='color:black'>(</span></i><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>U<sub>K</sub></span><span
+style='color:black'>) </span></i><span style='color:black'>при /<sub>в</sub> =
+/<span class=GramE>в</span>.н.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>8</span></i></b><i><span
+style='color:black'>.</span></i><span style='color:black'> Главные выводы и
+заключение.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:11.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;background:white;
+mso-layout-grid-align:none;text-autospace:none'><b><span style='color:black'>Описание
+работы</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>1.</span></i></b><i><span
+style='color:black'> </span></i><span style='color:black'>Схема включения
+двигателя показана на рис. 1.1. В данном случае напряжение двигателя измеряется
+непосредст­венно на зажимах его якоря, а последовательно с обмот­кой якоря,
+кроме пускового реостата <i>1</i>, включен допол­нительный реостат <i>2 </i>для
+регулирования подведенного напряжения. Реостат должен допускать плавное регули­рование
+напряжения на зажимах якоря и по нагреву должен быть рассчитан на полный ток
+двигателя. <span class=GramE>Из</span> <span class=GramE>рис</span>. 1.1 видно,
+что скорость вращения двигателя будет увеличиваться при перемещении движков
+реостатов <i>2 </i>и <i>3 </i>вниз, так как при этом, с одной стороны, увеличи­вается
+напряжение на зажимах якоря, а с другой, умень­шается магнитный поток возбужде­ния.
+Таким образом, изменение скорости вращения возможно дву­мя способами.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span style='color:black'><span
+style='mso-spacerun:yes'>    </span>Для нагрузки двигателя в лабо­ратории может
+быть применен ме­ханический или электромагнитный тормоз. В данной работе
+предпола­гается, что применяют механический тормоз.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span style='color:black'><span
+style='mso-spacerun:yes'>    </span>Многие двигатели параллельного возбуждения
+снабжаются легкой последовательной обмоткой, соеди­няемой согласно <span
+class=GramE>с</span> параллельной (на схемах она не указана). Эта об­мотка
+называется стабилизирующей и без нее двигатель рабо­тать не может. Это
+обстоятельство следует иметь в виду при сборке схемы двигателя.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>2.</span></i></b><span
+style='color:black'> Убедившись, что ручка пускового реостата нахо­дится в
+пусковом положении, а сопротивления реостатов <i>2 </i>в цепи якоря и <i>3 </i>в
+цепи возбуждения наименьшие, включают рубильник <i>4. </i>Если якорь двигателя
+вращается в нужную сторону, то по мере уменьшения пускового тока постепенно
+переводят ручку реостата <i>1</i> в рабочее положение, при котором его
+сопротивление равно нулю. </span><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1052" type="#_x0000_t75" style='position:absolute;
+ left:0;text-align:left;margin-left:0;margin-top:0;width:138pt;height:258pt;
+ z-index:9;mso-position-horizontal:left;mso-position-horizontal-relative:text;
+ mso-position-vertical:top;mso-position-vertical-relative:line' o:allowoverlap="f">
+ <v:imagedata src="Lab.files/image001.png" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><![if !vml]><img width=184 height=344
+src="Lab.files/image002.jpg" align=left hspace=12 v:shapes="_x0000_s1052"><![endif]><span
+style='color:black'>Если увеличивать сопротивление добавочного реостата <i>2 </i>в
+цепи якоря, можно убедиться, что скорость вращения уменьшается; при увеличении
+сопротивления реостата в цепи возбуждения скорость увеличивается. Для изме­нения
+направления вращения якоря изменяют направле­ние тока в обмотке возбуждения или
+в обмотке якоря. В последнем случае перемена концов проводов на зажи­мах якоря
+должна быть сделана так, чтобы ток в обмот­ке возбуждения не изменил направления.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>3.</span></i></b><span
+style='color:black'> Опыт определения <i>геометрической <span class=SpellE>нейтрали</span>
+</i>может быть произведен в режиме работы двигателя по схеме рис. 1.1. Пускают
+двигатель и нагружают его так, что­бы ток в якоре был равен примерно половине
+номиналь­ного, замеряют скорость вращения. После этого останав­ливают двигатель
+и меняют местами провода, присое­диненные к зажимам якоря, чтобы изменить
+направление вращения. Если после пуска оказывается, что ско­рость вращения
+остается неизменной при том же токе в якоре, то щетки расположены на
+геометрической <span class=SpellE>ней­трали</span>. Это заключение основано на
+том, что в двигателе с дополнительными полюсами сдвиг щеток с геометри­ческой <span
+class=SpellE>нейтрали</span> против направления вращения вызывает
+размагничивание за счет реакции якоря и поля допол­нительных полюсов, а значит,
+и увеличение скорости. Сдвиг щеток по направлению вращения вызывает
+подмагничивание и, следовательно, уменьшение скорости. Если оказывается, что
+при разных направлениях вра­щения скорости неодинаковы, то щетки перемещают до
+тех пор, пока не добиваются равных скоростей.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>4.</span></i></b><span
+style='color:black'> Для получения <i>рабочих характеристик </i>двигателя
+собирают схему рис. 1.1. пускают двигатель и посте­пенно нагружают его при
+помощи тормоза. <span class=GramE>Ве­личину напряжения на зажимах якоря все
+время под­держивают неизменной и равной <span lang=EN-US style='mso-ansi-language:
+EN-US'>U</span><span class=SpellE><sub>н</sub></span> при помощи регулирующего
+реостата в цепи якоря.</span> Ток возбуждения уста­навливают <span class=GramE>равным</span>
+</span><i><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span><span
+class=SpellE><span style='color:black'>вн</span></span><span style='color:black'>.</span></i><span
+style='color:black'> Начиная с холостого хода, уве­личивают силу на плече
+тормоза и записывают 4—5 раз ток якоря, скорость вращения якоря и силу торможе­ния
+</span><i><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>F</span><span
+style='color:black'>. </span></i><span style='color:black'>Результаты
+записывают <span class=GramE>в</span> табл. 2-6. Если на тор­мозном устройстве
+непосредственно измеряется мо­мент <i>М, </i>то в табл.1; 1-2 графа для <i>М </i>переносится
+под рубрику «данные опыта».<o:p></o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right;background:white;
+mso-layout-grid-align:none;text-autospace:none'>Таблица №1</p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:191;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=78 rowspan=2 valign=top style='width:58.5pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:9.0pt'>№ <span class=SpellE><span
+  class=GramE>п</span></span></span><span lang=EN-US style='font-size:9.0pt;
+  mso-ansi-language:EN-US'>/</span><span class=SpellE><span style='font-size:
+  9.0pt'>п</span></span><span style='font-size:9.0pt'> наблюдений<o:p></o:p></span></p>
+  </td>
+  <td width=323 colspan=5 valign=top style='width:242.45pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'>Данные опыта</p>
+  </td>
+  <td width=259 colspan=4 valign=top style='width:194.3pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'>Данные расчета</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=64 valign=top style='width:48.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'>F,
+  H<o:p></o:p></span></p>
+  </td>
+  <td width=65 valign=top style='width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'>n,
+  </span><span style='font-size:8.0pt'>об</span><span lang=EN-US
+  style='font-size:8.0pt;mso-ansi-language:EN-US'>/</span><span
+  style='font-size:8.0pt'>мин</span></p>
+  </td>
+  <td width=64 valign=top style='width:48.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'>I,
+  </span>А</p>
+  </td>
+  <td width=65 valign=top style='width:48.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'>U</span>,
+  В</p>
+  </td>
+  <td width=65 valign=top style='width:48.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'>I</span>в<span
+  lang=EN-US style='mso-ansi-language:EN-US'>, </span>А</p>
+  </td>
+  <td width=65 valign=top style='width:48.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'>M,
+  </span><span class=SpellE>н*м</span></p>
+  </td>
+  <td width=65 valign=top style='width:48.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'>P<sub>1</sub></span>,
+  Вт</p>
+  </td>
+  <td width=65 valign=top style='width:48.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'>P</span><sub>2</sub>,
+  Вт</p>
+  </td>
+  <td width=65 valign=top style='width:48.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='font-family:Symbol;
+  mso-bidi-font-family:Symbol;mso-ansi-language:EN-US'>h</span><span
+  lang=EN-US style='mso-ansi-language:EN-US'>, %<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=78 valign=top style='width:58.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=64 valign=top style='width:48.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=65 valign=top style='width:48.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=64 valign=top style='width:48.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=65 valign=top style='width:48.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=65 valign=top style='width:48.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=65 valign=top style='width:48.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=65 valign=top style='width:48.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=65 valign=top style='width:48.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=65 valign=top style='width:48.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><i><span lang=EN-US style='font-size:11.0pt;color:black;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></i></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 align=left
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:191;mso-table-lspace:9.0pt;margin-left:6.75pt;mso-table-rspace:
+ 9.0pt;margin-right:6.75pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:
+ margin;mso-table-left:left;mso-table-top:-2.95pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=94 rowspan=2 valign=top style='width:70.75pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span
+  style='font-size:9.0pt'>№ <span class=SpellE><span class=GramE>п</span></span></span><span
+  lang=EN-US style='font-size:9.0pt;mso-ansi-language:EN-US'>/</span><span
+  class=SpellE><span style='font-size:9.0pt'>п</span></span><span
+  style='font-size:9.0pt'> наблюдений</span><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=566 colspan=6 valign=top style='width:424.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'>Данные расчета</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span class=SpellE><span
+  lang=EN-US style='mso-ansi-language:EN-US'>M<sub>*</sub></span></span><span
+  lang=EN-US style='mso-ansi-language:EN-US'>, </span><span class=SpellE>от.ед</span>.</p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>P<sub>1*</sub>, </span><span class=SpellE>от.ед</span>.</p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>P</span><sub>2</sub><sub><span lang=EN-US
+  style='mso-ansi-language:EN-US'>*</span></sub><span lang=EN-US
+  style='mso-ansi-language:EN-US'>, </span><span class=SpellE>от.ед</span>.<span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span lang=EN-US
+  style='font-family:Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-US'>h</span>,
+  <span class=SpellE>от.ед</span>.</p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span class=SpellE><span
+  lang=EN-US style='mso-ansi-language:EN-US'>n<sub>*</sub></span></span><span
+  lang=EN-US style='mso-ansi-language:EN-US'>, </span><span class=SpellE>от.ед</span>.<span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span class=SpellE><span
+  lang=EN-US style='mso-ansi-language:EN-US'>I<sub>*</sub></span></span><span
+  lang=EN-US style='mso-ansi-language:EN-US'>, </span><span class=SpellE>от.ед</span>.<span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=94 valign=top style='width:70.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=94 valign=top style='width:70.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-top:-2.95pt;mso-height-rule:exactly'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><i><span lang=EN-US style='font-size:11.0pt;color:black;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></i></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><i><span lang=EN-US style='font-size:11.0pt;color:black;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></i></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><i><span style='font-size:11.0pt;color:black'><o:p>&nbsp;</o:p></span></i></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><i><span style='font-size:11.0pt;color:black'><o:p>&nbsp;</o:p></span></i></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><i><span lang=EN-US style='font-size:11.0pt;color:black;
+mso-ansi-language:EN-US'>M</span></i><i><span style='font-size:11.0pt;
+color:black'> = </span></i><i><span lang=EN-US style='font-size:11.0pt;
+color:black;mso-ansi-language:EN-US'>Fl</span></i><i><span lang=EN-US
+style='font-size:11.0pt;color:black'> </span></i><span style='font-size:11.0pt;
+color:black'>—полезный вращающий момент, <span class=SpellE><i>н*м</i></span><i>;
+</i></span><i><span lang=EN-US style='font-size:11.0pt;color:black;mso-ansi-language:
+EN-US'>F</span></i><i><span lang=EN-US style='font-size:11.0pt;color:black'> </span></i><i><span
+style='font-size:11.0pt;color:black'>— </span></i><span style='font-size:11.0pt;
+color:black'>сила на плече тормоза, Н; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><i><span lang=EN-US style='font-size:11.0pt;color:black;
+mso-ansi-language:EN-US'>l</span></i><span style='font-size:11.0pt;color:black'>
+— длина плеча тормоза, <i>м;</i></span></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><i><span lang=EN-US style='font-size:11.0pt;color:black;
+mso-ansi-language:EN-US'>P</span></i><i><sub><span style='font-size:11.0pt;
+color:black'>1</span></sub></i><i><span style='font-size:11.0pt;color:black'> =</span></i><i><span
+lang=EN-US style='font-size:11.0pt;color:black;mso-ansi-language:EN-US'>U</span></i><span
+class=SpellE><sub><span style='font-size:11.0pt;color:black'>н</span></sub></span><span
+style='font-size:11.0pt;color:black'>(</span><span lang=EN-US style='font-size:
+11.0pt;color:black;mso-ansi-language:EN-US'>I</span><span style='font-size:
+11.0pt;color:black'>я + </span><span lang=EN-US style='font-size:11.0pt;
+color:black;mso-ansi-language:EN-US'>I</span><span class=SpellE><span
+style='font-size:11.0pt;color:black'>вн</span></span><span style='font-size:
+11.0pt;color:black'>) = </span><i><span lang=EN-US style='font-size:11.0pt;
+color:black;mso-ansi-language:EN-US'>U</span></i><span class=SpellE><i><span
+style='font-size:11.0pt;color:black'>н</span></i></span><i><span lang=EN-US
+style='font-size:11.0pt;color:black;mso-ansi-language:EN-US'>I</span></i><span
+style='font-size:11.0pt;color:black'>— первичная мощность или мощность на
+входе, <i>Вт;</i></span></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><i><span lang=EN-US style='font-size:11.5pt;color:black;
+text-transform:uppercase;mso-ansi-language:EN-US'>P</span></i><i><sub><span
+style='font-size:11.5pt;color:black;text-transform:uppercase'>2</span></sub></i><i><span
+style='font-size:11.5pt;color:black;text-transform:uppercase'>=</span></i><i><span
+style='font-size:11.5pt;color:black'> </span></i><span class=SpellE><i><span
+lang=EN-US style='font-size:11.5pt;color:black;mso-ansi-language:EN-US'>M</span></i><i><span
+lang=EN-US style='font-size:11.5pt;font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black;mso-ansi-language:EN-US'>w</span></i></span><i><span
+style='font-size:11.5pt;color:black'><span style='mso-spacerun:yes'>  </span>- </span></i><i><span
+lang=EN-US style='font-size:11.5pt;color:black;mso-ansi-language:EN-US'>M</span></i><i><span
+style='font-size:11.5pt;color:black'>*2*</span></i><i><span lang=EN-US
+style='font-size:11.5pt;font-family:Symbol;mso-bidi-font-family:Symbol;
+color:black;mso-ansi-language:EN-US'>p</span></i><i><span style='font-size:
+11.5pt;color:black'>*</span></i><i><span lang=EN-US style='font-size:11.5pt;
+color:black;mso-ansi-language:EN-US'>n</span></i><i><span style='font-size:
+11.5pt;color:black'>/60 </span></i><span style='font-size:11.5pt;color:black'>=0,105</span><span
+lang=EN-US style='font-size:11.5pt;color:black;mso-ansi-language:EN-US'>n</span><span
+style='font-size:11.5pt;color:black'>М — вторичная мощность или мощность на
+выходе (полезная) Вт<i>;</i></span></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><i><span lang=EN-US style='font-size:11.5pt;font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black;mso-ansi-language:EN-US'>h = </span></i><span
+class=SpellE><i><span lang=EN-US style='font-size:11.5pt;color:black;
+mso-ansi-language:EN-US'>P</span></i><i><sub><span lang=EN-US style='font-size:
+11.5pt;font-family:Symbol;mso-bidi-font-family:Symbol;color:black;mso-ansi-language:
+EN-US'>2 </span></sub></i><i><span lang=EN-US style='font-size:11.5pt;
+font-family:Symbol;mso-bidi-font-family:Symbol;color:black;mso-ansi-language:
+EN-US'>/ </span></i><i><span lang=EN-US style='font-size:11.5pt;color:black;
+mso-ansi-language:EN-US'>P</span></i></span><i><sub><span style='font-size:
+11.5pt;color:black'>1</span></sub></i><i><span style='font-size:11.5pt;
+color:black'> — </span></i><span style='font-size:11.5pt;color:black'>к. п. д.
+двигателя.</span></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:11.5pt;color:black'>Если сила </span><i><span
+lang=EN-US style='font-size:11.5pt;color:black;mso-ansi-language:EN-US'>F</span></i><i><span
+lang=EN-US style='font-size:11.5pt;color:black'> </span></i><span
+style='font-size:11.5pt;color:black'>измеряется в килограммах, а длина пле­ча в
+метрах, то <o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:11.5pt;color:black'>Р<sub>2</sub>=9,81
+<i>М</i></span><i><span lang=EN-US style='font-size:11.5pt;font-family:Symbol;
+mso-bidi-font-family:Symbol;color:black;mso-ansi-language:EN-US'>w</span></i><span
+style='font-size:11.5pt;color:black'> = 9,81<i>М*2*</i></span><i><span
+lang=EN-US style='font-size:11.5pt;font-family:Symbol;mso-bidi-font-family:
+Symbol;color:black;mso-ansi-language:EN-US'>p</span></i><i><span
+style='font-size:11.5pt;color:black'>*</span></i><i><span lang=EN-US
+style='font-size:11.5pt;color:black;mso-ansi-language:EN-US'>n</span></i><i><span
+style='font-size:11.5pt;color:black'>/60=</span></i><span style='font-size:
+11.5pt;color:black'> 1,027<i>пМ<span class=GramE>,В</span>т.</i></span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span style='mso-spacerun:yes'>     </span>При построении
+рабочих кривых в относительных едини<span style='font-size:11.5pt;color:black'>цах,
+что всегда желательно, получают;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:78pt;height:44.25pt'>
+ <v:imagedata src="Lab.files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=104 height=59
+src="Lab.files/image004.gif" v:shapes="_x0000_i1025"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:54pt;height:40.5pt'>
+ <v:imagedata src="Lab.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=72 height=54
+src="Lab.files/image006.gif" v:shapes="_x0000_i1026"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:54pt;height:42.75pt'>
+ <v:imagedata src="Lab.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=72 height=57
+src="Lab.files/image008.gif" v:shapes="_x0000_i1027"><![endif]></sub><span
+lang=EN-US style='font-size:11.5pt;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;tab-stops:117.75pt;background:
+white;mso-layout-grid-align:none;text-autospace:none'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:66pt;height:38.25pt'>
+ <v:imagedata src="Lab.files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=88 height=51
+src="Lab.files/image010.gif" v:shapes="_x0000_i1028"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:54pt;height:40.5pt'>
+ <v:imagedata src="Lab.files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=72 height=54
+src="Lab.files/image012.gif" v:shapes="_x0000_i1029"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:60pt;height:37.5pt'>
+ <v:imagedata src="Lab.files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=80 height=50
+src="Lab.files/image014.gif" v:shapes="_x0000_i1030"><![endif]></sub>;<span
+style='font-size:11.5pt;color:black'><br clear=all style='mso-special-character:
+line-break'>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span style='color:black'>По данным табл. 1 строят
+рабочие характеристики.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>5.</span></i></b><span
+style='color:black'> Для получения <i>механических характеристик </i>опыт ведут
+так же, как и для рабочих характеристик. Первый раз торможение двигателя
+производят при сопротивле­нии добавочного реостата <span class=SpellE>г<sub>д</sub></span>
+в цепи якоря, равном нулю. Тогда характеристика </span><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>n</span><span style='color:black'>=</span></i><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>f</span><span
+style='color:black'>(</span></i><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>M</span><span style='color:black'>) </span></i><span
+style='color:black'>называется естествен­ной и представляет собой прямую линию
+со слабым наклоном к оси абсцисс. Второй, третий раз и далее тормозят двигатель
+при добавочных сопротивлениях, включенных в цепь якоря </span><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>r</span><sub><span
+style='color:black'>д1</span></sub><span style='color:black'>&lt;г<sub>Д<span
+class=GramE>2</span></sub>&lt;</span><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>r</span><span class=SpellE><span style='color:black'>дз</span></span><span
+style='color:black'> ... и т. д., и полу­чают семейство механических
+характеристик. Чем боль­ше <span class=SpellE>г<sub>д</sub></span>, тем круче
+наклон характеристики. Данные заме­ров записывают в табл. 1 и заполняют столбцы
+для величин </span><i><span lang=EN-US style='color:black;mso-ansi-language:
+EN-US'>F</span><span style='color:black'>, М, п.</span></i></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>6.</span></i></b><span
+style='color:black'> <i>Скоростные характеристики </i>получают следующим
+образом. Собирают схему двигателя по рис. 2-10 и пу­скают его вхолостую.
+Устанавливают номинальное на­пряжение на зажимах якоря при помощи реостата <i>2
+</i>в цепи якоря и ток возбуждения, примерно равный (1,1-1,2)</span><span
+class=GramE><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span></span><span
+class=SpellE><span style='color:black'>вн</span></span><span style='color:black'>
+измеряют скорость вращения двигателя и ток </span><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>I</span><span style='color:black'>.
+Это будет первая точка характеристики.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span style='color:black'>Затем двигатель постепенно
+нагружают, записывают показания амперметров и тахометра. Ток двигателя же­лательно
+довести до 1,2</span><span class=GramE><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>I</span></span><span style='color:black'>н.
+Достаточное число замеров четыре-пять. Такие же два опыта проводятся при токах
+возбуждения </span><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span><span
+class=SpellE><span style='color:black'>в=</span></span><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>I</span><span class=SpellE><span
+style='color:black'>вн</span></span><span style='color:black'> и </span><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span><span
+style='color:black'>в = 0,75</span><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>I</span><span class=SpellE><span style='color:black'>вн</span></span><span
+style='color:black'> Данные замеров записывают <span class=GramE>в</span> табл.
+2.</span></p>
+
+<p class=MsoNormal align=right style='text-align:right;background:white;
+mso-layout-grid-align:none;text-autospace:none'>Таблица №2</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:2.0pt;border-collapse:collapse;mso-padding-alt:0cm 2.0pt 0cm 2.0pt'>
+ <tr style='mso-yfti-irow:0;height:27.8pt'>
+  <td width=153 valign=top style='width:115.05pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .75pt;padding:0cm 2.0pt 0cm 2.0pt;height:
+  27.8pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span style='color:black'>№
+  наблюдений</span></p>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=119 valign=top style='width:89.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .75pt;mso-border-alt:
+  solid windowtext .75pt;padding:0cm 2.0pt 0cm 2.0pt;height:27.8pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>I, A<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=118 valign=top style='width:88.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .75pt;mso-border-alt:
+  solid windowtext .75pt;padding:0cm 2.0pt 0cm 2.0pt;height:27.8pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>n</span><span style='color:black'>,
+  <i>об/мин</i></span></p>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=119 valign=top style='width:89.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .75pt;mso-border-alt:
+  solid windowtext .75pt;padding:0cm 2.0pt 0cm 2.0pt;height:27.8pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>I<sub>*</sub></span><span
+  style='color:black'>, <span class=SpellE>отн</span> . ед.</span></p>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=115 valign=top style='width:86.35pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .75pt;mso-border-alt:
+  solid windowtext .75pt;padding:0cm 2.0pt 0cm 2.0pt;height:27.8pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><i><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>n<sub>*</sub></span><span
+  style='color:black'>, </span></i><span class=SpellE><span style='color:black'>отн</span></span><span
+  style='color:black'>. ед.</span></p>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;height:18.35pt'>
+  <td width=153 valign=top style='width:115.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .75pt;mso-border-alt:
+  solid windowtext .75pt;padding:0cm 2.0pt 0cm 2.0pt;height:18.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=119 valign=top style='width:89.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  mso-border-alt:solid windowtext .75pt;padding:0cm 2.0pt 0cm 2.0pt;height:
+  18.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=118 valign=top style='width:88.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  mso-border-alt:solid windowtext .75pt;padding:0cm 2.0pt 0cm 2.0pt;height:
+  18.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=119 valign=top style='width:89.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  mso-border-alt:solid windowtext .75pt;padding:0cm 2.0pt 0cm 2.0pt;height:
+  18.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=115 valign=top style='width:86.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  mso-border-alt:solid windowtext .75pt;padding:0cm 2.0pt 0cm 2.0pt;height:
+  18.35pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><span style='color:black'>По данным табл. 2 строят три
+характеристики соответственно трем токам возбуждения, примерный вид которых
+представлен на рис. 1.2.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>7,а</span></i></b><span
+style='color:black'>. Для получения <i>регулировочной характеристики </i></span><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>n</span><span
+style='color:black'> = </span></i><i><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>f</span><span style='color:black'>(</span></i><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span><span
+style='color:black'>в)</span></i><span style='color:black'> при </span><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>U</span><span
+class=SpellE><span style='color:black'>н</span></span></i><span
+style='color:black'> и моменте на валу <i>М<span class=GramE><sub>2</sub></span>,
+</i>равном нулю, по­ступают следующим образом. Собирают схему по рис. 1.2,
+пускают двигатель вхолостую, устанавливают наибольший ток возбуждения и
+номинальное напряжение на зажимах якоря. Поддержива­ют напряжение <span
+class=GramE>постоянным</span>, уменьшают ток возбужде­ния </span><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span><span
+style='color:black'>в </span></i><span style='color:black'>и измеряют скорость
+вращения.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span style='color:black'><span
+style='mso-spacerun:yes'>       </span>Ток в якоре при холостом ходе обычно не
+превышает 10% </span><i><span lang=EN-US style='color:black;mso-ansi-language:
+EN-US'>I</span><span class=SpellE><span style='color:black'>н</span></span></i><span
+style='color:black'>, поэтому реостат <i>2, </i>показанный на рис. 1.1,
+приходится заменять реостатом с большим сопротивле­нием, чтобы он позволял
+поддерживать напряжение рав­ным </span><span lang=EN-US style='color:black;
+mso-ansi-language:EN-US'>U<sub>H</sub></span><span style='color:black'>, когда
+опыт ведут при <i>М<span class=GramE><sub>2</sub></span></i> = 0.</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span style='color:black'><span
+style='mso-spacerun:yes'>     </span>Такой же опыт проводят, нагрузив двигатель
+при по­мощи тормоза, установив <i>М<span class=GramE><sub>2</sub></span>=Мн. </i>В
+этом случае рео­стат <i>2 </i>должен быть рассчитан на полный ток двигателя.
+Записи двух таких опытов сводят в табл. 3 и строят характеристики (рис. 1.3).</span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><b><i><span style='color:black'>7,б.</span></i></b><span
+style='color:black'> <i>Регулировочная характеристика </i></span><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span><span
+class=SpellE><span style='color:black'>в=</span></span></i><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>f</span><span style='color:black'>(</span></i><i><span
+lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span><span
+style='color:black'>)</span></i><span style='color:black'> при <span
+class=SpellE><span class=GramE><i>п<sub>н</sub></i></span></span><span
+class=GramE><i><sub> </sub></i>и</span> </span><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>U</span><span class=SpellE><sub><span
+style='color:black'>н</span></sub></span><span style='color:black'> </span></i><span
+style='color:black'>получается следующим образом. </span></p>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><!--[if gte vml 1]><v:shape id="_x0000_s1028" type="#_x0000_t75"
+ style='position:absolute;left:0;text-align:left;margin-left:270pt;
+ margin-top:12.4pt;width:186pt;height:176.05pt;z-index:-5'>
+ <v:imagedata src="Lab.files/image015.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:-5;left:0px;margin-left:360px;margin-top:16px;width:248px;
+height:235px'><img width=248 height=235 src="Lab.files/image016.jpg" v:shapes="_x0000_s1028"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1029" type="#_x0000_t75" style='position:absolute;left:0;
+ text-align:left;margin-left:-12pt;margin-top:12.4pt;width:192.3pt;height:177.4pt;
+ z-index:-9'>
+ <v:imagedata src="Lab.files/image017.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:-9;left:0px;margin-left:-16px;margin-top:16px;width:256px;
+height:237px'><img width=256 height=237 src="Lab.files/image018.jpg" v:shapes="_x0000_s1029"></span><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:291.75pt'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1030" type="#_x0000_t202" style='position:absolute;
+ margin-left:4in;margin-top:8.2pt;width:156pt;height:42pt;z-index:7' filled="f"
+ stroked="f"/><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+position:absolute;z-index:7;margin-left:384px;margin-top:11px;width:212px;
+height:60px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=212 height=60 style='vertical-align:top'><![endif]><![if !mso]><span
+  style='position:absolute;mso-ignore:vglayout;z-index:7'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div v:shape="_x0000_s1030" style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal><span style='font-size:9.0pt;color:black'>Рис.<span
+    style='mso-spacerun:yes'>  </span>1.4.<span style='mso-spacerun:yes'>    
+    </span>Зависи­мость тока возбужде­ния<span style='mso-spacerun:yes'>  
+    </span>двигателя от то­ка якоря.</span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1031" type="#_x0000_t75"
+ style='position:absolute;margin-left:284pt;margin-top:85pt;width:147.9pt;
+ height:186pt;z-index:6'>
+ <v:imagedata src="Lab.files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:6;margin-left:379px;margin-top:113px;width:197px;height:248px'><img
+width=197 height=248 src="Lab.files/image020.jpg" v:shapes="_x0000_s1031"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1032" type="#_x0000_t202" style='position:absolute;margin-left:42pt;
+ margin-top:277pt;width:132pt;height:60pt;z-index:4' filled="f" stroked="f">
+ <v:textbox style='mso-next-textbox:#_x0000_s1032'/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:4;margin-left:56px;margin-top:369px;width:180px;height:84px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=180 height=84 style='vertical-align:top'><![endif]><![if !mso]><span
+  style='position:absolute;mso-ignore:vglayout;z-index:4'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div v:shape="_x0000_s1032" style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal><span style='font-size:9.5pt;color:black'>Рис.<span
+    style='mso-spacerun:yes'>   </span>1.3.<span style='mso-spacerun:yes'>   
+    </span>Зависимость скорости<span style='mso-spacerun:yes'>  
+    </span>вращения<span style='mso-spacerun:yes'>   </span>дви­гателя<span
+    style='mso-spacerun:yes'>     </span>параллельного возбуждения от тока
+    возбуждения.</span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1033" type="#_x0000_t75"
+ style='position:absolute;margin-left:42pt;margin-top:73pt;width:114pt;
+ height:204pt;z-index:-7' o:allowoverlap="f">
+ <v:imagedata src="Lab.files/image021.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:-7;margin-left:56px;margin-top:97px;width:152px;height:272px'><img
+width=152 height=272 src="Lab.files/image022.jpg" v:shapes="_x0000_s1033"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1034" type="#_x0000_t202" style='position:absolute;margin-left:30pt;
+ margin-top:7pt;width:2in;height:60pt;z-index:2' filled="f" stroked="f">
+ <v:textbox style='mso-next-textbox:#_x0000_s1034'/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:2;margin-left:40px;margin-top:9px;width:196px;height:84px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=196 height=84 style='vertical-align:top'><![endif]><![if !mso]><span
+  style='position:absolute;mso-ignore:vglayout;z-index:2'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div v:shape="_x0000_s1034" style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal><span style='font-size:9.5pt;color:black'>Рис.<span
+    style='mso-spacerun:yes'>  </span>1.2.<span style='mso-spacerun:yes'> 
+    </span>Скоростные характери­стики<span style='mso-spacerun:yes'> 
+    </span>двигателя<span style='mso-spacerun:yes'>   </span>параллельного
+    возбуждения.</span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><span style='mso-tab-count:1'>                                                                                                 </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1035" type="#_x0000_t202"
+ style='position:absolute;margin-left:300pt;margin-top:2.25pt;width:138pt;
+ height:54pt;z-index:8' filled="f" stroked="f"/><![endif]--><![if !vml]><span
+style='mso-ignore:vglayout'>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=400 height=3></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td width=188 height=76 style='vertical-align:top'><![endif]><![if !mso]><span
+  style='position:absolute;mso-ignore:vglayout;z-index:8'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div v:shape="_x0000_s1035" style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+    text-autospace:none'><span style='font-size:10.0pt;color:black'>Рис. 1.5.
+    Зависимость скорости<span style='mso-spacerun:yes'>   </span>вращения<span
+    style='mso-spacerun:yes'>   </span>двигателя<span
+    style='mso-spacerun:yes'>     </span>от напряжения на зажимах якоря</span><span
+    style='font-size:10.0pt'><o:p></o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<br style='mso-ignore:vglayout' clear=ALL>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><span style='color:black'>Схема соединения двигателя та
+же, что и в предыдущем опыте. Дви­гатель пускают вхолостую и устанавливают
+номиналь­ную скорость вращения при номинальном напряжении. Затем двигатель
+нагружают, тормозя его на валу, и регулируют<span style='mso-spacerun:yes'> 
+</span>ТОК<span style='mso-spacerun:yes'>    </span>возбуждения </span><span
+class=GramE><i><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>I</span></i></span><i><span
+style='color:black'>в</span></i><span style='color:black'>, чтобы скорость
+оставалась неизменной.<span style='mso-spacerun:yes'>   </span>Напряжение на
+зажимах якоря все время поддерживают <span class=GramE>постоянным</span> при
+помощи регули­ровочного реостата в цепи якоря. Этот опыт позволяет определить
+величину сопротивления регулировочного реостата в цепи возбуждения (рис.1.1), при
+помощи которого возможно поддержание неизменной скорости </span><span
+style='font-size:11.5pt;color:black'>при всех нагрузках двигателя. При опыте
+достаточно по­лучить пять-шесть точек.</span></p>
+
+<p class=MsoNormal align=right style='text-align:right;background:white;
+mso-layout-grid-align:none;text-autospace:none'><span style='color:black'>Таблица
+№ 3<o:p></o:p></span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:191;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=73 rowspan=2 valign=top style='width:55.0pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span style='font-size:9.0pt;
+  color:black'>№ наблюдений</span><span style='font-size:9.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=293 colspan=4 valign=top style='width:220.05pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><i><span lang=EN-US style='mso-ansi-language:EN-US'>M<sub>2</sub>-0<o:p></o:p></span></i></p>
+  </td>
+  <td width=294 colspan=4 valign=top style='width:220.2pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><i><span lang=EN-US style='mso-ansi-language:EN-US'>M<sub>2</sub>-M</span><span
+  class=SpellE><sub>н</sub></span><o:p></o:p></i></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=73 valign=top style='width:55.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>I</span>в<span lang=EN-US style='mso-ansi-language:
+  EN-US'>, A<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>n</span><span style='color:black'>,
+  <i>об/мин</i></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>I</span><span style='color:black'>в</span><sub><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>*</span></sub><span
+  style='color:black'>, <span class=SpellE>отн</span> . ед.</span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>n</span><span style='color:black'>в</span></i><i><sub><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>*</span></sub><span
+  style='color:black'>, </span></i><span class=SpellE><span style='color:black'>отн</span></span><span
+  style='color:black'>. <span class=SpellE><span class=GramE>ед</span></span></span><span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>I</span>в<span lang=EN-US style='mso-ansi-language:
+  EN-US'>, A<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>n</span><span style='color:black'>,
+  <i>об/мин</i></span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>I</span><span style='color:black'>в</span><sub><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>*</span></sub><span
+  style='color:black'>, <span class=SpellE>отн</span> . ед.</span></p>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-layout-grid-align:
+  none;text-autospace:none'><i><span lang=EN-US style='color:black;mso-ansi-language:
+  EN-US'>n</span><span style='color:black'>в</span></i><i><sub><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>*</span></sub><span
+  style='color:black'>, </span></i><span class=SpellE><span style='color:black'>отн</span></span><span
+  style='color:black'>. <span class=SpellE><span class=GramE>Ед</span></span></span><span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=73 valign=top style='width:55.0pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=73 valign=top style='width:55.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;background:white;mso-layout-grid-align:
+none;text-autospace:none'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'>Таблица № 4</p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:191;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=132 valign=top style='width:99.05pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span style='font-size:9.0pt;
+  color:black'>№ наблюдений</span><span style='font-size:9.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=132 valign=top style='width:99.05pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>I, A<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=132 valign=top style='width:99.05pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>I</span>в<span lang=EN-US style='mso-ansi-language:
+  EN-US'>, A<o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=132 valign=top style='width:99.05pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>I<sub>*</sub></span><span
+  style='color:black'>, <span class=SpellE>отн</span> . ед.</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=132 valign=top style='width:99.05pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='color:black;mso-ansi-language:EN-US'>I</span><span style='color:black'>в</span><sub><span
+  lang=EN-US style='color:black;mso-ansi-language:EN-US'>*</span></sub><span
+  style='color:black'>, <span class=SpellE>отн</span> . ед.</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=132 valign=top style='width:99.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=132 valign=top style='width:99.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=132 valign=top style='width:99.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=132 valign=top style='width:99.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=132 valign=top style='width:99.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='background:white;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:11.0pt;color:black'>Данные замеров опыта
+записывают в табл. 4 и строят характеристику, показанную на<span
+style='mso-spacerun:yes'>  </span>рис. 1.4</span><span style='font-size:11.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><i><span style='color:black'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p class=MsoNormal><b><i><span style='color:black'>7,<span class=GramE>в</span>.</span></i></b><span
+style='color:black'> <span class=GramE>Для</span> этого опыта включают пусковой
+реостат (рис. 1.1) при разомкнутом реостате <i>2 </i>и устанавливают
+номинальный ток в обмотке возбуждения. Опыт можно производить как при <i>М</i>=
+0, так и любом неизменном мо­менте на валу <i>(М = </i></span><span
+class=SpellE><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>const</span></span><span
+style='color:black'>). После этого при помощи реостата <i>2 </i>постепенно
+поднимают напряжение на зажимах якоря. При некоторой величине </span><span
+class=GramE><span lang=EN-US style='color:black;mso-ansi-language:EN-US'>U</span></span><sub><span
+style='color:black'>Т,</span></sub><span style='color:black'> называемой напря­жением
+<span class=SpellE>трогания</span>, якорь начинает вращаться, при­чем скорость
+вращения возрастает пропорционально на­пряжению </span><i><span lang=EN-US
+style='color:black;mso-ansi-language:EN-US'>U</span><span style='color:black'>.
+</span></i><span style='color:black'>Такой способ регулирования применяется в
+системе генератор — двигатель, причем напряжение там регулируется изменением
+тока возбуждения генератора. Данные замеров опыта записывают в табл. 5 и стро­ят
+график (рис. 1.5).<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='color:
+black'>Таблица № 5<o:p></o:p></span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:191;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=220 valign=top style='width:165.05pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:white;
+  mso-layout-grid-align:none;text-autospace:none'><span style='color:black'>№
+  наблюдений</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=220 valign=top style='width:165.1pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>U, B<o:p></o:p></span></p>
+  </td>
+  <td width=220 valign=top style='width:165.1pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='mso-ansi-language:EN-US'>n, </span>об<span lang=EN-US
+  style='mso-ansi-language:EN-US'>/</span>мин</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=220 valign=top style='width:165.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=220 valign=top style='width:165.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=220 valign=top style='width:165.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-family:Arial;color:navy'>Лабораторная
+работа № 2 </span><b><span style='font-family:Arial'>«Электродвигатель
+последовательного возбуждения»</span></b><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

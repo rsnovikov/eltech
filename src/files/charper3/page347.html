@@ -1,0 +1,111 @@
+<html>
+<head>
+
+
+<SCRIPT LANGUAGE="JavaScript"> 
+// <!-- Begin
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     // document.write("<BGSOUND SRC=../Sound/Chapter3/3.4.7.mp3 >");
+   } 
+  document.write("<audio SRC=../Sound/Chapter3/3.4.7.mp3 autoplay=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 ></audio>");
+// End --> 
+</SCRIPT>
+
+<title>3.4.7. Согласование источника энергии с нагрузкой</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      
+    <td height="29" colspan="2" class="head1"> 
+      <div align="center"><b class="head1">3.4.7. Согласование источника энергии 
+        с нагрузкой<br>
+        </b></div>
+    </td>
+  </tr>
+    <tr align="center"> 
+  <td colspan="2" valign="top"><table width="100%"  border="0">
+    <tr>
+          <td width="70%" colspan="2"> 
+            
+            <p class="text" align="left"><span class="text">Рассмотрим электрическую 
+              цепь, состоящую из источника энергии (сигнала) <u class="index">E</u></span><u class="index"><span class="indexsmall">u</span></u><span class="text"> 
+              с внутренним сопротивлением </span><u><span class="index">Z</span></u><span class="text"><u class="indexsmall">u</u> 
+              = </span><span class="index">R</span><span class="indexsmall">u</span><span class="text">+ 
+              </span><span class="index">jX</span><span class="indexsmall">u</span><span class="text"> 
+              и нагрузки с сопротивлением </span><u><span class="index">Z</span></u><span class="indexsmall">н</span><span class="text"> 
+              = </span><span class="index">R</span><span class="indexsmall">н</span><span class="text">+ 
+              </span><span class="index">jX</span><span class="indexsmall">н</span><span class="text"> 
+              (рис. 3.40, </span><span class="index">а</span><span class="text">). 
+              В общем случае ток<br>
+              </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/347/img004.gif" align="absmiddle">,<br>
+              а активная мощность нагрузки<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/347/img006.gif" align="absmiddle"></p>
+			  <p class="text" align="center"><img src="Images/347/img002.jpg" width="349" height="172"></p>
+            <p class="text" align="left">Чтобы получить максимальную мощность, 
+              передаваемую в нагрузку, необходимо:<br>
+              а) исключить в знаменателе реактивное сопротивление <span class="index">Х</span>, 
+              т. е. получить режим резонанса напряжений (РН), при котором <span class="index">X</span> 
+              = <span class="index">X</span><span class="indexsmall">и</span> 
+              + <span class="index">X</span><span class="indexsmall">н</span> 
+              = 0 или <span class="index">X</span><span class="indexsmall">и</span> 
+              = - <span class="index">X</span><span class="indexsmall">н</span>. 
+              Выполнив это условие, получим значение активной мощности<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/347/img008.gif" align="absmiddle"><br>
+              б) найти оптимальное соотношение между сопротивлениями <span class="index">R</span><span class="indexsmall">и</span> 
+              и <span class="index">R</span><span class="indexsmall">н</span>. 
+              Для этого возьмём производную <em>P<sub>н</em>(<em>max</em>)<em></sub>/dR</em></span><span class="indexsmall">н</span></em>
+              и приравняем её к нулю, т. е.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/347/img012.gif" align="absmiddle"><br>
+              Откуда <span class="index">R</span><span class="indexsmall">н</span> 
+              = <span class="index">R</span><span class="indexsmall">и</span></p>
+            <p class="text">Итак, <span class="head2">для согласования источника 
+              энергии (сигнала) с нагрузкой по критерию максимума мощности, передаваемой 
+              в нагрузку, сопротивление нагрузки должно быть величиной, комплексно-сопряжённой 
+              с внутренним сопротивлением источника</span>. </p>
+            <p class="text">При выполнении этого условия, имеем:<br>
+              - максимально достижимое <span class="head2">значение активной мощности</span>, 
+              передаваемой в нагрузку,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/347/img016.gif" align="absmiddle">;<br>
+              - мощность источника сигнала <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/347/img018.gif" align="absmiddle">;<br>
+              - коэффициент полезного действия источника сигнала (рис. 3.40, <em>б</em>)</p>
+            <table width="100%" border="0">
+              <tr>
+                <td class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/347/img020.gif" align="absmiddle">. 
+                </td>
+                <td width=100 class="head2">
+                  <div align="right">(3.63) </div>
+                </td>
+              </tr>
+            </table>
+            <p class="text">Такой режим работы реализуют в маломощных радиоустройствах. 
+              Промышленные же системы электроснабжения работают при отношениях 
+              <span class="index">R</span><span class="indexsmall">н</span>/<span class="index">R</span><span class="indexsmall">и</span> 
+              &gt; 4...5 (при малых <span class="index">R</span><span class="indexsmall">и</span>), 
+              при которых КПД <span class="symbol">h</span> <span class="symbol">®</span> 
+              1.</p>
+            <p> <span class="text"><br>
+          </span> </p>          </td>
+    </tr>
+  </table></td>
+  </tr>
+    <tr> 
+      
+    <td height="20"><a href="zad35.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+    </td>
+      <td>
+      <div align="right"><a href="page351.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>      
+    </td>
+    </tr>
+</table> 
+</body>
+</html>

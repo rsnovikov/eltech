@@ -1,0 +1,374 @@
+<html>
+<head>
+<script language="JavaScript">
+<!--
+var total=1;
+var db = new Array();
+
+// -- Enter Values Here --
+// Format: dbAdd(parent[true|false] , description, URL [blank for nohref], level , TARGET [blank for "content"], new? [1=yes])
+/*dbAdd( false , " Упражнение 1. " , "index1.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 2. " , "index2.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 3. " , "index3.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 4. " , "index4.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 5. " , "index5.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 6. " , "index6.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 7. " , "index7.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 8. " , "index8.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 9. " , "index9.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 10. " , "index10.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 11. " , "index11.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 12. " , "index11.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 13. " , "index11.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 14. " , "index11.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 15. " , "index11.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 16. " , "index11.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 17. " , "index11.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 18. " , "index11.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 19. " , "index11.html" , 0 , "_parent" , 0)
+dbAdd( false , " Упражнение 20. " , "index11.html" , 0 , "_parent" , 0)
+*/ 
+
+// Глава 1
+dbAdd( true , "Тема 1" , "" , 0 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 1.1" , "charper1/upr11.html" , 1, "mainFrame" , 0)
+dbAdd( false, "Упражнение 1.2" , "charper1/upr12.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 1.3" , "charper1/upr13.html" , 1 , "mainFrame" , 0)
+
+// Глава 2
+dbAdd( true , "Тема 2" , "" , 0 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.1" , "charper2/upr21.html" , 1, "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.2" , "charper2/upr22.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.3" , "charper2/upr23.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.4" , "charper2/upr24.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.5" , "charper2/upr25.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.6" , "charper2/upr26.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.7" , "charper2/upr27.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.8" , "charper2/upr28.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.9" , "charper2/upr29.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.10" , "charper2/upr210.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.11" , "charper2/upr211.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.12" , "charper2/upr212.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.13" , "charper2/upr213.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.14" , "charper2/upr214.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.15" , "charper2/upr215.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.16" , "charper2/upr216.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.17" , "charper2/upr217.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.18" , "charper2/upr218.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.19" , "charper2/upr219.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.20" , "charper2/upr220.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.21" , "charper2/upr221.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.22" , "charper2/upr222.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.23" , "charper2/upr223.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.24" , "charper2/upr224.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.25" , "charper2/upr225.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.26" , "charper2/upr226.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.27" , "charper2/upr227.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.28" , "charper2/upr228.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 2.29" , "charper2/upr229.html" , 1 , "mainFrame" , 0)
+
+// Глава 3
+dbAdd( true , "Тема 3" , "" , 0 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.1" , "charper3/upr31.html" , 1, "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.2" , "charper3/upr32.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.3" , "charper3/upr33.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.4" , "charper3/upr3.4.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.5" , "charper3/upr3.5.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.6" , "charper3/upr3.6.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.7" , "charper3/upr3.7.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.8" , "charper3/upr3.8.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.9" , "charper3/upr3.9.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.10" , "charper3/upr3.10.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.11" , "charper3/upr3.11.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.12" , "charper3/upr312.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.13" , "charper3/upr313.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.14" , "charper3/upr314.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.15" , "charper3/upr315.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.16" , "charper3/upr316.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.17" , "charper3/upr317.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.18" , "charper3/upr318.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.19" , "charper3/upr319.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.20" , "charper3/upr320.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 3.21" , "charper3/upr321.html" , 1 , "mainFrame" , 0)
+
+// Глава 4
+dbAdd( true , "Тема 4" , "" , 0 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 4.1" , "chapter4/Glava_4/Chapter_1/upr_4_1.htm" , 1, "mainFrame" , 0)
+dbAdd( false, "Упражнение 4.2" , "chapter4/Glava_4/Chapter_1/upr_4_2.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 4.3" , "chapter4/Glava_4/Chapter_2/upr_4_3.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 4.4" , "chapter4/Glava_4/Chapter_2/upr_4_4.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 4.5" , "chapter4/Glava_4/Chapter_4/upr_4_5.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 4.6" , "chapter4/Glava_4/Chapter_4/upr_4_6.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 4.7" , "chapter4/Glava_4/Chapter_6/upr_4_7.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 4.8" , "chapter4/Glava_4/Chapter_6/upr_4_8.htm" , 1 , "mainFrame" , 0)
+
+// Глава 5
+dbAdd( true , "Тема 5" , "" , 0 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 5.1" , "chapter5/upr5_1.htm" , 1, "mainFrame" , 0)
+dbAdd( false, "Упражнение 5.2" , "chapter5/upr5_2.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 5.3" , "chapter5/upr5_3.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 5.4" , "chapter5/upr5_4.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 5.5" , "chapter5/upr5_5.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 5.6" , "chapter5/upr5_6.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 5.7" , "chapter5/upr5_7.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 5.8" , "chapter5/upr5_8.htm" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 5.9" , "chapter5/upr5_9.htm" , 1 , "mainFrame" , 0)
+
+// Глава 6
+dbAdd( true , "Тема 6" , "" , 0 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 6.1" , "charper6/upr61.html" , 1, "mainFrame" , 0)
+dbAdd( false, "Упражнение 6.2" , "charper6/upr62.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 6.3" , "charper6/upr63.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 6.4" , "charper6/upr64.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 6.5" , "charper6/upr65.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 6.6" , "charper6/upr66.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 6.7" , "charper6/upr67.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 6.8" , "charper6/upr68.html" , 1 , "mainFrame" , 0)
+
+// Глава 7
+dbAdd( true , "Тема 7" , "" , 0 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 7.1" , "charper7/upr71.html" , 1, "mainFrame" , 0)
+dbAdd( false, "Упражнение 7.2" , "charper7/upr72.html" , 1 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 7.3" , "charper7/upr73.html" , 1 , "mainFrame" , 0)
+
+// Глава 8
+dbAdd( true , "Тема 8" , "" , 0 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 8.1" , "charper8/upr81.html" , 1, "mainFrame" , 0)
+dbAdd( false, "Упражнение 8.2" , "charper8/upr82.html" , 1 , "mainFrame" , 0)
+
+// Глава 9
+dbAdd( true , "Тема 9" , "" , 0 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 9.1" , "chapter9/upr91.html" , 1, "mainFrame" , 0)
+dbAdd( false, "Упражнение 9.2" , "chapter9/upr92.html" , 1 , "mainFrame" , 0)
+
+// Глава 10
+dbAdd( true , "Тема 10" , "" , 0 , "mainFrame" , 0)
+dbAdd( false, "Упражнение 10.1" , "chapter10/upr10_1.html" , 1, "mainFrame" , 0)
+dbAdd( false, "Упражнение 10.2" , "chapter10/upr10_2.html" , 1 , "mainFrame" , 0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+// -- End modifications --
+
+// Get current cookie setting
+var current=getCurrState()
+function getCurrState() {
+  var label = "currState="
+  var labelLen = label.length
+  var cLen = document.cookie.length
+  var i = 0
+  while (i < cLen) {
+    var j = i + labelLen
+    if (document.cookie.substring(i,j) == label) {
+      var cEnd = document.cookie.indexOf(";",j)
+      if (cEnd == -1) { cEnd = document.cookie.length }
+      return unescape(document.cookie.substring(j,cEnd))
+    }
+    i++
+  }
+  return ""
+}
+
+// Add an entry to the database
+function dbAdd(mother,display,URL,indent,top,newitem) {
+  db[total] = new Object;
+  db[total].mother = mother
+  db[total].display = display
+  db[total].URL = URL
+  db[total].indent = indent
+  db[total].top = top
+  db[total].newitem = newitem
+  total++
+  }
+
+// Record current settings in cookie
+function setCurrState(setting) {
+  var expire = new Date();
+  expire.setTime(expire.getTime() + ( 7*24*60*60*1000 ) ); // expire in 1 week
+  document.cookie = "currState=" + escape(setting) + "; expires=" + expire.toGMTString();
+  }
+
+// toggles an outline mother entry, storing new value in the cookie
+function toggle(n) {
+  if (n != 0) {
+    var newString = ""
+    var expanded = current.substring(n-1,n) // of clicked item
+    newString += current.substring(0,n-1)
+    newString += expanded ^ 1 // Bitwise XOR clicked item
+    newString += current.substring(n,current.length)
+    setCurrState(newString) // write new state back to cookie
+  }
+}
+
+// returns padded spaces (in mulTIPles of 2) for indenting
+function pad(n) {
+  var result = ""
+  for (var i = 1; i <= n; i++) { result += "&nbsp;&nbsp;&nbsp;&nbsp;" }
+  return result
+}
+
+// Expand everything
+function explode() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "1"
+    current += "1"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+
+// Collapse everything
+function contract() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+
+function tree_close() {
+  window.parent.location = window.parent.content.location;
+  }
+
+// end -->
+
+
+</script>
+<title>Contents</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="styles/emx_nav_left.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/left.jpg);
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+}
+body,td,th {
+	color: #990000;
+}
+-->
+</style></head>
+
+<body bgcolor=#ffffff link="#006666" vlink="#004444">
+<table width=100% border=0 cellpadding=5 cellspacing=0 bordercolor="#005FA9">
+<tr>
+<td align=left><div align="right"><a href="javascript:contract();"><img src="images/minimize.gif" width=16 height=14 border=0></a>
+      <a href="javascript:explode();"><img src="images/maximize.gif" width=16 height=14 border=0 ></a>
+      <a href="javascript:tree_close();">      </a></div></td>
+</tr>
+<tr>
+  <td align=left><div align="center" class="style1">
+    УПРАЖНЕНИЯ
+    </div></td>
+  </tr>
+</table>
+<br>
+<table border=0 width=100%>
+  <tr><td>
+<font size="-1">
+
+<script language="JavaScript">
+<!--
+// Set the initial state if no current state or length changed
+if (current == "" || current.length != (db.length-1)) {
+  current = ""
+  initState = ""
+  for (i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState)
+  }
+var prevIndentDisplayed = 0
+var showMyDaughter = 0
+// end -->
+
+<!--
+var Outline=""
+// cycle through each entry in the outline array
+for (var i = 1; i < db.length; i++) {
+  var currIndent = db[i].indent           // get the indent level
+  var expanded = current.substring(i-1,i) // current state
+  var top = db[i].top
+  if (top == "") { top="content" }
+  // display entry only if it meets one of three criteria
+  if ((currIndent == 0 || currIndent <= prevIndentDisplayed || (showMyDaughter == 1 && (currIndent - prevIndentDisplayed == 1)))) {
+  Outline += pad(currIndent)
+
+  // Insert the appropriate GIF and HREF
+  newitem = "";
+  if (db[i].newitem) { newitem="_new"; }
+  if (!(db[i].mother)) {
+    Outline += "<IMG SRC=\"images/blank.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/document" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+    }
+  else {
+      if (current.substring(i-1,i) == 1) {
+        Outline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.parent.status=\'Click to collapse\';return true;\" onClick=\"toggle(" + i + ")\">"
+        Outline += "<IMG SRC=\"images/minus.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/open" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+        Outline += "</A>"
+        }
+      else {
+	    Outline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.parent.status=\'Click to expand\';return true;\" onClick=\"toggle(" + i + ")\">"
+        Outline += "<IMG SRC=\"images/plus.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/closed" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+        Outline += "</A>"
+        }
+      }
+    Outline += "&nbsp;";
+
+    if (db[i].URL == "" || db[i].URL == null) {
+      Outline += "" + db[i].display      // no link, just a listed item
+      }
+    else {
+      Outline += " <A HREF=\"" + db[i].URL + "\" TARGET=\"" + top + "\">" + db[i].display + "</A>"
+      }
+	// Bold if at level 0
+    if (currIndent == 0) {
+      Outline = "" + Outline + ""
+      }
+    Outline += "<BR>"
+    prevIndentDisplayed = currIndent
+    showMyDaughter = expanded
+    // if (i == 1) { Outline = ""}
+    if (db.length > 25) {
+      document.write(Outline)
+      Outline = ""
+      }
+    }
+  }
+document.write(Outline)
+// end -->
+</script>
+</font>
+</td>
+  </tr>
+</table>
+<hr>
+<br>
+</body>
+</html>

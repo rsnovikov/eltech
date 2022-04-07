@@ -1,0 +1,316 @@
+<html>
+<head>
+<script LANGUAGE="JavaScript">
+<!--
+var total=1;
+var db = new Array();
+
+// -- Enter Values Here --
+// Format: dbAdd(parent[true|false] , description, URL [blank for nohref], level , TARGET [blank for "content"], new? [1=yes])
+dbAdd( true , " 6.1. Основные магнитные величины и свойства ферромагнитных материалов" , "" , 0 , "mainFrame" , 0)
+  dbAdd( false,  " 6.1.1. Неразрывность электрического и магнитного полей" , "charper6/page611.html" , 1, "mainFrame" , 0)
+  dbAdd( false, " 6.1.2. Магнитная индукция" , "charper6/page612.html" , 1 , "mainFrame" , 0)
+  dbAdd( false, " 6.1.3. Изображение магнитного поля и направление  магнитной индукции" , "charper6/page613.html" , 1 , "mainFrame" , 0)
+  dbAdd( false, " 6.1.4. Магнитный поток и потокосцепление" , "charper6/page614.html" , 1 , "mainFrame" , 0)
+  dbAdd( false, " 6.1.5. Напряжённость магнитного поля" , "charper6/page615.html" , 1 , "mainFrame" , 0)
+  dbAdd( true, " 6.1.6. Магнитная проницаемость ферромагнетиков" , "" , 1 , "mainFrame" , 0)
+    dbAdd( false , " 6.1.6.1. Намагниченность ферромагнетиков." , "charper6/page6161.html" , 2 , "mainFrame", 0)
+    dbAdd( false , " 6.1.6.2. Кривые намагничивания." , "charper6/page6162.html" , 2 , "mainFrame", 0)
+    dbAdd( false , " 6.1.6.3. Петля гистерезиса." , "charper6/page6163.html" , 2 , "mainFrame", 0)
+  dbAdd( true , " 6.1.7. Свойства ферромагнитных материалов" , "" ,1 , "mainFrame" , 0) 
+    dbAdd( false , " 6.1.7.1. Классы ферромагнитных материалов." , "charper6/page6171.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.1.7.2. Кривые намагничивание магнитно-мягких материалов.", "charper6/page6172.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.1.7.3. Постоянные магниты.", "charper6/page6173.html" ,2 , "mainFrame" , 0)
+    dbAdd( false , " 6.1.7.4. Сила тяги электромагнита.", "charper6/page6174.html", 2, "mainFrame" , 0)
+
+dbAdd( true , " 6.2. Основные законы магнитных цепей" , "" , 0 , "mainFrame" , 0)
+  dbAdd( false,  " 6.2.1. Назначение и типы магнитных цепей" , "charper6/page621.html" , 1, "mainFrame" , 0)
+  dbAdd( false, " 6.2.2. Проявления магнитного поля" , "charper6/page622.html" , 1 , "mainFrame" , 0)
+  dbAdd( false, " 6.2.3. Закон Ампера" , "charper6/page623.html" , 1 , "mainFrame" , 0)
+  dbAdd( false, " 6.2.4. Закон электромагнитной индукции (Фарадея)" , "charper6/page624.html" , 1 , "mainFrame" , 0)
+  dbAdd( false, " 6.2.5. Закон полного тока" , "charper6/page625.html" , 1 , "mainFrame" , 0)
+  dbAdd( true, " 6.2.6. Закон Ома и законы Кирхгофа для магнитной цепи" , "" , 1 , "mainFrame" , 0)
+    dbAdd( false , " 6.2.6.1. Закон Ома для однородной магнитной цепи." , "charper6/page6261.html" , 2 , "mainFrame", 0)
+    dbAdd( false , " 6.2.6.2. Первый закон Кирхгофа." , "charper6/page6262.html" , 2 , "mainFrame", 0)
+    dbAdd( false , " 6.2.6.3. Второй закон Кирхгофа для неоднородной магнитной цепи." , "charper6/page6263.html" , 2 , "mainFrame", 0)
+    dbAdd( false , " 6.2.6.4. Закон Ома для неоднородной магнитной цепи." , "charper6/page6264.html" , 2 , "mainFrame", 0)
+
+dbAdd( true , " 6.3. Расчет магнитных цепей при постоянном магнитном потоке" , "" , 0 , "mainFrame" , 0)
+  dbAdd( false,  " 6.3.1. Постановка задачи" , "charper6/page631.html" , 1, "mainFrame" , 0)
+  dbAdd( true,  " 6.3.2. Расчёт неразветвленной магнитной цепи" , "charper6/page632.html" , 1, "mainFrame" , 0)
+    dbAdd( false , " 6.3.2.1 Прямая задача." , "charper6/page6321.html" , 2 , "mainFrame", 0)
+    dbAdd( false , " УПРАЖНЕНИЕ 6.1" , "charper6/upr61.html" , 2 , "mainFrame", 0)
+	dbAdd( false , " 6.3.2.2 Обратная задача." , "charper6/page6322.html" , 2 , "mainFrame", 0)
+    dbAdd( false , " УПРАЖНЕНИЕ 6.2" , "charper6/upr62.html" , 2 , "mainFrame", 0)
+	dbAdd( false , " УПРАЖНЕНИЕ 6.3" , "charper6/upr63.html" , 2 , "mainFrame", 0)
+	dbAdd( false , " 6.3.2.3. Влияние длины воздушного зазора на вебер-амперную характеристику магнитной цепи." , "charper6/page6323.html" , 2 , "mainFrame", 0)
+    dbAdd( false , " ЗАДАНИЕ 6.1" , "charper6/zad61.html" , 2 , "mainFrame", 0)
+  dbAdd( true,  " 6.3.3. Расчёт разветвленных магнитных цепей" , "charper6/page633.html" , 1, "mainFrame" , 0)
+	dbAdd( false , " УПРАЖНЕНИЕ 6.4" , "charper6/upr64.html" , 2 , "mainFrame", 0)
+	dbAdd( false , " УПРАЖНЕНИЕ 6.5" , "charper6/upr65.html" , 2 , "mainFrame", 0)
+	dbAdd( false , " ЗАДАНИЕ 6.2" , "charper6/zad62.html" , 2 , "mainFrame", 0)
+  dbAdd( true,  " 6.3.4. Расчёт магнитной цепи постоянных магнитов" , "" , 1, "mainFrame" , 0)
+    dbAdd( false , " 6.3.4.1. Магнит с воздушным зазором" , "charper6/page6341.html" , 2 , "mainFrame", 0)
+    dbAdd( false , " УПРАЖНЕНИЕ 6.6" , "charper6/upr66.html" , 2 , "mainFrame", 0)
+	dbAdd( false , " 6.3.4.2. Магнит с частично заполненным воздушным зазором магнитно-мягким магнетиком" , "charper6/page6342.html" , 2 , "mainFrame", 0)
+
+dbAdd( true , " 6.4. Магнитные цепи переменного магнитного потока" , "" , 0 , "mainFrame" , 0)
+  dbAdd( true,  " 6.4.1. Неразветвленная цепь переменного магнитного потока (катушка со сталью)" , "" , 1, "mainFrame" , 0)
+	dbAdd( false , " 6.4.1.1. Магнитный поток при синусоидальном напряжении." , "charper6/page6411.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.4.1.2. Электромагнитные процессы в катушке со сталью.", "charper6/page6412.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.4.1.3. Уравнение трансформаторной ЭДС.", "charper6/page6413.html" ,2 , "mainFrame" , 0)
+    dbAdd( false , " 6.4.1.4. Роль ферромагнитного сердечника катушки.", "charper6/page6414.html", 2, "mainFrame" , 0)
+	dbAdd( false , " 6.4.1.5. Векторная диаграмма идеализированной катушки со сталью.", "charper6/page6415.html", 2, "mainFrame" , 0)
+  dbAdd( true,  " 6.4.2. Форма намагничивающего тока и потери в стали" , "" , 1, "mainFrame" , 0)
+	dbAdd( false , " 6.4.2.1. Ток катушки со сталью при синусоидальном напряжении питания." , "charper6/page6421.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.4.2.2. Магнитные потери в стали. ", "charper6/page6422.html" , 2 , "mainFrame" , 0)
+  dbAdd( true,  " 6.4.3. Схема замещения и векторная диаграмма катушки со сталью" , "" , 1, "mainFrame" , 0)
+	dbAdd( false , " 6.4.3.1. Схема замещения катушки со сталью." , "charper6/page6431.html" , 2 , "mainFrame" , 0)
+	dbAdd( false , " УПРАЖНЕНИЕ 6.7" , "charper6/upr67.html" , 2 , "mainFrame", 0)
+	dbAdd( false , " 6.4.3.2. Влияние воздушного зазора в магнитопроводе на режим работы катушки.", "charper6/page6432.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.4.3.3. Применение катушки со сталью при синусоидальном напряжении питания. ", "charper6/page6433.html" ,2 , "mainFrame" , 0)
+
+dbAdd( true , " 6.5. Магнитные цепи с постоянной и переменной магнито-движущими силами" , "" , 0 , "mainFrame" , 0)
+  dbAdd( true,  " 6.5.1. Управляемый дроссель" , "" , 1, "mainFrame" , 0)
+	dbAdd( false , " 6.5.1.1.Понятие о цепях с подмагничиванием." , "charper6/page6511.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.5.1.2. Управляемый дроссель.", "charper6/page6512.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.5.1.3. Вольт-амперная характеристика (ВАХ) управляемого дросселя по первой гармонике.", "charper6/page6513.html" ,2 , "mainFrame" , 0)
+	dbAdd( false , " УПРАЖНЕНИЕ 6.8" , "charper6/upr68.html" , 2 , "mainFrame", 0)
+  dbAdd( true,  " 6.5.2. Магнитные усилители" , "" , 1, "mainFrame" , 0)
+	dbAdd( false , " 6.5.2.1. Понятие о магнитных усилителях." , "charper6/page6521.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.5.2.2.Устройство магнитных усилителей.", "charper6/page6522.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.5.2.3. Принцип действия магнитных усилителей.", "charper6/page6523.html" ,2 , "mainFrame" , 0)
+    dbAdd( false , " 6.5.2.4. Характеристика управления МУ.", "charper6/page6524.html", 2, "mainFrame" , 0)
+  dbAdd( false, " 6.5.3. Феррорезонансные стабилизаторы напряжения" , "charper6/page653.html" , 1 , "mainFrame" , 0)
+
+dbAdd( true , " 6.6. Электрические аппараты и реле" , "" , 0 , "mainFrame" , 0)
+  dbAdd( true,  " 6.6.1. Назначение и классификация электрических аппаратов" , "" , 1, "mainFrame" , 0)
+	dbAdd( false , " 6.6.1.1. Назначение электрических аппаратов." , "charper6/page6611.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.6.1.2. Классификация электрических аппаратов.", "charper6/page6612.html" , 2 , "mainFrame" , 0)
+  dbAdd( true,  " 6.6.2. Электромагнитные реле" , "" , 1, "mainFrame" , 0)
+	dbAdd( false , " 6.6.2.1. Классификация и принципы действия реле." , "charper6/page6621.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.6.2.2. Сила притяжения якоря и время срабатывания и отпускания реле.", "charper6/page6622.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.6.2.3. Поляризованное реле.", "charper6/page6623.html" ,2 , "mainFrame" , 0)
+  dbAdd( true,  " 6.6.3. Контакторы и пускатели" , "" , 1, "mainFrame" , 0)
+	dbAdd( false , " 6.6.3.1. Контакторы." , "charper6/page6631.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.6.3.2. Магнитные пускатели.", "charper6/page6632.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.6.3.3. Тепловое реле.", "charper6/page6633.html" ,2 , "mainFrame" , 0)
+  dbAdd( false, " 6.6.4. Условные графические обозначения на схемах электрических аппаратов" , "charper6/page664.html" , 1 , "mainFrame" , 0)
+  dbAdd( true,  " 6.6.5. Примеры схем автоматического управления электрическими двигателями" , "" , 1, "mainFrame" , 0)
+	dbAdd( false , " 6.6.5.1. Управление реверсивным асинхронным двигателем." , "charper6/page6651.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.6.5.2. Управление синхронным двигателем.", "charper6/page6652.html" , 2 , "mainFrame" , 0)
+    dbAdd( false , " 6.6.5.3. Управление двигателем постоянного тока.", "charper6/page6653.html" ,2 , "mainFrame" , 0)
+	dbAdd( false , "Лаб. работа 15", "LabWorks/LwLauncher(15).exe" ,0 , "mainFrame" , 0)
+	dbAdd( false , "Вопросы по теме 6", "charper6/Vopros.html" ,0 , "mainFrame" , 0)
+	dbAdd( false , "Самоконтроль", "tests/utis/utlauncher(1_t6.tfp).exe" ,0 , "mainFrame" , 0)
+	// dbAdd( false , "" , "" , 0 , "" , 0)
+
+// -- End modifications --
+
+// Get current cookie setting
+var current=getCurrState()
+function getCurrState() {
+  var label = "currState="
+  var labelLen = label.length
+  var cLen = document.cookie.length
+  var i = 0
+  while (i < cLen) {
+    var j = i + labelLen
+    if (document.cookie.substring(i,j) == label) {
+      var cEnd = document.cookie.indexOf(";",j)
+      if (cEnd == -1) { cEnd = document.cookie.length }
+      return unescape(document.cookie.substring(j,cEnd))
+    }
+    i++
+  }
+  return ""
+}
+
+// Add an entry to the database
+function dbAdd(mother,display,URL,indent,top,newitem) {
+  db[total] = new Object;
+  db[total].mother = mother
+  db[total].display = display
+  db[total].URL = URL
+  db[total].indent = indent
+  db[total].top = top
+  db[total].newitem = newitem
+  total++
+  }
+
+// Record current settings in cookie
+function setCurrState(setting) {
+  var expire = new Date();
+  expire.setTime(expire.getTime() + ( 7*24*60*60*1000 ) ); // expire in 1 week
+  document.cookie = "currState=" + escape(setting) + "; expires=" + expire.toGMTString();
+  }
+
+// toggles an outline mother entry, storing new value in the cookie
+function toggle(n) {
+  if (n != 0) {
+    var newString = ""
+    var expanded = current.substring(n-1,n) // of clicked item
+    newString += current.substring(0,n-1)
+    newString += expanded ^ 1 // Bitwise XOR clicked item
+    newString += current.substring(n,current.length)
+    setCurrState(newString) // write new state back to cookie
+  }
+}
+
+// returns padded spaces (in mulTIPles of 2) for indenting
+function pad(n) {
+  var result = ""
+  for (var i = 1; i <= n; i++) { result += "&nbsp;&nbsp;&nbsp;&nbsp;" }
+  return result
+}
+
+// Expand everything
+function explode() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "1"
+    current += "1"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+
+// Collapse everything
+function contract() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+
+function tree_close() {
+  window.parent.location = window.parent.content.location;
+  }
+
+// end -->
+
+
+</script>
+<TITLE>Contents</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="styles/emx_nav_left.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/left.jpg);
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+}
+body,td,th {
+	color: #990000;
+}
+-->
+</style></HEAD>
+
+<BODY bgcolor=#ffffff LINK="#006666" VLINK="#004444">
+<table width=100% border=0 cellpadding=5 cellspacing=0 bordercolor="#005FA9">
+<tr>
+<td align=left><div align="right"><a href="javascript:contract();"><IMG SRC="images/minimize.gif" WIDTH=16 HEIGHT=14 BORDER=0></a>
+      <a href="javascript:explode();"><IMG SRC="images/maximize.gif" WIDTH=16 HEIGHT=14 BORDER=0 ></a>
+      <a href="javascript:tree_close();">      </a></div></td>
+</tr>
+<tr>
+  <td align=left><div align="center" class="style2 style1">Тема 6. МАГНИТНЫЕ ЦЕПИ И ЭЛЕКТРОМАГНИТНЫЕ УСТРОЙСТВА</div></td>
+  </tr>
+</table>
+<br>
+<table border=0 width=100%>
+  <tr><td>
+<font size="-1">
+
+<script LANGUAGE="JavaScript">
+<!--
+// Set the initial state if no current state or length changed
+if (current == "" || current.length != (db.length-1)) {
+  current = ""
+  initState = ""
+  for (i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState)
+  }
+var prevIndentDisplayed = 0
+var showMyDaughter = 0
+// end -->
+
+<!--
+var Outline=""
+// cycle through each entry in the outline array
+for (var i = 1; i < db.length; i++) {
+  var currIndent = db[i].indent           // get the indent level
+  var expanded = current.substring(i-1,i) // current state
+  var top = db[i].top
+  if (top == "") { top="content" }
+  // display entry only if it meets one of three criteria
+  if ((currIndent == 0 || currIndent <= prevIndentDisplayed || (showMyDaughter == 1 && (currIndent - prevIndentDisplayed == 1)))) {
+  Outline += pad(currIndent)
+
+  // Insert the appropriate GIF and HREF
+  newitem = "";
+  if (db[i].newitem) { newitem="_new"; }
+  if (!(db[i].mother)) {
+    Outline += "<IMG SRC=\"images/blank.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/document" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+    }
+  else {
+      if (current.substring(i-1,i) == 1) {
+        Outline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.parent.status=\'Click to collapse\';return true;\" onClick=\"toggle(" + i + ")\">"
+        Outline += "<IMG SRC=\"images/minus.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/open" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+        Outline += "</A>"
+        }
+      else {
+	    Outline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.parent.status=\'Click to expand\';return true;\" onClick=\"toggle(" + i + ")\">"
+        Outline += "<IMG SRC=\"images/plus.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/closed" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+        Outline += "</A>"
+        }
+      }
+    Outline += "&nbsp;";
+
+    if (db[i].URL == "" || db[i].URL == null) {
+      Outline += "" + db[i].display      // no link, just a listed item
+      }
+    else {
+      Outline += " <A HREF=\"" + db[i].URL + "\" TARGET=\"" + top + "\">" + db[i].display + "</A>"
+      }
+	// Bold if at level 0
+    if (currIndent == 0) {
+      Outline = "" + Outline + ""
+      }
+    Outline += "<BR>"
+    prevIndentDisplayed = currIndent
+    showMyDaughter = expanded
+    // if (i == 1) { Outline = ""}
+    if (db.length > 25) {
+      document.write(Outline)
+      Outline = ""
+      }
+    }
+  }
+document.write(Outline)
+// end -->
+</script>
+</font>
+</td>
+  </tr>
+</table>
+<hr>
+<br>
+</BODY>
+</HTML>
